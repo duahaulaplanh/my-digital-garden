@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/project/dive-into-deep-learning/","tags":["#courses"],"created":"2024-02-25T17:39:27.670+07:00","updated":"2024-02-25T17:44:15.904+07:00"}
+{"dg-publish":true,"permalink":"/project/dive-into-deep-learning/","tags":["courses"],"created":"2024-02-25T17:39:27.670+07:00","updated":"2024-02-25T17:45:45.985+07:00"}
 ---
 
 
