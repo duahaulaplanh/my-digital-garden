@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/project/thesis/model-merging-research/","tags":["research","gardenEntry"]}
+{"dg-publish":true,"permalink":"/project/thesis/model-merging-research/","tags":["research","gardenEntry","gardenEntry"]}
 ---
 
 Day 1: [[Project/Thesis/Report 1 (18-02-2024)\|Report 1 (18-02-2024)]]
