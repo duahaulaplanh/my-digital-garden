@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/inbox/bs-ms-info/","created":"2024-02-25T15:34:23.311+07:00","updated":"2024-02-25T15:41:57.063+07:00"}
+{"dg-publish":true,"permalink":"/inbox/bs-ms-info/","created":"2024-02-25T15:34:23.311+07:00","updated":"2024-02-25T15:56:02.332+07:00"}
 ---
 
 
@@ -17,7 +17,13 @@ Tiểu ban xét tuyển chương trình liên thông môn học xét duyệt dan
 - Kết quả phỏng vấn chuyên môn
 - Điểm trung bình tích lũy tại thời điểm xét tuyển.
 
-**4. Hồ sơ đăng ký xét tuyển:**
+**4. Kế hoạch xét tuyển:**
+- **Giới thiệu chương trình liên thông môn học: 14g30 ngày 25/2/2024**
+- **Thời gian nộp hồ sơ:** từ 01/03 đến ngày 08/03/2024 (thứ 2 - thứ 6; sáng từ 8g00 -12g00, chiều từ 13g30-17g00) 
+- **Phỏng vấn xét tuyển:** dự kiến từ 18/03 đến 23/03/2024 (sẽ có thông báo thời gian cụ thể) 
+- **Kết quả:** sau ngày 01/04/2024 tại website Khoa, Trường.
+
+**5. Hồ sơ đăng ký xét tuyển:**
 - 02 biên nhận hồ sơ đăng ký xét tuyển ([mẫu 1](https://www.fit.hcmus.edu.vn/media/graduate/Mau-1-Bien-nhan-ho-so.docx))
 - 01 đơn đăng ký xét tuyển ([mẫu 2](https://www.fit.hcmus.edu.vn/media/graduate/Mau-2-Don-dang-ky-xet-tuyen.docx))
 - 01 bảng điểm tích lũy bậc đại học được cấp tại thời điểm đăng ký xét tuyển (có mộc của Phòng Đào tạo)
@@ -25,14 +31,14 @@ Tiểu ban xét tuyển chương trình liên thông môn học xét duyệt dan
 
 Các thắc mắc liên quan đến chương trình liên thông môn học, sinh viên gửi email về địa chỉ: [giaovusdh@fit.hcmus.edu.vn](mailto:giaovusdh@fit.hcmus.edu.vn) để được hỗ trợ.
 
-**5. Chỉ tiêu xét tuyển:** 35 sinh viên
+**6. Chỉ tiêu xét tuyển:** 35 sinh viên
 
-**6. Học phí**
+**7. Học phí**
 - Sinh viên được phép đăng ký chuyển điểm hoặc không chuyển điểm (trong trường hợp đã học và đạt các môn đại học).
 - Nếu sinh viên đăng ký chuyển điểm ở bậc đại học sẽ đóng học phí cho môn học tương đương của chương trình đại học theo mức thu đại học.
 - Nếu sinh viên không chuyển điểm sẽ đóng học phí môn học theo mức thu môn học của chương trình thạc sĩ.
 
-**7. Danh mục môn học liên thông ĐH-ThS**
+**8. Danh mục môn học liên thông ĐH-ThS**
 
 | STT   | Trình độ đại học |                                                   |       | Trình độ thạc sĩ |                                                           |     |
 | ----- | ---------------- | ------------------------------------------------- | ----- | ---------------- | --------------------------------------------------------- | --- |
