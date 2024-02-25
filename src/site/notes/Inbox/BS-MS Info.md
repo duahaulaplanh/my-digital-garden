@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/inbox/bs-ms-info/","created":"2024-02-25T15:34:23.311+07:00","updated":"2024-02-25T15:56:02.332+07:00"}
+{"dg-publish":true,"permalink":"/inbox/bs-ms-info/","created":"2024-02-25T15:34:23.311+07:00","updated":"2024-02-25T15:56:31.931+07:00"}
 ---
 
 
@@ -26,7 +26,8 @@ Tiểu ban xét tuyển chương trình liên thông môn học xét duyệt dan
 **5. Hồ sơ đăng ký xét tuyển:**
 - 02 biên nhận hồ sơ đăng ký xét tuyển ([mẫu 1](https://www.fit.hcmus.edu.vn/media/graduate/Mau-1-Bien-nhan-ho-so.docx))
 - 01 đơn đăng ký xét tuyển ([mẫu 2](https://www.fit.hcmus.edu.vn/media/graduate/Mau-2-Don-dang-ky-xet-tuyen.docx))
-- 01 bảng điểm tích lũy bậc đại học được cấp tại thời điểm đăng ký xét tuyển (có mộc của Phòng Đào tạo)
+- 01 bảng điểm đại học do Phòng đào tạo cấp (có điểm trung bình tích lũy đến HK1/23-24)
+- Điền thông tin [tại link](https://docs.google.com/forms/d/e/1FAIpQLSceuYtsOaa_pq2T0sNRHL0HIAAP-PyX6LSv4JAAem1YrcpVWw/viewform) để hoàn tất việc đăng ký
 - Ứng viên nộp hồ sơ tại Văn phòng Khoa - phòng I53, cơ sở 227 Nguyễn Văn Cừ, P4, Q5.
 
 Các thắc mắc liên quan đến chương trình liên thông môn học, sinh viên gửi email về địa chỉ: [giaovusdh@fit.hcmus.edu.vn](mailto:giaovusdh@fit.hcmus.edu.vn) để được hỗ trợ.
