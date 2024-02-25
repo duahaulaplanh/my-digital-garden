@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/inbox/bs-ms-info/"}
+{"dg-publish":true,"permalink":"/inbox/bs-ms-info/","created":"2024-02-25T15:34:23.311+07:00","updated":"2024-02-25T15:41:57.063+07:00"}
 ---
 
 
