@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/project/dive-into-deep-learning/","tags":["courses"],"created":"2024-02-25T17:39:27.670+07:00","updated":"2024-02-25T18:00:27.297+07:00"}
+{"dg-publish":true,"permalink":"/project/dive-into-deep-learning/","tags":["courses"],"created":"2024-02-25T17:39:27.670+07:00","updated":"2024-02-26T09:52:17.422+07:00"}
 ---
 
 
@@ -12,3 +12,5 @@
 - **Notebook**: https://colab.research.google.com/drive/1z6kSy6d6XOlEFNZtIXhc9ijpU2vJuaq3?usp=sharing
 
 # 2. My take
+
+- 
