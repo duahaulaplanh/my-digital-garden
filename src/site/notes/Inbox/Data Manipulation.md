@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/inbox/data-manipulation/","created":"2024-02-26T09:09:02.907+07:00","updated":"2024-02-26T09:49:47.865+07:00"}
+{"dg-publish":true,"permalink":"/inbox/data-manipulation/","created":"2024-02-26T09:09:02.907+07:00","updated":"2024-02-26T10:01:42.095+07:00"}
 ---
 
 # Content
@@ -23,7 +23,7 @@ T = [[[1, 2, 3],
 	  [[7, 8, 9],
 	  [10, 11, 12]]] # (3 chiều)
 ``` 
-- **Pytorch** có các hàm ```arange, reshape``` và attribute ```shape``` tương tự như **numpy**.
+- **Pytorch** có các  ```arange(), reshape(), zeros(), ones(), randn(), shape```  tương tự như **numpy**.
 ```python
 X = torch.arange(start=0,
 				 end=10,
@@ -34,13 +34,29 @@ X = torch.arange(start=0,
 X.shape
 # X.shape = torch.Size([10])
 
-X.reshape(2, 5) # hàm này không inplace
+# Note:
+# - Hàm này không inplace
+# - Các phần tử được đưa ra lần lượt row
+X.reshape(2, 5)
 # X = tensor([[0, 1],
 #             [2, 3],
 #             [4, 5],
 #             [6, 7],
 #             [8, 9]])
+
+# Note: tham số là shape (chiều từ trái qua phải)
+Y = torch.zeros((3, 5))
+# Y = tensor([[0., 0., 0., 0., 0.],
+#             [0., 0., 0., 0., 0.],
+#             [0., 0., 0., 0., 0.]])
 ```
+
+## Indexing và Slicing (tương tự như pandas)
+
+## Operations
+
+- 
+
 ---
 
 # References
