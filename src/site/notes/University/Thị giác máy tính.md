@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/university/thi-giac-may-tinh/","tags":["university"],"created":"2024-02-28T08:58:45.075+07:00","updated":"2024-02-28T09:06:46.987+07:00"}
+{"dg-publish":true,"permalink":"/university/thi-giac-may-tinh/","tags":["university"],"created":"2024-02-28T08:58:45.075+07:00","updated":"2024-02-28T09:28:32.711+07:00"}
 ---
 
 # Info
@@ -25,7 +25,11 @@
 		- Đối sánh mẫu
 		- YOLO
 	- **Chương 8**: Theo vết đối tượng (Object Tracking)
+		- Input là video
+		- Dựa trên random walk, monte carlo
+		- Dùng NN (đều dựa trên YOLO)
 	- **Chương 9**: Phân đoạn ảnh (Image Segmentation)
-	- Ôn tập
+		- Đi tìm contour sao cho phù hợp với object (khác với contour chương 2)
+		- Dùng NN (transformers).
 # Note
 
