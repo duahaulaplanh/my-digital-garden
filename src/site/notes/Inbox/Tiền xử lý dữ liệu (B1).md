@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/inbox/tien-xu-ly-du-lieu-b1/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-02-28T00:52:46.429+07:00"}
+{"dg-publish":true,"permalink":"/inbox/tien-xu-ly-du-lieu-b1/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-02-28T16:48:42.959+07:00"}
 ---
+
 
 # I. Khái niệm dữ liệu
 
