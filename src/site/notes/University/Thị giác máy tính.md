@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/university/thi-giac-may-tinh/","tags":["university"],"created":"2024-02-28T08:58:45.075+07:00","updated":"2024-02-28T09:28:32.711+07:00"}
+{"dg-publish":true,"permalink":"/university/thi-giac-may-tinh/","tags":["university"],"created":"2024-02-28T08:58:45.075+07:00","updated":"2024-02-28T11:09:07.754+07:00"}
 ---
 
 # Info
@@ -33,3 +33,4 @@
 		- Dùng NN (transformers).
 # Note
 
+- Buổi 1 (28/02/2024): 
