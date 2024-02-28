@@ -1,0 +1,49 @@
+---
+{"dg-publish":true,"permalink":"/university/nhap-mon-hoc-may/","tags":["university"],"created":"2024-02-28T12:49:08.619+07:00","updated":"2024-02-28T12:54:35.059+07:00"}
+---
+
+# Info
+- **Homepage**: [Course: Nhập môn học máy - CQ2021/21 (hcmus.edu.vn)](https://courses.fit.hcmus.edu.vn/course/view.php?id=3943)
+- **Classroom**: E305
+- **Class schedule**: Wednesday (6-9)
+- **Complement**: 
+	- [Đề cương](https://courses.fit.hcmus.edu.vn/pluginfile.php/204328/mod_resource/content/2/CLC-CSC14005-ML.pdf)
+	- [Tài liệu học tập](https://drive.google.com/drive/folders/1kmCWMLzL5sez5RK4v4Q7jXjrVTcqDAVU)
+	- [[Project/Dive into Deep Learning\|Dive into Deep Learning]]
+	- [Đề thi mẫu](https://courses.fit.hcmus.edu.vn/pluginfile.php/204338/mod_resource/content/1/machine-learning-sample.pdf)
+	- [Lab materials](https://courses.fit.hcmus.edu.vn/mod/page/view.php?id=107280)
+- **Regulation**:
+	- Lý thuyết 50% 
+		- Hoạt động (cá nhân)
+		- Cuối kỳ
+	- Thực hành 50%
+- **Syllabus**: 
+	- Week 1:
+	    - Introducing the course syllabus
+	    - Reading the chapter 5 of "deep learning"
+	    - Watching the video of "learning is feasible" of Caltech
+	    - Perceptron Model
+	- Week 2:
+	    - Linear regression
+	    - Gradient descent
+	    - Computational graph
+	- Week 3:
+	    - Logistic regression
+	- Week 4:
+	    - Softmax regression
+	    - Over-fitting vs under-fitting
+	- Week 5:
+	    - Decision tree
+	- Week 6:
+	    - Instanced based learning
+	    - Statistical learning
+	- Week 7:
+	    - Statistical learning (cont.)
+	- Week 8:
+	    - Ensemble
+	- Week 9:
+	    - Support vector machine
+	    - Neural network
+	- Week 10: RNN, LTSM, Transformer
+	- Week 11: Reinforcement learning, Review
+# Note
