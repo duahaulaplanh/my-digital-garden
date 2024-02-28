@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/university/nhap-mon-hoc-may/","tags":["university"],"created":"2024-02-28T12:49:08.619+07:00","updated":"2024-02-28T12:54:35.059+07:00"}
+{"dg-publish":true,"permalink":"/university/nhap-mon-hoc-may/","tags":["university"],"created":"2024-02-28T12:49:08.619+07:00","updated":"2024-02-28T16:52:01.931+07:00"}
 ---
 
 # Info
@@ -11,11 +11,12 @@
 	- [Tài liệu học tập](https://drive.google.com/drive/folders/1kmCWMLzL5sez5RK4v4Q7jXjrVTcqDAVU)
 	- [[Project/Dive into Deep Learning\|Dive into Deep Learning]]
 	- [Đề thi mẫu](https://courses.fit.hcmus.edu.vn/pluginfile.php/204338/mod_resource/content/1/machine-learning-sample.pdf)
+	- [Slides](https://drive.google.com/drive/folders/1KDifaACbAuomUiyBsiZfN09gFoKa5iqo)
 	- [Lab materials](https://courses.fit.hcmus.edu.vn/mod/page/view.php?id=107280)
 - **Regulation**:
 	- Lý thuyết 50% 
-		- Hoạt động (cá nhân)
-		- Cuối kỳ
+		- Hoạt động (cá nhân) (10%, trả lời trên zalo)
+		- Cuối kỳ (40%)
 	- Thực hành 50%
 - **Syllabus**: 
 	- Week 1:
@@ -47,3 +48,5 @@
 	- Week 10: RNN, LTSM, Transformer
 	- Week 11: Reinforcement learning, Review
 # Note
+
+- Buổi 1 (28/04/2024): [[Inbox/Perceptron\|Perceptron]]
