@@ -49,4 +49,4 @@
 	- Week 11: Reinforcement learning, Review
 # Note
 
-- Buổi 1 (28/04/2024): [[Inbox/Perceptron\|Perceptron]]
+- Buổi 1 (28/04/2024): [[Zettel/Perceptron\|Perceptron]]
