@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-02-29T14:40:39.808+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-02-29T14:46:37.553+07:00"}
 ---
 
 
@@ -276,7 +276,7 @@ $$
 $$
 z_{if} = \dfrac{r_{if} - 1}{M_f - 1}
 $$
-	- Cuối cùng là dùng $z_{if}$ đại diện cho giá trị của $x_i$ tại thuộc tính $f$. Vì $z_{if}$ là số nên ta cứ tính bằng cách dùng độ đo proximity cho thuộc tính numeric.
+- Cuối cùng là dùng $z_{if}$ đại diện cho giá trị của $x_i$ tại thuộc tính $f$. Vì $z_{if}$ là số nên ta cứ tính bằng cách dùng độ đo proximity cho thuộc tính numeric.
 
 ## 6. Độ đo proximity cho nhiều thuộc tính khác nhau
 
