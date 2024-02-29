@@ -33,4 +33,4 @@
 		- Dùng NN (transformers).
 # Note
 
-- Buổi 1 (28/02/2024): [[Inbox/Mô hình camera\|Mô hình camera]]
+- Buổi 1 (28/02/2024): [[Zettel/Mô hình camera\|Mô hình camera]]
