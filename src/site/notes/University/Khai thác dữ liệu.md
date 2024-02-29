@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/university/khai-thac-du-lieu/","tags":["university"],"created":"2024-02-26T20:40:54.919+07:00","updated":"2024-02-27T23:04:17.525+07:00"}
+{"dg-publish":true,"permalink":"/university/khai-thac-du-lieu/","tags":["university"],"created":"2024-02-26T20:40:54.919+07:00","updated":"2024-02-28T23:05:09.662+07:00"}
 ---
 
 # Info
@@ -23,4 +23,4 @@
 	- Bonus: MOOC (về ML, DL hoặc Data Mining) + dịch paper.
 # Note
 
-- **Buổi 1 (27-02-2024)**: [[Inbox/Tiền xử lý dữ liệu (B1)\|Tiền xử lý dữ liệu (B1)]]
+- **Buổi 1 (27-02-2024)**: [[Inbox/Tiền xử lý dữ liệu\|Tiền xử lý dữ liệu]]
