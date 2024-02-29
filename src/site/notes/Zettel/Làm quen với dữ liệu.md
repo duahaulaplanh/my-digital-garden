@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-02-29T14:46:37.553+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-02-29T15:14:29.403+07:00"}
 ---
 
 
@@ -291,7 +291,7 @@ Trong đó:
 	- $x_{if} = x_{jf} = 0$ và $f$ là thuộc tính binary không đối xứng.
 - Ngược lại $\delta_{ij}^{(f)} = 1$.
 - Với mỗi $f$, ta có cách tính $d_{ij}^{(f)}$ khác nhau:
-	- **Nếu $f$ là numeric**: $$d_{ij}^{(f)} = \dfrac{|x_{if} - x_{jf}|}{\max_f - \min_f}$$ trong đó $\max_f$ và $\min_f$ là giá trị lớn nhất và nhỏ nhất của thuộc tính $f$.
+	- **Nếu $f$ là numeric**: $d_{ij}^{(f)} = \dfrac{|x_{if} - x_{jf}|}{\max_f - \min_f}$ trong đó $\max_f$ và $\min_f$ là giá trị lớn nhất và nhỏ nhất của thuộc tính $f$.
 	- **Nếu $f$ là nominal hoặc binary**: $d_{ij}^{(f)} = 0$ nếu $x_{if} = x_{jf} = 0$; ngược lại $d_{ij}^{(f)} = 1$.
 	- **Nếu $f$ là ordinal**: tính $z_{if}$ như cách tính proximity cho ordinal sau đó xem $z_{if}$ như numeric và áp dụng như phía trên.
 
