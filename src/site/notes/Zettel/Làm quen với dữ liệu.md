@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-02-29T14:37:15.909+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-02-29T14:40:39.808+07:00"}
 ---
 
 
@@ -153,6 +153,9 @@ $$
 $$
 ### b. Quartiles (tứ phân vị)
 
+>[!warning] 
+>Mình lười, có thể xem thêm ở phần reference.
+
 ### c. Variance (phương sai) và Standard Deviation (độ lệch chuẩn)
 
 - Xét một thuộc tính $X$ có giá trị là $x_1, x_2, ..., x_n$ với $n$ đối tượng dữ liệu. Khi đó **phương sai** của thuộc tính $X$ là:
@@ -270,9 +273,9 @@ $$
 	- Sau đó số hoá các giá trị $f$ thành $(1, ..., M_f)$ (ví dụ $f$ là drink_size thì small = 1, medium = 2, large = 3).
 	- Tiếp theo đó thay thế $x_{if}$ thành $r_{if} \in (1, ..., M_f)$ (ví dụ $x_{if} = \text{small}$ thì $r_{if} = 1$).
 	- Tiếp theo tính trọng số:
-	$$
-	z_{if} = \dfrac{r_{if} - 1}{M_f - 1}
-	$$
+$$
+z_{if} = \dfrac{r_{if} - 1}{M_f - 1}
+$$
 	- Cuối cùng là dùng $z_{if}$ đại diện cho giá trị của $x_i$ tại thuộc tính $f$. Vì $z_{if}$ là số nên ta cứ tính bằng cách dùng độ đo proximity cho thuộc tính numeric.
 
 ## 6. Độ đo proximity cho nhiều thuộc tính khác nhau
@@ -293,6 +296,9 @@ Trong đó:
 	- **Nếu $f$ là ordinal**: tính $z_{if}$ như cách tính proximity cho ordinal sau đó xem $z_{if}$ như numeric và áp dụng như phía trên.
 
 ## 7. Độ tương đồng cosine (cosine similarity)
+
+>[!warning] 
+>Mình lười. Có thể xem thêm ở [Cosine Similarity, Clearly Explained!!! (youtube.com)](https://www.youtube.com/watch?v=e9U0QAFbfLI). 
 
 ---
 # References
