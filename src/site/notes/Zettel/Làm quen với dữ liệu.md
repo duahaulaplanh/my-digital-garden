@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-02-29T15:14:29.403+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-02-29T23:24:09.954+07:00"}
 ---
 
 
@@ -248,11 +248,11 @@ Ta có thể dùng nhiều khoảng cách khác nhau để làm độ đo proxim
 
 - **Khoảng cách Euclid** (euclidean distance):
 $$
-d(x, y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + ... + (x_n-y_n)^2}
+d(x, y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + ... + (x_p-y_p)^2}
 $$
 - **Khoảng cách Manhattan** (mahattan distance): 
 $$
-d(x, y) = |x_1 - y_1| + |x_2 - y_2| + ... + |x_n - y_n|
+d(x, y) = |x_1 - y_1| + |x_2 - y_2| + ... + |x_p - y_p|
 $$
 
 >[!note]
@@ -264,7 +264,7 @@ $$
 
 - **Khoảng cách Minkowski**:
 $$
-d(x, y) = \sqrt[h]{|x_1-y_1|^h + |x_2-y_2|^h + ... + |x_n-y_n|^h}
+d(x, y) = \sqrt[h]{|x_1-y_1|^h + |x_2-y_2|^h + ... + |x_p-y_p|^h}
 $$
 ## 5. Độ đo proximity cho thuộc tính ordinal
 
