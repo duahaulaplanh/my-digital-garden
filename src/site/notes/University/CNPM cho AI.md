@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/university/cnpm-cho-ai/","tags":["university"],"created":"2024-03-01T12:22:22.042+07:00","updated":"2024-03-01T15:31:13.799+07:00"}
+{"dg-publish":true,"permalink":"/university/cnpm-cho-ai/","tags":["university"],"created":"2024-03-01T12:22:22.042+07:00","updated":"2024-03-01T15:33:31.826+07:00"}
 ---
 
 # Info
@@ -42,4 +42,4 @@
 	- Thi cuối kỳ (dùng tài liệu giấy)
 # Note
 
-- Buổi 1 (2024-03-01): [[Zettel/Exercises\|Exercises]]
+- Buổi 1 (2024-03-01): [[Zettel/W1 Exercises\|W1 Exercises]]
