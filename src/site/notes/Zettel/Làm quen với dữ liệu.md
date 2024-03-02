@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-02-29T23:24:09.954+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-03-02T13:29:12.666+07:00"}
 ---
 
 
@@ -38,7 +38,7 @@ Giá trị của một thuộc tính tại một đối tượng dữ liệu nà
 ### 1. Định danh (nominal)
 
 - Là những thuộc tính liên quan đến việc "phân loại" (categorize) đối tượng dữ liệu. 
-- Thuộc tính định danh không thể dùng tính toán, đo đạc hay sắp thứ tự.
+- Thuộc tính định danh không thể dùng tính toán, đo đạc hay so sánh.
 
 >[!example]+ Ví dụ
 >Thuộc tính *Eye color* của SH, các giá trị của eye color là *yellow, blue, green, ...*
@@ -50,6 +50,7 @@ Giá trị của một thuộc tính tại một đối tượng dữ liệu nà
 ### 3. Thứ tự (ordinal)
 
 - Là các thuộc tính mà giá trị của nó có tính thứ tự nào đó.
+- Ngoài ra, các thuộc tính ordinal có thể so sánh với nhau được (vẫn không được dùng để tính toán).
 
 >[!example]+ Ví dụ
 >Thuộc tính **drink_size** (kích thước ly nước) sẽ có các giá trị là *small, medium, large*. Có thể thấy các giá trị có thứ tự tăng dần. Ngoài ra thuộc tính **grade** (điểm) có các giá trị $[0, 0.5, 1, 1.5, ..., 9.5, 10]$ cũng là thuộc tính thứ tự.
@@ -58,9 +59,10 @@ Giá trị của một thuộc tính tại một đối tượng dữ liệu nà
 >[!note]
 >Các thuộc **nominal, binary, ordinal** đều là thuộc tính **định tính** (qualitative). Giá trị của các thuộc tính này thường là chữ, nếu là số (ví dụ như $0$ là nam, $1$ là nữ) thì chỉ có nghĩa là cách viết gọn hơn để dễ máy tính dễ xử lý chứ không thể dùng tính toán.
 
-Gồm 2 loại:
-- **Interval-Scaled** (theo khoảng)
-- **Ratio-Scaled** (theo tỉ lệ)
+- Còn gọi là thuộc tính **định lượng** (quantitative). Có thể dùng để đo đạc, tính toán và so sánh với nhau.
+- Gồm 2 loại:
+	- **Interval-Scaled** (theo khoảng)
+	- **Ratio-Scaled** (theo tỉ lệ)
 # II. Các phương pháp đánh giá dữ liệu
 
 ## 1. Theo xu hướng tập trung (central tendency)
