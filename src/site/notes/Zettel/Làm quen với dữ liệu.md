@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-03-02T13:29:12.666+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-03-03T10:09:13.776+07:00"}
 ---
 
 
