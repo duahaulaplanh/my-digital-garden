@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/university/thi-giac-may-tinh/","tags":["university"],"created":"2024-02-28T08:58:45.075+07:00","updated":"2024-02-28T16:51:26.150+07:00"}
+{"dg-publish":true,"permalink":"/university/thi-giac-may-tinh/","tags":["university"],"created":"2024-02-28T08:58:45.075+07:00","updated":"2024-03-03T09:29:09.774+07:00"}
 ---
 
 # Info
@@ -7,11 +7,11 @@
 - **Classroom**: G301
 - **Class schedule**: Wednesday (2-4) (bắt đầu từ 8h30)
 - **Complement**: 
-- **Textbook**:
+- **Textbook**: https://drive.google.com/file/d/1sC19vtRweh96irNMCUGNHbXkhYg9d79i/view?usp=sharing
 - **Regulation**:
 	- Thi cuối kỳ (50%): Trắc nghiệm + Tự luận
 	- Thực hành (50%):
-		- 3-4 bài lab cá nhân (C/C++)
+		- 3-4 bài lab cá nhân (Open CV C/C++)
 		- Đồ án (2 sv/nhóm)
 	- Chuyên cần (5%)
 - **Syllabus**:
@@ -33,4 +33,5 @@
 		- Dùng NN (transformers).
 # Note
 
+- [[Zettel/Hình học chiếu\|Hình học chiếu]]
 - Buổi 1 (28/02/2024): [[Zettel/Mô hình camera\|Mô hình camera]]
