@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/resources/","created":"2024-02-17T12:48:27.496+07:00","updated":"2024-02-28T09:30:09.197+07:00"}
+{"dg-publish":true,"permalink":"/resources/","created":"2024-02-17T12:48:27.496+07:00","updated":"2024-03-04T19:38:01.041+07:00"}
 ---
 
 # Computer Graphics
@@ -58,7 +58,6 @@
 -  [CS 330 Deep Multi-Task and Meta Learning (stanford.edu)](https://cs330.stanford.edu/)
 - [CS224U: Natural Language Understanding - Spring 2023 (stanford.edu)](https://web.stanford.edu/class/cs224u/)
 - [Stanford XCS224U: NLU I Intro & Evolution of Natural Language Understanding, Pt. 1 I Spring 2023 (youtube.com)](https://www.youtube.com/watch?v=K_Dh0Sxujuc&list=PLoROMvodv4rOwvldxftJTmoR3kRcWkJBp)
-- [Stanford CS 224N | Natural Language Processing with Deep Learning](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1214/)
 - [Stanford CS 224N | Natural Language Processing with Deep Learning](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/)
 - [Stanford CS224N: NLP with Deep Learning | Winter 2021 | Lecture 1 - Intro & Word Vectors (youtube.com)](https://www.youtube.com/watch?v=rmVRLeJRkl4&list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4)
 - [Home | CS324 (stanford-cs324.github.io)](https://stanford-cs324.github.io/winter2022/)
