@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/university/nhap-mon-hoc-may/","tags":["university"],"created":"2024-02-28T12:49:08.619+07:00","updated":"2024-03-01T16:04:10.234+07:00"}
+{"dg-publish":true,"permalink":"/university/nhap-mon-hoc-may/","tags":["university"],"created":"2024-02-28T12:49:08.619+07:00","updated":"2024-03-04T07:46:39.654+07:00"}
 ---
 
 # Info
@@ -48,5 +48,3 @@
 	- Week 10: RNN, LTSM, Transformer
 	- Week 11: Reinforcement learning, Review
 # Note
-
-- Buổi 1 (28/04/2024): [[Zettel/Perceptron\|Perceptron]]
