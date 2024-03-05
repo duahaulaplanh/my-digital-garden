@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p2/","created":"2024-03-05T12:54:21.953+07:00","updated":"2024-03-05T17:55:40.605+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p2/","created":"2024-03-05T12:54:21.953+07:00","updated":"2024-03-05T23:09:52.042+07:00"}
 ---
 
 # III. Phép đo độ tương đồng và khác biệt của dữ liệu (TT)
@@ -34,6 +34,10 @@ $$
 \Rightarrow \hspace{5pt} \text{JDist}(A, B) &= 1 - \text{JSim}(A, B) = \dfrac{r + s}{q + r + s + t} = d(A, B)
 \end{aligned}
 $$
+
+>[!summary]+ Tóm tắt
+>- Dùng cho tập hợp
+>- Nếu dùng cho biến binary thì tương tự như độ đo proximity cho thuộc tính binary ở [[Zettel/Làm quen với dữ liệu (P1)\|Làm quen với dữ liệu (P1)]]
 ## 9. Cosine Similarity
 
 - Cho 2 đối tượng dữ liệu $X = (x_1, x_2, ..., x_p)$ và $Y = (y_1, y_2, ..., y_p)$ gồm $p$ thuộc tính. Khi đó **độ tương đồng cosine** giữa $X$ và $Y$ là:
@@ -50,9 +54,10 @@ d(X, Y) = 1 - \text{sim}(X, Y)
 $$
 - Thế nhưng *khoảng cách cosine không phải là 1 metric*, xét ví dụ đơn giản sau đây: Giả sử ta có 2 vector $a = (1, 2)$ và $b = (2, 4)$ khi đó $\text{sim}(a, b) = 1$ nên $d(a, b) = 0$ nhưng khoảng cách giữa hai đối tượng khác nhau phải luôn $> 0$.
 
-## 10. Correlation Coefficient
-
-### a. Pearson correlation coefficient 
+>[!summary]+ Tóm tắt
+>- Dùng cho thuộc tính numeric
+>- Nếu văn bản thì tìm term-frequency (hoặc tf-idf) sau đó tính cosine similarity
+## 10. (Pearson) Correlation Coefficient
 
 - Cho hai đối tượng dữ liệu gồm $p$ thuộc tính $X = (x_1, x_2, ..., x_p)$ và $Y = (y_1, y_2, ..., y_p)$ khi đó **hệ số tương quan pearson** giữa $X$ và $Y$ là:
 $$
@@ -62,6 +67,107 @@ $$
 	- $\overline{X}$ là mean của $X$, tương tự với $\overline{Y}$.
 	- $\sigma_X = \sqrt{\sum_{i=1}^p(x_i - \overline{X})}$ là phương sai của $X$, tương tự với $Y$.
 - Thông thường, ta gọi vector $X'$ là vector **chuẩn hoá** của $X$ nếu $X' = X - \overline{X} = (x_1 - \overline{X}, ..., x_p - \overline{X})$. Thế nên ở công thức trên, $\text{Corr}(X, Y)$ chính là độ tương đồng cosine giữa các vector chuẩn hoá. 
+- Đối với các giá trị pearson khác nhau thì ta có thể trực quan như sau:
+
+![Pasted image 20240305195836.png](/img/user/Attachment/Pasted%20image%2020240305195836.png)
+
+## 11. Distance cho các thuộc tính xếp hạng
+
+Cho 2 rank vector $r_A = (a_1, ..., a_n)$ và $r_B = (b_1, ..., b_n)$, khi đó **khoảng cách spearman** là:
+$$
+d(A, B) = |a_1 - b_1| + |a_2 - b_2| + ... + |a_n - b_n|
+$$
+Ngoài ra, ta có **khoảng cách kendal's tau** là số cặp items có thứ tự khác nhau.
+
+>[!example]+ Ví dụ
+>- Giả sử ta hỏi 2 người $A$ và $B$ về hãng đồ ăn nào ngon hơn. Ta có $A = (McDonald, Jolibee, Lotte)$ và $B = (Lotte, McDonald, Jolibee)$ (xếp theo độ ngon tăng dần).
+>- Đầu tiên, chọn một người làm vector chính, còn gọi là **pattern-vector**, giả sử chọn $A$. Do đó ta có rank vector $r_A = (1, 2, 3)$ với $1 = McDonald, 2 = Jolibee$ và $3 = Lotte$. Khi đó $r_B = (3, 1, 2)$.
+>- Khoảng cách spearman là:
+>$$
+>d(A, B) = |1 - 3| + |2 - 1| + |3 - 2| = 6
+>$$
+>- Khoảng cách kendall = 3 do có 3 cặp items khác thứ tự bao gồm $(1, 3)$, $(2, 1)$ và $(3, 2)$.
+
+>[!warning]
+>Theo tài liệu từ nguồn [Ordinal Distance Tutorial (revoledu.com)](https://people.revoledu.com/kardi/tutorial/Similarity/OrdinalVariables.html) thì khoảng cách spearman và kendell tau khác công thức phía trên (tại sao lại khác thì mình chịu). Theo mình tham khảo từ nhiều nguồn (kể cả wiki) thì đa số khác công thức phía trên.
+>- [Kendall tau distance - Wikipedia](https://en.wikipedia.org/wiki/Kendall_tau_distance)
+>- [Spearman Distance Tutorial (revoledu.com)](https://people.revoledu.com/kardi/tutorial/Similarity/SpearmanDistance.html)
+>- [Kendall Distance Tutorial (revoledu.com)](https://people.revoledu.com/kardi/tutorial/Similarity/KendallDistance.html)
+
+## 12. Khoảng cách Hamming
+
+- Dùng cho các vector bit, ví dụ như $X = (1, 0, 1, 0, 1, 0)$. **Khoảng cách Hamming** giữa hai vector bit $X$ và $Y$ là số vị trí mà tại đó bit của $X$ và $Y$ khác nhau.
+
+>[!example]+ Ví dụ
+>Cho 2 vector bit:
+>- $X = (1, 0, 1, 1)$
+>- $Y = (1, 1, 0, 1)$
+>
+>Khoảng cách Hamming = 2 (khác tại vị trí $1$ và $2$, vị trí bắt đầu là $0$)
+
+- Có thể sử dụng khoảng cách Hamming lên thuộc tính phân loại (nominal, ordinal). Khi đó khoảng cách hamming giữa $X$ và $Y$ là số vị trí mà tại đó $X$ và $Y$ khác giá trị.
+
+>[!example]+ Ví dụ
+>Cho 2 đối tượng dữ liệu sau:
+>- $X = (married, sad, rich)$
+>- $Y = (single, happy, rich)$
+>
+>Khoảng cách Hamming = 2 (khác tại vị trí $0$ và $1$)
+
+## 13. Khoảng cách Edit
+
+- Được dùng để đo khoảng cách giữa hai chuỗi.
+- Ta có thể hiểu khoảng cách edit giữa chuỗi $A$ và chuỗi $B$ là **số phép toán để biến chuỗi $A$ thành chuỗi $B$**. 
+- Có nhiều công thức cho khoảng cách edit:
+	- **Chuỗi con chung dài nhất** (Longest Common Subsequence): chỉ có thể dùng hai phép toán là *xoá* (delete) và *thêm* (insert) ký tự để biến chuỗi $A$ thành chuỗi $B$.
+	- **Khoảng cách Levenshtein**: có thể xem như bản nâng cấp của LCS khi cho phép thêm *thay thế* (substitution) để thay ký tự này thành ký tự khác (trong slide thì phép thay thế gọi là *đột biến*).
+
+>[!example]+ Ví dụ
+>Xét 2 chuỗi $A = kitten$ và $B = sitting$. Khi đó:
+>- Khoảng cách LCS = 5. Trong đó:
+>	- Xoá "k" để $kitten \to itten$.
+>	- Thêm "s" để $itten \to sitten$.
+>	- Xoá "e" để $sitten \to sittn$.
+>	- Thêm "i" để $sittn \to sittin$.
+>	- Thêm "g" để $sittin \to sitting$.
+>- Khoảng cách Levenshtein = 3. Trong đó:
+>	- Thay "s" thành "k" để $kitten \to sitten$.
+>	- Thay "e" thành "i" để $sitten \to sittin$.
+>	- Thêm "g" để $sittin \to sitting$.
+
+- Nếu ta xem một chuỗi là vector các ký tự thì vẫn có thể áp dụng khoảng cách Hamming. Khi đó khoảng cách Hamming là số vị trí mà ký tự của hai chuỗi khác nhau (chỉ áp dụng cho các chuỗi cùng độ dài).
+
+## 14. Khoảng cách Hausdorff
+
+>[!warning]
+>Để sau, giờ mình không biết viết gì
+
+## 15. Khoảng cách giữa hai phân phối
+
+Xét hai phân phối $P$ và $Q$ trên không gian mẫu $\mathcal{X}$. Ta có thể dùng nhiều công thức để tìm khoảng cách giữa hai phân phối xác suất.
+
+**Phân kỳ Kullback-Leibler** (Kullback-Leibler Divergence): Kí hiệu là $D_{KL}(P \mid \mid Q)$, trong đó:
+- Nếu $P$ và $Q$ cùng là *phân phối rời rạc*:
+$$
+D_{KL}(P \mid \mid Q) = \sum_{x \in \mathcal{X}} P(x) \log \left( \dfrac{P(x)}{Q(x)} \right)
+$$
+- Nếu $P$ và $Q$ cùng là *phân phối liên tục*:
+$$
+D_{KL}(P \mid \mid Q) = \int_{-\infty}^{\infty} P(x) \log \left( \dfrac{P(x)}{Q(x)} \right)
+$$
+
+>[!note]+
+>- Mặc dù là một công thức khoảng cách nhưng phân kỳ KL không là một metric
+>- Bởi vì phân kỳ KL không thoả mãn tính đối xứng, tức là $d(x, y) = d(y, x)$ (https://stats.stackexchange.com/a/188904).
+
+**Phân kỳ Jensen-Shannon**: Kí hiệu là $\text{JS}(P \mid \mid Q)$, trong đó:
+$$
+\text{JS}(P \mid \mid Q) = \dfrac{1}{2} D_{KL}(P \mid \mid M) + \dfrac{1}{2} D_{KL}(Q \mid \mid M)
+$$
+với $M = \frac{1}{2}(P + Q)$.
+
+>[!note]
+>Giống như bản nâng cấp của phân kỳ KL, phân kỳ JS thoả mãn tính đối xứng.
 
 ---
 # References
