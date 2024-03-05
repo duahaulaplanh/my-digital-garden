@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/university/khai-thac-du-lieu/","tags":["university"],"created":"2024-02-26T20:40:54.919+07:00","updated":"2024-03-05T17:58:53.478+07:00"}
+{"dg-publish":true,"permalink":"/university/khai-thac-du-lieu/","tags":["university"],"created":"2024-02-26T20:40:54.919+07:00","updated":"2024-03-05T23:14:17.430+07:00"}
 ---
 
 # Info
@@ -26,3 +26,4 @@
 - **Buổi 1 (27-02-2024)**: [[Zettel/Làm quen với dữ liệu (P1)\|Làm quen với dữ liệu (P1)]]
 - **Buổi 2 (06-03-2024)**:
 	- [[Zettel/Làm quen với dữ liệu (P2)\|Làm quen với dữ liệu (P2)]]
+	- [[Zettel/Xử lý dữ liệu\|Xử lý dữ liệu]]
