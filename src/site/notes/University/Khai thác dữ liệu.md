@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/university/khai-thac-du-lieu/","tags":["university"],"created":"2024-02-26T20:40:54.919+07:00","updated":"2024-02-29T11:49:48.940+07:00"}
+{"dg-publish":true,"permalink":"/university/khai-thac-du-lieu/","tags":["university"],"created":"2024-02-26T20:40:54.919+07:00","updated":"2024-03-05T12:54:54.062+07:00"}
 ---
 
 # Info
@@ -23,4 +23,6 @@
 	- Bonus: MOOC (về ML, DL hoặc Data Mining) + dịch paper.
 # Note
 
-- **Buổi 1 (27-02-2024)**: [[Zettel/Làm quen với dữ liệu\|Làm quen với dữ liệu]]
+- **Buổi 1 (27-02-2024)**: [[Zettel/Làm quen với dữ liệu (P1)\|Làm quen với dữ liệu (P1)]]
+- **Buổi 2 (06-02-2024)**:
+	- [[Zettel/Làm quen với dữ liệu (P2)\|Làm quen với dữ liệu (P2)]]
