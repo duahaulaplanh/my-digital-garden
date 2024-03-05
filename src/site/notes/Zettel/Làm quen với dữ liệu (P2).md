@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p2/","created":"2024-03-05T12:54:21.953+07:00","updated":"2024-03-05T23:09:52.042+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p2/","created":"2024-03-05T12:54:21.953+07:00","updated":"2024-03-05T23:13:02.630+07:00"}
 ---
 
 # III. Phép đo độ tương đồng và khác biệt của dữ liệu (TT)
@@ -153,7 +153,7 @@ D_{KL}(P \mid \mid Q) = \sum_{x \in \mathcal{X}} P(x) \log \left( \dfrac{P(x)}{Q
 $$
 - Nếu $P$ và $Q$ cùng là *phân phối liên tục*:
 $$
-D_{KL}(P \mid \mid Q) = \int_{-\infty}^{\infty} P(x) \log \left( \dfrac{P(x)}{Q(x)} \right)
+D_{KL}(P \mid \mid Q) = \int_{-\infty}^{\infty} P(x) \log \left( \dfrac{P(x)}{Q(x)} \right) dx
 $$
 
 >[!note]+
