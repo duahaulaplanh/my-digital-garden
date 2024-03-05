@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p1/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-03-05T15:11:23.995+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p1/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-03-05T17:37:01.018+07:00"}
 ---
 
 
@@ -168,6 +168,17 @@ $$
 $$
 \sigma = \sqrt{\text{phương sai}} = \sqrt{\sigma^2}
 $$
+## 3. Covariance (hiệp phương sai)
+
+- Xét hai thuộc tính $X$ và $Y$ có giá trị lần lượt là $(x_1, x_2, ..., x_n)$ và $(y_1, y_2, ..., y_n)$.
+- Ta có **kì vọng** (expected value) của $X$ là (tương tự với $Y$):
+$$
+\text{E}[X] = \overline{X} 
+$$
+- Hiệp phương sai giữa $X$ và $Y$ được định nghĩa như sau:
+$$
+\text{Cov}(X, Y) = \text{E}[(X - \overline{X})(Y - \overline{Y})] = \dfrac{\sum_{i=1}^n(x_i - \overline{X})(y_i - \overline{Y})}{n}
+$$
 
 # III. Phép đo độ tương đồng và khác biệt của dữ liệu
 
@@ -250,25 +261,39 @@ Ta có thể dùng nhiều khoảng cách khác nhau để làm độ đo proxim
 
 - **Khoảng cách Euclid** (euclidean distance):
 $$
-d(x, y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + ... + (x_p-y_p)^2}
+d(x, y) = \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + ... + (x_p-y_p)^2} = \left[ \sum_{i=1}^p (x_i - y_i)^2 \right]^{1/2}
 $$
 - **Khoảng cách Manhattan** (mahattan distance): 
 $$
-d(x, y) = |x_1 - y_1| + |x_2 - y_2| + ... + |x_p - y_p|
+d(x, y) = |x_1 - y_1| + |x_2 - y_2| + ... + |x_p - y_p| = \sum_{i=1}^p |x_i - y_i|
+$$
+- **Khoảng cách Minkowski**:
+$$
+d(x, y) = \sqrt[h]{|x_1-y_1|^h + |x_2-y_2|^h + ... + |x_p-y_p|^h} = \left[ \sum_{i=1}^p (x_i - y_i)^h \right]^{1/h}
+$$
+- **Khoảng cách Chebyshev**:
+$$
+d(x, y) = \max_i |x_i - y_i| = \max \{|x_1 - y_1|, |x_2 - y_2|, ..., |x_p -y_p|\}
 $$
 
 >[!note]
->Một hàm khoảng cách $d(i, j)$ được gọi là **metric** nếu thoả mãn 4 điều kiện (còn gọi là 4 tiên đề) sau:
->- **Non-negativity**: $d(i, j) \geq 0$ (khoảng cách không âm)
->- **Identity of indiscernibles**: $d(i, i) = 0$ (khoảng cách từ một đối tượng đến chính nó là $0$)
->- **Symmetry**: $d(i, j) = d(j, i)$.
->- **Triangle inequality**: $d(i, j) \leq d(i, k) + d(k, j)$ 
+>- Khoảng cách Euclid còn được gọi là $L_2$-norm.
+>- Khoảng cách Mahanttan là $L_1$-norm.
+>- Khoảng cách Minkowski là $L_p$- norm
+>- Khoảng cách Chebyshev là $L_{\infty}$-norm
 
-- **Khoảng cách Minkowski**:
-$$
-d(x, y) = \sqrt[h]{|x_1-y_1|^h + |x_2-y_2|^h + ... + |x_p-y_p|^h}
-$$
-## 5. Độ đo proximity cho thuộc tính ordinal
+- Nhìn theo khía cạnh hình học như hình dưới. Ta có thể thấy khi $L_p$-norm với $p \to \infty$ thì các cạnh của tứ giác màu tím càng *mở rộng* ra cho đến khi thành hình vuông cam.
+
+![Pasted image 20240305165359.png](/img/user/Attachment/Pasted%20image%2020240305165359.png)
+
+## 5. Metric
+
+Một hàm khoảng cách $d(i, j)$ được gọi là **metric** nếu thoả mãn 4 điều kiện (còn gọi là 4 tiên đề) sau với mọi $i, j$.
+- **Positivity**: Nếu $i \neq j$ thì $d(i, j) > 0$ (khoảng cách từ hai đối tượng khác nhau luôn dương)
+- **Identity of indiscernibles**: $d(i, i) = 0$ (khoảng cách từ một đối tượng đến chính nó là $0$.
+- **Symmetry**: $d(i, j) = d(j, i)$.
+- **Triangle inequality**: $d(i, j) \leq d(i, k) + d(k, j)$ 
+## 6. Độ đo proximity cho thuộc tính ordinal
 
 - Giả sử $f$ là một trong những thuộc tính thứ tự trong các thuộc tính thứ tự của đối tượng dữ liệu. Để tính proximity thì ta làm các bước như sau:
 	- Giá trị của $f$ tại đối tượng dữ liệu $x_i$ là $x_{if}$ và $f$ có $M_f$ giá trị (ví dụ $M_f = 3$ nếu $f$ là drink_size gồm small, medium, large). 
@@ -280,7 +305,7 @@ z_{if} = \dfrac{r_{if} - 1}{M_f - 1}
 $$
 - Cuối cùng là dùng $z_{if}$ đại diện cho giá trị của $x_i$ tại thuộc tính $f$. Vì $z_{if}$ là số nên ta cứ tính bằng cách dùng độ đo proximity cho thuộc tính numeric.
 
-## 6. Độ đo proximity cho nhiều thuộc tính khác nhau
+## 7. Độ đo proximity cho nhiều thuộc tính khác nhau
 
 Giả sử một tập dữ liệu có $p$ thuộc tính khác nhau. Khi đó:
 
