@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p2/","created":"2024-03-05T12:54:21.953+07:00","updated":"2024-03-05T23:13:02.630+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p2/","created":"2024-03-05T12:54:21.953+07:00","updated":"2024-03-06T07:32:25.961+07:00"}
 ---
 
 # III. Phép đo độ tương đồng và khác biệt của dữ liệu (TT)
@@ -61,11 +61,12 @@ $$
 
 - Cho hai đối tượng dữ liệu gồm $p$ thuộc tính $X = (x_1, x_2, ..., x_p)$ và $Y = (y_1, y_2, ..., y_p)$ khi đó **hệ số tương quan pearson** giữa $X$ và $Y$ là:
 $$
-\text{Corr}(X, Y) = \dfrac{\sum_{i=1}^p(x_i - \overline{X})(y_i - \overline{Y})}{\sqrt{\sum_{i=1}^p(x_i - \overline{X})}\sqrt{\sum_{i=1}^p(y_i - \overline{Y})}} 
+\text{Corr}(X, Y) = \dfrac{\sum_{i=1}^p(x_i - \overline{X})(y_i - \overline{Y})}{\sqrt{\sum_{i=1}^p(x_i - \overline{X})}\sqrt{\sum_{i=1}^p(y_i - \overline{Y})}} = \dfrac{\text{Cov}(X, Y)}{\sigma_X\sigma_Y}
 $$
 - Trong đó:
-	- $\overline{X}$ là mean của $X$, tương tự với $\overline{Y}$.
-	- $\sigma_X = \sqrt{\sum_{i=1}^p(x_i - \overline{X})}$ là phương sai của $X$, tương tự với $Y$.
+	- $\overline{X}$ là mean của $X$. Tương tự với $Y$.
+	- $\sigma_X$ là độ lệch chuẩn của $X$. Tương tự với $Y$.
+	- $\text{Cov}(X, Y)$ là hiệp phương sai của $X$ và $Y$.
 - Thông thường, ta gọi vector $X'$ là vector **chuẩn hoá** của $X$ nếu $X' = X - \overline{X} = (x_1 - \overline{X}, ..., x_p - \overline{X})$. Thế nên ở công thức trên, $\text{Corr}(X, Y)$ chính là độ tương đồng cosine giữa các vector chuẩn hoá. 
 - Đối với các giá trị pearson khác nhau thì ta có thể trực quan như sau:
 
@@ -93,6 +94,13 @@ Ngoài ra, ta có **khoảng cách kendal's tau** là số cặp items có thứ
 >- [Kendall tau distance - Wikipedia](https://en.wikipedia.org/wiki/Kendall_tau_distance)
 >- [Spearman Distance Tutorial (revoledu.com)](https://people.revoledu.com/kardi/tutorial/Similarity/SpearmanDistance.html)
 >- [Kendall Distance Tutorial (revoledu.com)](https://people.revoledu.com/kardi/tutorial/Similarity/KendallDistance.html)
+>
+>Trong đó:
+>- Khoảng cách spearman:
+>$$
+>d(A, B) = ||A - B|| = \sum_{i=1}^n (a_i - b_i)^2
+>$$
+>- Khoảng cách kendall: Là số lần để swap để đưa một vector về thành pattern vector. Nói cách khác là số bước của "bubble sort" để sort vector ta cần xét về thành pattern vector.
 
 ## 12. Khoảng cách Hamming
 
@@ -168,6 +176,11 @@ với $M = \frac{1}{2}(P + Q)$.
 
 >[!note]
 >Giống như bản nâng cấp của phân kỳ KL, phân kỳ JS thoả mãn tính đối xứng.
+
+# IV. Hệ thống gợi ý (Recommender System)
+
+>[!warning]
+>Mình không biết viết gì trong này
 
 ---
 # References
