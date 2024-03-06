@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p2/","created":"2024-03-05T12:54:21.953+07:00","updated":"2024-03-06T07:32:25.961+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p2/","created":"2024-03-05T12:54:21.953+07:00","updated":"2024-03-06T07:36:07.331+07:00"}
 ---
 
 # III. Phép đo độ tương đồng và khác biệt của dữ liệu (TT)
@@ -166,7 +166,7 @@ $$
 
 >[!note]+
 >- Mặc dù là một công thức khoảng cách nhưng phân kỳ KL không là một metric
->- Bởi vì phân kỳ KL không thoả mãn tính đối xứng, tức là $d(x, y) = d(y, x)$ (https://stats.stackexchange.com/a/188904).
+>- Bởi vì phân kỳ KL không thoả mãn tính đối xứng, tức là $d(x, y) \neq d(y, x)$ (https://stats.stackexchange.com/a/188904).
 
 **Phân kỳ Jensen-Shannon**: Kí hiệu là $\text{JS}(P \mid \mid Q)$, trong đó:
 $$
