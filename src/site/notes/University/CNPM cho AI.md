@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/university/cnpm-cho-ai/","tags":["university"],"created":"2024-03-01T12:22:22.042+07:00","updated":"2024-03-01T15:55:03.600+07:00"}
+{"dg-publish":true,"permalink":"/university/cnpm-cho-ai/","tags":["university"],"created":"2024-03-01T12:22:22.042+07:00","updated":"2024-03-06T12:09:59.599+07:00"}
 ---
 
 # Info
@@ -11,6 +11,7 @@
 	- [SE9 Presentations (st-andrews.ac.uk)](https://ifs.host.cs.st-andrews.ac.uk/Books/SE9/Presentations/index.html)
 	- [Sommerville 9th edition](https://engineering.futureuniversity.com/BOOKS%20FOR%20IT/Software-Engineering-9th-Edition-by-Ian-Sommerville.pdf)
 	- [Amazon.com: Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications: 9781098107963: Huyen, Chip: Books](https://www.amazon.com/Designing-Machine-Learning-Systems-Production-Ready/dp/1098107969)
+	- [Machine Learning Engineering: Burkov, Andriy: 9781999579579: Amazon.com: Books](https://www.amazon.com/Machine-Learning-Engineering-Andriy-Burkov/dp/1999579577)
 - **Regulation**:
 	- Project assigments (40%)
 	- In-class quizz (10%)
