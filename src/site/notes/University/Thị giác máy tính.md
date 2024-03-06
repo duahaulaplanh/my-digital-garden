@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/university/thi-giac-may-tinh/","tags":["university"],"created":"2024-02-28T08:58:45.075+07:00","updated":"2024-03-03T23:16:12.325+07:00"}
+{"dg-publish":true,"permalink":"/university/thi-giac-may-tinh/","tags":["university"],"created":"2024-02-28T08:58:45.075+07:00","updated":"2024-03-06T12:07:49.602+07:00"}
 ---
 
 # Info
@@ -32,4 +32,6 @@
 		- Đi tìm contour sao cho phù hợp với object (khác với contour chương 2)
 		- Dùng NN (transformers).
 # Note
- 
+
+- **Buổi 1**: [[Zettel/Mô hình camera\|Mô hình camera]]
+- **Buổi 2 (06-03-2023)**: [[Zettel/Biên cạnh và contour\|Biên cạnh và contour]]
