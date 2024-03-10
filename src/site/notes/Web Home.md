@@ -14,4 +14,4 @@
 
 # Self Study
 
-- [[Project/ISLP\|ISLP]]
+- [[ISLP\|ISLP]]
