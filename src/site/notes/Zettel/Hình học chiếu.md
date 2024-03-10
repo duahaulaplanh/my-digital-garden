@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/hinh-hoc-chieu/","created":"2024-03-03T09:29:12.155+07:00","updated":"2024-03-06T12:04:09.417+07:00"}
+{"dg-publish":true,"permalink":"/zettel/hinh-hoc-chieu/","created":"2024-03-03T09:29:12.155+07:00","updated":"2024-03-10T12:48:05.829+07:00"}
 ---
 
 - Như chúng ta đã biết, một điểm trong mặt phẳng được viết là $(x, y)$ (trong $\mathbb{R}^2$). Còn nếu ta xem $\mathbb{R}^2$ là một không gian vector thì khi đó **một điểm được xem như một vector**.
@@ -40,7 +40,6 @@
 >- *Đồng nhất* : $\mathbf{x}^T\mathbf{l} = 0$ với điểm là $\mathbf{x} = (x, y, 1)^T$ và $\mathbf{l} = (a, b, c)^T$.
 
 **Hệ số tự do** (degree of fredom - **dof**):
-- 
 
 ---
 # References
