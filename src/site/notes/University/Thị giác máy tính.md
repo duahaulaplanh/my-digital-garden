@@ -33,5 +33,5 @@
 		- Dùng NN (transformers).
 # Note
 
-- **Buổi 1**: [[Zettel/Mô hình camera\|Mô hình camera]]
+- **Buổi 1**: [[Mô hình camera\|Mô hình camera]]
 - **Buổi 2 (06-03-2023)**: [[Zettel/Biên cạnh và contour\|Biên cạnh và contour]]
