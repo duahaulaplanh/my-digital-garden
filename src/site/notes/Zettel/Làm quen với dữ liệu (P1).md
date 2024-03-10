@@ -1,7 +1,6 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p1/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-03-05T17:37:01.018+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p1/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-03-10T12:48:11.660+07:00"}
 ---
-
 
 # I. Khái niệm dữ liệu
 
