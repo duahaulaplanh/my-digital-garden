@@ -1,10 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/chung-minh-jaccard-distance-la-mot-metric/","created":"2024-03-05T16:03:42.470+07:00","updated":"2024-03-05T16:11:58.551+07:00"}
+{"dg-publish":true,"permalink":"/zettel/chung-minh-jaccard-distance-la-mot-metric/","created":"2024-03-05T16:03:42.470+07:00","updated":"2024-03-10T11:42:30.462+07:00"}
 ---
 
-# Content
-
-- 
 
 ---
 # References
