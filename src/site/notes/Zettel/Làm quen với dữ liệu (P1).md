@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p1/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-03-10T12:48:11.660+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p1/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-03-11T09:49:13.593+07:00"}
 ---
 
 # I. Khái niệm dữ liệu
@@ -320,6 +320,10 @@ Trong đó:
 	- **Nếu $f$ là numeric**: $d_{ij}^{(f)} = \dfrac{|x_{if} - x_{jf}|}{\max_f - \min_f}$ trong đó $\max_f$ và $\min_f$ là giá trị lớn nhất và nhỏ nhất của thuộc tính $f$.
 	- **Nếu $f$ là nominal hoặc binary**: $d_{ij}^{(f)} = 0$ nếu $x_{if} = x_{jf} = 0$; ngược lại $d_{ij}^{(f)} = 1$.
 	- **Nếu $f$ là ordinal**: tính $z_{if}$ như cách tính proximity cho ordinal sau đó xem $z_{if}$ như numeric và áp dụng như phía trên.
+
+---
+
+Phần sau: [[Zettel/Làm quen với dữ liệu (P2)\|Làm quen với dữ liệu (P2)]]
 
 ---
 # References
