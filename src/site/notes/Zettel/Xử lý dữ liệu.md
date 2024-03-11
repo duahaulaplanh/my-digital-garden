@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/xu-ly-du-lieu/","created":"2024-03-06T12:06:48.224+07:00","updated":"2024-03-11T09:46:43.108+07:00"}
+{"dg-publish":true,"permalink":"/zettel/xu-ly-du-lieu/","created":"2024-03-06T12:06:48.224+07:00","updated":"2024-03-11T09:52:30.396+07:00"}
 ---
 
 # I. Xử lý dữ liệu
@@ -274,6 +274,7 @@ Ta có:
 | 2   | overcast | cool        |
 | 3   | rainy    | mild        |
 | 4   | sunny    | hot         |
+
 thành:
 
 | ID  | outlook overcast | outlook rainy | outlook sunny | temp hot | temp cool | temp mild |
