@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p2/","created":"2024-03-05T12:54:21.953+07:00","updated":"2024-03-11T00:14:14.205+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p2/","created":"2024-03-05T12:54:21.953+07:00","updated":"2024-03-11T09:47:00.620+07:00"}
 ---
 
 # III. Phép đo độ tương đồng và khác biệt của dữ liệu (TT)
@@ -181,6 +181,11 @@ với $M = \frac{1}{2}(P + Q)$.
 
 >[!warning]
 >Mình không biết viết gì trong này
+
+---
+
+Phần trước: [[Zettel/Làm quen với dữ liệu (P1)\|Làm quen với dữ liệu (P1)]]
+Phần sau: [[Zettel/Xử lý dữ liệu\|Xử lý dữ liệu]]
 
 ---
 # References
