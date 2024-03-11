@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p2/","created":"2024-03-05T12:54:21.953+07:00","updated":"2024-03-06T07:36:07.331+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p2/","created":"2024-03-05T12:54:21.953+07:00","updated":"2024-03-11T00:14:14.205+07:00"}
 ---
 
 # III. Phép đo độ tương đồng và khác biệt của dữ liệu (TT)
@@ -61,7 +61,7 @@ $$
 
 - Cho hai đối tượng dữ liệu gồm $p$ thuộc tính $X = (x_1, x_2, ..., x_p)$ và $Y = (y_1, y_2, ..., y_p)$ khi đó **hệ số tương quan pearson** giữa $X$ và $Y$ là:
 $$
-\text{Corr}(X, Y) = \dfrac{\sum_{i=1}^p(x_i - \overline{X})(y_i - \overline{Y})}{\sqrt{\sum_{i=1}^p(x_i - \overline{X})}\sqrt{\sum_{i=1}^p(y_i - \overline{Y})}} = \dfrac{\text{Cov}(X, Y)}{\sigma_X\sigma_Y}
+\text{Corr}(X, Y) = \dfrac{\sum_{i=1}^p(x_i - \overline{X})(y_i - \overline{Y})}{\sqrt{\sum_{i=1}^p(x_i - \overline{X})^2}\sqrt{\sum_{i=1}^p(y_i - \overline{Y})^2}} = \dfrac{\text{Cov}(X, Y)}{\sigma_X\sigma_Y}
 $$
 - Trong đó:
 	- $\overline{X}$ là mean của $X$. Tương tự với $Y$.
