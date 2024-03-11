@@ -49,5 +49,5 @@
 	- Week 11: Reinforcement learning, Review
 # Note
 
-- **Buổi 1**: [[Zettel/Perceptron\|Perceptron]]
-- **Buổi 2 (06-03-2024)**: [[Zettel/Linear Model\|Linear Model]]
+- **Buổi 1**: [[Perceptron\|Perceptron]]
+- **Buổi 2 (06-03-2024)**: [[Linear Model\|Linear Model]]
