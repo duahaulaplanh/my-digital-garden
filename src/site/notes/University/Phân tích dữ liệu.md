@@ -20,4 +20,4 @@
 - **Buổi 1 (02/03/2024)**: [[Zettel/Introduction DA\|Introduction DA]]
 - **Buổi 2 (09/03/2024)**: 
 	- [[University/Phân tích dữ liệu\|Phân tích dữ liệu]]
-	- [[Zettel/Data Visualization\|Data Visualization]]
+	- [[Data Visualization\|Data Visualization]]
