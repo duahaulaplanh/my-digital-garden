@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/university/khai-thac-du-lieu/","tags":["university"],"created":"2024-02-26T20:40:54.919+07:00","updated":"2024-03-06T12:16:27.281+07:00"}
+{"dg-publish":true,"permalink":"/university/khai-thac-du-lieu/","tags":["university"],"created":"2024-02-26T20:40:54.919+07:00","updated":"2024-03-13T15:59:01.683+07:00"}
 ---
 
 # Info
@@ -28,3 +28,6 @@
 	- [[Zettel/Làm quen với dữ liệu (P2)\|Làm quen với dữ liệu (P2)]]
 	- [[Zettel/Xử lý dữ liệu\|Xử lý dữ liệu]]
 	- [[Zettel/Classification\|Classification]]
+- **Buổi 3 (12-03-2024)**:
+	- [[Classification (TT)\|Classification (TT)]]
+	- [[Clustering\|Clustering]]
