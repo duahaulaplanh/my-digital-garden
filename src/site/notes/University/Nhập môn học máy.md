@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/university/nhap-mon-hoc-may/","tags":["university"],"created":"2024-02-28T12:49:08.619+07:00","updated":"2024-03-06T13:51:41.726+07:00"}
+{"dg-publish":true,"permalink":"/university/nhap-mon-hoc-may/","tags":["university"],"created":"2024-02-28T12:49:08.619+07:00","updated":"2024-03-13T15:58:31.495+07:00"}
 ---
 
 # Info
@@ -50,4 +50,9 @@
 # Note
 
 - **Buổi 1**: [[Perceptron\|Perceptron]]
-- **Buổi 2 (06-03-2024)**: [[Linear Model\|Linear Model]]
+- **Buổi 2 (06-03-2024)**: 
+	- [[Linear Model\|Linear Model]]
+	- [[Đồ thị tính toán\|Đồ thị tính toán]]
+- **Buổi 3 (13-03-2024)**:
+	- [[Đồ thị tính toán (TT)\|Đồ thị tính toán (TT)]]
+	- [[Linear Model (TT)\|Linear Model (TT)]]
