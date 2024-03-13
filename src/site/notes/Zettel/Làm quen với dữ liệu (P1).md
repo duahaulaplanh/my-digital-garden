@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p1/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-03-11T09:49:13.593+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p1/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-03-12T09:48:58.405+07:00"}
 ---
 
 # I. Khái niệm dữ liệu
@@ -142,7 +142,7 @@ $$
 ### d. Midrange
 - Là giá trị trung bình giữa giá trị lớn nhất trong dữ liệu ($x_{\max}$) và nhỏ nhất trong dữ liệu ($x_{\min}$).
 $$
-\text{midrange} = \dfrac{x_{\max} - x_{\min}}{2} 
+\text{midrange} = \dfrac{x_{\max} + x_{\min}}{2} 
 $$
 ## 2. Theo xu hướng phân tán
 
