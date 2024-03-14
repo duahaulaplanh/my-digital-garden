@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/xu-ly-du-lieu/","created":"2024-03-06T12:06:48.224+07:00","updated":"2024-03-11T09:52:30.396+07:00"}
+{"dg-publish":true,"permalink":"/zettel/xu-ly-du-lieu/","created":"2024-03-06T12:06:48.224+07:00","updated":"2024-03-14T13:40:49.859+07:00"}
 ---
 
 # I. Xử lý dữ liệu
@@ -127,11 +127,10 @@ Lấy ví dụ hình trên, sau khi thực hiện clustering ta được 3 nhóm
 ### c. Hồi quy 
 
 - Đầu tiên dùng hồi quy tuyến tính để tìm ra một hàm để dự đoán cho các giá trị của thuộc tính bị noise.
-- Sau khi có hàm thì dùng hàm này để đưa giá trị mới cho các mẫu bị noise.
+- Sau khi có hàm thì dùng hàm này để đưa giá trị mới cho các mẫu bị noise.p
 ## 3. Tích hợp dữ liệu (data integration)
 
->[!warning]
->Mình chưa biết viết gì vào đây
+![[IMG_0178.JPG]]
 
 # II. Biến đổi dữ liệu (Data Transformation)
 
@@ -228,7 +227,43 @@ $$
 $$
 \text{new\_value} = \dfrac{old\_value - mean\_value}{max\_value - min\_value}
 $$
-## 2. Rời rạc hoá (discretization)
+## 2. Chuyển hoá categorical thành giá trị số
+
+Ta có:
+
+| ID  | outlook  | temperature |
+| --- | -------- | ----------- |
+| 1   | overcast | hot         |
+| 2   | overcast | cool        |
+| 3   | rainy    | mild        |
+| 4   | sunny    | hot         |
+
+thành:
+
+| ID  | outlook overcast | outlook rainy | outlook sunny | temp hot | temp cool | temp mild |
+| --- | ---------------- | ------------- | ------------- | -------- | --------- | --------- |
+| 1   | 1                | 0             | 0             | 1        | 0         | 0         |
+| 2   | 1                | 0             | 0             | 0        | 1         | 0         |
+| 3   | 0                | 1             | 0             | 0        | 0         | 1         |
+| 4   | 0                | 0             | 1             | 1        | 0         | 0         |
+
+## 3. Tinh giảm dữ liệu
+
+Dữ liệu thường có kích thước lớn (nhiều mẫu và mỗi mẫu có nhiều thuộc tính) do đó việc tinh giảm dữ liệu mà vẫn giữ nguyên (hoặc gần như giữ nguyên) các tính chất của dữ liệu sẽ giúp cải thiện performance.
+### a. Tổng hợp khối dữ liệu 
+
+![[IMG_0188.JPG]]
+### b. Giảm chiều dữ liệu
+
+![[IMG_0189.JPG]]
+
+![[IMG_0197.JPG]]
+![[IMG_0198.JPG]]
+![[IMG_0199.JPG]]
+### c. Giảm số lượng
+
+![[IMG_0190.JPG]]
+### d. Rời rạc hoá (discretization)
 
 - Rời rạc hoá được áp dụng cho thuộc tính numeric, mục đích là để đưa về những dạng dễ hơn (ví dụ đưa thành thuộc tính nominal, ordinal, ...) cho các thuật toán khác nhau.
 
@@ -264,41 +299,6 @@ Dưới đây là các phương pháp rời rạc hoá phổ biến:
 	- Bottom-up: hợp nhất các khoảng lân cận tốt nhất (những khoảng có phân bố lớp tượng tự nhau, tức là giá trị $\chi^2$ thấp).
 	- Hợp nhất được thực hiện theo đệ quy, cho đến khi gặp điều kiện dừng.
 	- Supervised
-## 3. Chuyển hoá categorical thành giá trị số
-
-Ta có:
-
-| ID  | outlook  | temperature |
-| --- | -------- | ----------- |
-| 1   | overcast | hot         |
-| 2   | overcast | cool        |
-| 3   | rainy    | mild        |
-| 4   | sunny    | hot         |
-
-thành:
-
-| ID  | outlook overcast | outlook rainy | outlook sunny | temp hot | temp cool | temp mild |
-| --- | ---------------- | ------------- | ------------- | -------- | --------- | --------- |
-| 1   | 1                | 0             | 0             | 1        | 0         | 0         |
-| 2   | 1                | 0             | 0             | 0        | 1         | 0         |
-| 3   | 0                | 1             | 0             | 0        | 0         | 1         |
-| 4   | 0                | 0             | 1             | 1        | 0         | 0         |
-
-## 4. Tinh giảm dữ liệu
-
-Dữ liệu thường có kích thước lớn (nhiều mẫu và mỗi mẫu có nhiều thuộc tính) do đó việc tinh giảm dữ liệu mà vẫn giữ nguyên (hoặc gần như giữ nguyên) các tính chất của dữ liệu sẽ giúp cải thiện performance.
-### a. Tổng hợp khối dữ liệu 
-
->[!warning]
->Không biết viết gì trong này
-### b. Giảm chiều dữ liệu
-
->[!warning]
->Không biết viết gì trong này
-### c. Giảm số lượng
-
->[!warning]
->Không biết viết gì trong này
 
 ---
 
