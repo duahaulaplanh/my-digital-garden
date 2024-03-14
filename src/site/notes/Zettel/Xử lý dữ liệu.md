@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/xu-ly-du-lieu/","created":"2024-03-06T12:06:48.224+07:00","updated":"2024-03-14T13:49:49.841+07:00"}
+{"dg-publish":true,"permalink":"/zettel/xu-ly-du-lieu/","created":"2024-03-06T12:06:48.224+07:00","updated":"2024-03-14T14:16:53.330+07:00"}
 ---
 
 
@@ -131,7 +131,7 @@ Lấy ví dụ hình trên, sau khi thực hiện clustering ta được 3 nhóm
 - Sau khi có hàm thì dùng hàm này để đưa giá trị mới cho các mẫu bị noise.p
 ## 3. Tích hợp dữ liệu (data integration)
 
-![[IMG_0178.JPG]]
+![IMG_0178.png](/img/user/Attachment/IMG_0178.png)
 
 # II. Biến đổi dữ liệu (Data Transformation)
 
@@ -253,17 +253,17 @@ thành:
 Dữ liệu thường có kích thước lớn (nhiều mẫu và mỗi mẫu có nhiều thuộc tính) do đó việc tinh giảm dữ liệu mà vẫn giữ nguyên (hoặc gần như giữ nguyên) các tính chất của dữ liệu sẽ giúp cải thiện performance.
 ### a. Tổng hợp khối dữ liệu 
 
-![[IMG_0188.JPG]]
+![IMG_0188.png](/img/user/Attachment/IMG_0188.png)
 ### b. Giảm chiều dữ liệu
 
-![[IMG_0189.JPG]]
+![IMG_0189.png](/img/user/Attachment/IMG_0189.png)
 
-![[IMG_0197.JPG]]
-![[IMG_0198.JPG]]
-![[IMG_0199.JPG]]
+![IMG_0197.png](/img/user/Attachment/IMG_0197.png)
+![IMG_0198.png](/img/user/Attachment/IMG_0198.png)
+![IMG_0199.png](/img/user/Attachment/IMG_0199.png)
 ### c. Giảm số lượng
 
-![[IMG_0190.JPG]]
+![IMG_0190.png](/img/user/Attachment/IMG_0190.png)
 ### d. Rời rạc hoá (discretization)
 
 - Rời rạc hoá được áp dụng cho thuộc tính numeric, mục đích là để đưa về những dạng dễ hơn (ví dụ đưa thành thuộc tính nominal, ordinal, ...) cho các thuật toán khác nhau.
