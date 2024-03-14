@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/university/phan-tich-du-lieu/","tags":["university"],"created":"2024-03-02T13:04:11.422+07:00","updated":"2024-03-09T14:54:28.762+07:00"}
+{"dg-publish":true,"permalink":"/university/phan-tich-du-lieu/","tags":["university"],"created":"2024-03-02T13:04:11.422+07:00","updated":"2024-03-14T13:27:22.748+07:00"}
 ---
 
 # Info
@@ -19,5 +19,5 @@
 
 - **Buổi 1 (02/03/2024)**: [[Zettel/Introduction DA\|Introduction DA]]
 - **Buổi 2 (09/03/2024)**: 
-	- [[University/Phân tích dữ liệu\|Phân tích dữ liệu]]
+	- [[Zettel/Xử lý dữ liệu\|Xử lý dữ liệu]]
 	- [[Data Visualization\|Data Visualization]]
