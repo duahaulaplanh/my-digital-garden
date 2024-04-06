@@ -1,7 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/hinh-hoc-chieu/","created":"2024-03-03T09:29:12.155+07:00","updated":"2024-03-10T12:48:05.829+07:00"}
+source: "[[University/Thị giác máy tính\|Thị giác máy tính]]"
+id: 202403030929
+date_create: 2024-03-03
+dg-publish: true
 ---
-
 - Như chúng ta đã biết, một điểm trong mặt phẳng được viết là $(x, y)$ (trong $\mathbb{R}^2$). Còn nếu ta xem $\mathbb{R}^2$ là một không gian vector thì khi đó **một điểm được xem như một vector**.
 - Các vector được ký hiệu bằng chữ in hoa, ví dụ như $\mathbf{x}$ và **mặc định vector là vector cột**, do đó một vector sẽ được viết là $(x, y)^T$, mà một điểm $\Leftrightarrow$ một vector nên ta cũng viết là $(x, y)^T$ thay vì $(x, y)$ như trước.
 ## 1. Đường thẳng và điểm
