@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/xu-ly-du-lieu/","created":"2024-03-06T12:06:48.224+07:00","updated":"2024-03-14T14:16:53.330+07:00"}
+{"dg-publish":true,"permalink":"/zettel/xu-ly-du-lieu/","created":"2024-03-20T00:13:20.880+07:00","updated":"2024-03-20T01:12:43.409+07:00"}
 ---
 
 
@@ -304,7 +304,7 @@ Dưới đây là các phương pháp rời rạc hoá phổ biến:
 ---
 
 Phần trước: [[Zettel/Làm quen với dữ liệu (P2)\|Làm quen với dữ liệu (P2)]]
-Phần sau: [[Zettel/Classification\|Classification]]
+Phần sau: [[Classification\|Classification]]
 
 ---
 # References
