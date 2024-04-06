@@ -1,7 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/dinh-nghia-tuong-duong/","created":"2024-03-03T10:37:34.468+07:00","updated":"2024-03-06T12:04:14.065+07:00"}
+source: "[[University/Thị giác máy tính\|Thị giác máy tính]]"
+id: 202403031037
+date_create: 2024-03-03
+dg-publish: true
 ---
-
 # Content
 
 >[!abstract]+ Định nghĩa quan hệ
