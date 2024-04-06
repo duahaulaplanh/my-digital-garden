@@ -1,7 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/chung-minh-jaccard-distance-la-mot-metric/","created":"2024-03-05T16:03:42.470+07:00","updated":"2024-03-10T11:42:30.462+07:00"}
+source: "[[University/Khai thác dữ liệu\|Khai thác dữ liệu]]"
+id: 202403051603
+date_create: 2024-03-05
+dg-publish: true
 ---
-
 
 ---
 # References
