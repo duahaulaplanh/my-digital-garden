@@ -1,7 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p1/","created":"2024-02-27T13:27:25.662+07:00","updated":"2024-03-12T09:48:58.405+07:00"}
+source: "[[University/Khai thác dữ liệu\|Khai thác dữ liệu]]"
+id: 202402271327
+date_create: 2024-02-27
+dg-publish: true
 ---
-
 # I. Khái niệm dữ liệu
 
 Cho tập dữ liệu khảo sát siêu anh hùng (gọi tắt là SH) dưới đây:
