@@ -1,7 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/introduction-da/","created":"2024-03-02T13:12:10.658+07:00","updated":"2024-03-05T12:54:14.958+07:00"}
+source: "[[University/Phân tích dữ liệu\|Phân tích dữ liệu]]"
+id: 202403021312
+date_create: 2024-03-02
+dg-publish: true
 ---
-
 # Content
 
 [[Zettel/Làm quen với dữ liệu (P1)\|Làm quen với dữ liệu (P1)]]
