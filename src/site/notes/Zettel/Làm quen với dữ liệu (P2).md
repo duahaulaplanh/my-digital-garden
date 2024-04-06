@@ -1,9 +1,7 @@
 ---
-source: "[[University/Khai thác dữ liệu\|Khai thác dữ liệu]]"
-id: 202403051254
-date_create: 2024-03-05
-dg-publish: true
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p2/","created":"2024-03-20T00:13:20.868+07:00","updated":"2024-04-06T15:29:11.773+07:00"}
 ---
+
 # III. Phép đo độ tương đồng và khác biệt của dữ liệu (TT)
 
 ## 8. Jaccard Similarity
