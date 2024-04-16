@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/polynomial-curve-fitting/","created":"2024-04-15T11:06:21.892+07:00","updated":"2024-04-15T14:06:17.120+07:00"}
+{"dg-publish":true,"permalink":"/zettel/polynomial-curve-fitting/","created":"2024-04-15T11:06:21.892+07:00","updated":"2024-04-15T22:40:21.662+07:00"}
 ---
 
 Giả sử bạn LN có số tiền là $x \in \mathbb{R}$ và LN muốn dự đoán xem với số tiền $x$ này, LN có thể mua được bao nhiêu cái bánh xèo, bởi vì bà bán bánh xèo bả không muốn tiết lộ giá 1 cái bánh xèo và giá có thể mỗi ngày thay đổi (nhưng bánh xèo ngon).
@@ -34,7 +34,7 @@ E(\mathbf{w}) = \frac{1}{2} \sum_{i=1}^N [f(x_{i}, \mathbf{w}) - y_{i}]^2
 $$
 ta có thể hiểu hàm lỗi này là tổng bình phương độ lỗi (hay độ khác nhau) giữa số bánh dự đoán $f(x_i, \mathbf{w})$ và số bánh thực sự mua được $y_i$. Ngoài ra $E(\mathbf{w}) = 0$ khi và chỉ khi $f(x_{i}, \mathbf{w}) = y_{i} \hspace{3pt} \forall i = 1\dots N$, nghĩa là không có lỗi nào ở đây, $f(x, \mathbf{w})$ khớp hoàn toàn với dữ liệu.
 
->[!note]
+>[!note]+
 >Với hàm lỗi như trên, ta hoàn toàn có thể tìm được giá trị $\mathbf{w}^\star$ bởi vì $f(x_i, \mathbf{w})$ là một hàm linear nên $[f(x_{i}, \mathbf{w}) - y_{i}]^2$ là một hàm bậc 2, do đó đạo hàm của $E(\mathbf{w})$ theo $w_i$ là một hàm linear do đó tồn tại một nghiệm duy nhất.
 >$$
 \dfrac{\partial E(\mathbf{w})}{\partial \mathbf{w}} = \begin{bmatrix}
