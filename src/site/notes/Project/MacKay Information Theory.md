@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/project/mac-kay-information-theory/","tags":["courses"],"created":"2024-04-15T16:37:58.113+07:00","updated":"2024-04-15T19:27:25.524+07:00"}
+{"dg-publish":true,"permalink":"/project/mac-kay-information-theory/","tags":["courses"],"noteIcon":"📝","created":"2024-04-15T16:37:58.113+07:00","updated":"2024-04-17T15:14:31.493+07:00"}
 ---
 
 
@@ -11,7 +11,10 @@
 
 # 2. My take
 
-## Chapter 1 
+### Part 0
 
 - [[Zettel/About Chapter 1\|About Chapter 1]]
-- [[Zettel/Introduction to Information Theory\|Introduction to Information Theory]]
+- [[Introduction to Information Theory\|Introduction to Information Theory]]
+- [[Zettel/Probability, Entropy và Inference\|Probability, Entropy và Inference]]
+- [[About Chapter 3\|About Chapter 3]]
+- [[More About Inference\|More About Inference]]
