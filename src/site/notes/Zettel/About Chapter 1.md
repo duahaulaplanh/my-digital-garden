@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/about-chapter-1/","created":"2024-04-15T16:40:01.637+07:00","updated":"2024-04-17T14:36:30.038+07:00"}
+{"dg-publish":true,"permalink":"/zettel/about-chapter-1/","created":"2024-04-15T16:40:01.637+07:00","updated":"2024-04-17T14:39:13.626+07:00"}
 ---
 
 ## Phân phối nhị thức (binomial distribution)
@@ -145,7 +145,8 @@ $$
 Định nghĩa hàm $H_2(x)$ như sau:
 $$
 H_{2}(x) \equiv x\log \frac{1}{x} + (1-x) \log \frac{1}{(1-x)}.
-$$ta gọi $H_2(x)$ là **hàm entropy nhị phân** (binary entropy function).
+$$
+ta gọi $H_2(x)$ là **hàm entropy nhị phân** (binary entropy function).
 
 Dựa vào hàm $H_2(x)$, ta có thể xấp xỉ $\log{N \choose r}$ thành:
 $$
