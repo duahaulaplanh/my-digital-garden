@@ -1,6 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/transformers-reading/","created":"2024-03-20T00:13:20.877+07:00","updated":"2024-04-06T15:29:55.399+07:00"}
+{"dg-publish":true,"permalink":"/zettel/transformers-reading/","noteIcon":"📝","created":"2024-03-20T00:13:20.877+07:00","updated":"2024-04-17T21:31:59.142+07:00"}
 ---
+
+>[!danger]+
+>Shamlessly ăn cắp từ thread [[D] Resources for Understanding The Original Transformer Paper : r/MachineLearning (reddit.com)](https://www.reddit.com/r/MachineLearning/comments/pkedi4/d_resources_for_understanding_the_original/).
 
 The [Attention Is All You Need paper](https://arxiv.org/abs/1706.03762), aka. The Original Transformer paper, is one of the most important papers in deep learning. I found this paper to be quite difficult to understand having only read a dozen papers before. This is a list of resources that I used to understand this paper:
 # 0. Prerequisites
