@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/about-chapter-1/","created":"2024-04-15T16:40:01.637+07:00","updated":"2024-04-17T14:39:13.626+07:00"}
+{"dg-publish":true,"permalink":"/zettel/about-chapter-1/","noteIcon":"📝","created":"2024-04-15T16:40:01.637+07:00","updated":"2024-04-17T15:08:03.056+07:00"}
 ---
 
 ## Phân phối nhị thức (binomial distribution)
@@ -156,13 +156,9 @@ hay
 $$
 {N \choose r} = 2^{NH_{2}(r / N)}.
 $$
-
->[!danger]+ Tại sao mình lại học Information Theory
->He
-
 ---
 
-Phần sau: [[Zettel/Introduction to Information Theory\|Introduction to Information Theory]]
+Phần sau: [[Zettel/Probability, Entropy và Inference\|Probability, Entropy và Inference]]
 
 ---
 # References
