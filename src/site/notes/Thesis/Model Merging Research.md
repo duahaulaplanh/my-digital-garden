@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/thesis/model-merging-research/","tags":["research"],"created":"2024-03-20T00:13:20.829+07:00","updated":"2024-04-06T21:13:15.521+07:00"}
+{"dg-publish":true,"permalink":"/thesis/model-merging-research/","tags":["research"],"noteIcon":"📝","created":"2024-03-20T00:13:20.829+07:00","updated":"2024-04-06T21:13:15.521+07:00"}
 ---
 
 Day 1: [[Thesis/Report 1 (18-02-2024)\|Report 1 (18-02-2024)]]
