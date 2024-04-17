@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/project/ml-bishop/","tags":["courses"],"created":"2024-04-15T11:05:19.428+07:00","updated":"2024-04-15T12:40:26.732+07:00"}
+{"dg-publish":true,"permalink":"/project/ml-bishop/","tags":["courses"],"noteIcon":"📝","created":"2024-04-15T11:05:19.428+07:00","updated":"2024-04-15T12:40:26.732+07:00"}
 ---
 
 
