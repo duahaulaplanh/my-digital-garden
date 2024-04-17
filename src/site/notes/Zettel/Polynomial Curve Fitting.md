@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/polynomial-curve-fitting/","created":"2024-04-15T11:06:21.892+07:00","updated":"2024-04-15T22:40:21.662+07:00"}
+{"dg-publish":true,"permalink":"/zettel/polynomial-curve-fitting/","noteIcon":"📝","created":"2024-04-15T11:06:21.892+07:00","updated":"2024-04-15T22:40:21.662+07:00"}
 ---
 
 Giả sử bạn LN có số tiền là $x \in \mathbb{R}$ và LN muốn dự đoán xem với số tiền $x$ này, LN có thể mua được bao nhiêu cái bánh xèo, bởi vì bà bán bánh xèo bả không muốn tiết lộ giá 1 cái bánh xèo và giá có thể mỗi ngày thay đổi (nhưng bánh xèo ngon).
