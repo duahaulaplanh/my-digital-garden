@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/probability-theory-bishop/","noteIcon":"📝","created":"2024-04-15T11:07:12.414+07:00","updated":"2024-04-19T00:07:49.325+07:00"}
+{"dg-publish":true,"permalink":"/zettel/probability-theory-bishop/","noteIcon":"📝","created":"2024-04-15T11:07:12.414+07:00","updated":"2024-04-19T00:17:26.319+07:00"}
 ---
 
 ## I. Mở đầu
@@ -29,7 +29,7 @@ $$
 
 >[!note]+
 >Đặt $A_1, ..., A_n$ là $n$ biến cố, nếu:
->- *Mutually exlusive* (loại trừ lẫn nhau): tức là với mỗi $A_i$ và $A_j$, nếu $A_i$ xảy ra thì $A_j$ không xảy ra và ngược lại ($A_i \cap A_j = \emptyset$).
+>- *Mutually exclusive* (loại trừ lẫn nhau): tức là với mỗi $A_i$ và $A_j$, nếu $A_i$ xảy ra thì $A_j$ không xảy ra và ngược lại ($A_i \cap A_j = \emptyset$).
 >- $A_1 \cup A_2 \cup \dots \cup A_n = \Omega$.
 >
 >thì:
@@ -53,12 +53,12 @@ Ta có thể tưởng tượng $X$ và $Y$ tạo thành một bảng, trong đó
 
 Nếu ta xét trong $N$ lần thử, thì giả sử ta có $N$ viên bi, mỗi viên ứng với một lần thử. Ở mỗi lần thử, nếu kết quả xảy ra là $X = x_i$ và $Y = y_j$ thì ta bỏ viên bi vào ô $i, j$. Sau khi xong $N$ lần thử, ta chỉ cần đếm lại số viên bi ở ô $i, j$ để tìm ra số lần mà $X = x_i$ và $Y = y_j$ xảy ra, tức là $n_{ij}$ = số viên bi. Vậy ta có thể xem mỗi ô $i, j$ là số lần thử mà $X = x_i$ và $Y = y_j$ xảy ra. 
 
-| Biến ngẫu nhiên | $x_1$    | **$\dots$** | **$x_M$** |          |
-| --------------- | -------- | ----------- | --------- | -------- |
-| $y_1$           | $n_{11}$ | $\dots$     | $n_{M1}$  | $r_1$    |
-| $\vdots$        | $\vdots$ | $\ddots$    | $\vdots$  | $\vdots$ |
-| $y_L$           | $n_{1L}$ | $\dots$     | $n_{ML}$  | $r_L$    |
-|                 | $c_1$    | $\dots$     | $c_M$     |          |
+| **Biến ngẫu nhiên** | **$x_1$** | **$\dots$** | **$x_M$** |          |
+| ------------------- | --------- | ----------- | --------- | -------- |
+| **$y_1$**           | $n_{11}$  | $\dots$     | $n_{M1}$  | $r_1$    |
+| **$\vdots$**        | $\vdots$  | $\ddots$    | $\vdots$  | $\vdots$ |
+| **$y_L$**           | $n_{1L}$  | $\dots$     | $n_{ML}$  | $r_L$    |
+|                     | $c_1$     | $\dots$     | $c_M$     |          |
 
 >[!note]+
 >Ta đọc dấu $,$ trong công thức xác suất đồng thời là "và", tức là $P(X = x_i, Y = Y_j)$ sẽ đọc là "xác suất của $X = x_i$ và $Y = y_j$". Do là và nên "$X = x_i$ và $Y=y_j$" hoặc "$Y = y_j$ và $X = x_i$" là như nhau, tức là $P(X =x_i, Y = y_j) = P(Y = y_j, X = x_i)$. Hiểu một cách khác thì ô $i, j$ hay ô $j, i$ đều như nhau nên số viên bi tại đó là bằng nhau.
@@ -98,11 +98,14 @@ $$
 P(X = x_{i}, Y = y_{j}) = P(Y = y_{j} \mid X = x_{i}) P(X = x_{i})
 $$
 ta gọi công thức biến đổi phía trên là **product rule** (*quy tắc nhân*) của xác suất.
+
+>[!bug]+ Cách kí hiệu
+>Có thể thấy phía trên việc kí hiệu $P(X = x_i)$ nghĩa là xác suất của $X = x_i$. Mình có thể viết $P(x_i)$, thì ta có thể hiểu xác suất của $X = x_i$ hoặc mình viết $P(X)$ tức là phân phối của $X$ (là xác suất của $X = x$ với $x$ là giá trị nào đó). Giả sử mình có $P(X = 1) = 2, P(X = 2) = 3$, vậy mình có thể viết $P(X) = x + 1$.
+
 ## II. Mật độ xác suất
 
 >[!note]+
 >Giả sử mình đang xét biến ngẫu nhiên liên tục $X$ với $X$ đại diện cho chiều cao của công dân Việt Nam. Như thông thường, mình sẽ tìm xác suất $P(X = x)$ với $x$ là một số thực, nhưng ai lại quan tâm xác suất để chiều cao là $1.8072003 \hspace{3pt} (m)$ chứ 🥲. Vậy nên khi nói đến biến ngẫu nhiên liên tục, ta sẽ quan tâm xác suất để $X$ nằm trong một khoảng hơn, ví dụ xác suất để một công dân Việt Nam có chiều cao từ $1.6$ đến $1.9$, tức là $P(1.6 \leq X \leq 1.9)$. 
-
 
 
 ---
