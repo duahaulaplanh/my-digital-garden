@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/polynomial-curve-fitting/","noteIcon":"📝","created":"2024-04-15T11:06:21.892+07:00","updated":"2024-04-15T22:40:21.662+07:00"}
+{"dg-publish":true,"permalink":"/zettel/polynomial-curve-fitting/","noteIcon":"📝","created":"2024-04-15T11:06:21.892+07:00","updated":"2024-04-17T21:44:36.527+07:00"}
 ---
 
 Giả sử bạn LN có số tiền là $x \in \mathbb{R}$ và LN muốn dự đoán xem với số tiền $x$ này, LN có thể mua được bao nhiêu cái bánh xèo, bởi vì bà bán bánh xèo bả không muốn tiết lộ giá 1 cái bánh xèo và giá có thể mỗi ngày thay đổi (nhưng bánh xèo ngon).
@@ -15,7 +15,7 @@ Giả sử LN thu thập dữ liệu cho việc dự đoán của mình thông q
 Hình: Dữ liệu mà LN thu thập được sau $N = 10$ lần mua
 
 >[!note]
->Đường cong màu xanh lá tương ứng với hàm $f(x) = \sin(2\pi x) + 2$, mình dùng hàm này để sinh ra data, sau đó cộng thêm với giá trị random được lấy từ phân phối chuẩn với $\mu = 0$ và $\sigma = 0.3$ để cho ra các giá trị $y$ màu xanh đỏ (theo [Bishop]). Mục đích của chúng ta là dựa trên data để tìm ra hàm $f$ tốt nhất, thế nhưng data thông thường sẽ có rất nhiều noise và hàm $f$ trong thực tế rất khó tìm.
+>Đường cong màu xanh lá tương ứng với hàm $f(x) = \sin(2\pi x) + 2$, mình dùng hàm này để sinh ra data, sau đó cộng thêm với giá trị random được lấy từ phân phối chuẩn với $\mu = 0$ và $\sigma = 0.3$ (mục đích là để tạo ra noise cho giống với data thực tế) cho ra các giá trị $y$ màu đỏ (theo [Bishop]). Mục đích của chúng ta là dựa trên data để tìm ra hàm $f$ tốt nhất, thế nhưng data thông thường sẽ có rất nhiều noise và hàm $f$ trong thực tế rất khó tìm.
 
 LN đoán rằng, việc dùng một hàm đa thức như dưới có thể dự đoán được số bánh:
 $$
@@ -35,7 +35,7 @@ $$
 ta có thể hiểu hàm lỗi này là tổng bình phương độ lỗi (hay độ khác nhau) giữa số bánh dự đoán $f(x_i, \mathbf{w})$ và số bánh thực sự mua được $y_i$. Ngoài ra $E(\mathbf{w}) = 0$ khi và chỉ khi $f(x_{i}, \mathbf{w}) = y_{i} \hspace{3pt} \forall i = 1\dots N$, nghĩa là không có lỗi nào ở đây, $f(x, \mathbf{w})$ khớp hoàn toàn với dữ liệu.
 
 >[!note]+
->Với hàm lỗi như trên, ta hoàn toàn có thể tìm được giá trị $\mathbf{w}^\star$ bởi vì $f(x_i, \mathbf{w})$ là một hàm linear nên $[f(x_{i}, \mathbf{w}) - y_{i}]^2$ là một hàm bậc 2, do đó đạo hàm của $E(\mathbf{w})$ theo $w_i$ là một hàm linear do đó tồn tại một nghiệm duy nhất.
+>Với hàm lỗi như trên, ta hoàn toàn có thể tìm được giá trị $\mathbf{w}^\star$ bởi vì $f(x_i, \mathbf{w})$ là một hàm linear nên $[f(x_{i}, \mathbf{w}) - y_{i}]^2$ là một hàm bậc 2, do đó đạo hàm của $E(\mathbf{w})$ theo $w_i$ là một hàm linear, do đó tồn tại một nghiệm duy nhất.
 >$$
 \dfrac{\partial E(\mathbf{w})}{\partial \mathbf{w}} = \begin{bmatrix}
 \dfrac{\partial{E(\mathbf{w})}}{\partial w_{0}} \dots 
