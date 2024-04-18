@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/about-chapter-1/","noteIcon":"📝","created":"2024-04-15T16:40:01.637+07:00","updated":"2024-04-17T21:49:36.193+07:00"}
+{"dg-publish":true,"permalink":"/zettel/about-chapter-1/","noteIcon":"📝","created":"2024-04-15T16:40:01.637+07:00","updated":"2024-04-18T16:46:07.600+07:00"}
 ---
 
 ## Phân phối nhị thức (binomial distribution)
@@ -8,7 +8,7 @@ Một đồng xu không đồng chất (tức là xác suất ra mặt ngửa v�
 $$
 P(X = r \mid f, N) = P(r \mid f, N) = {N \choose r} f^r (1-f)^{N- r} 
 $$
->[!note]+ Giải thích
+>[!info]+ Giải thích
 >Giả sử rằng mỗi lần tung đồng xu là độc lập với nhau, đặt biến cố lần tung đầu tiên là $A_1$, tương tự, tung lần thứ $i$ là $A_i$ và tung sau $N$ là $A$ vậy:
 >$$
 >P(A) = P(A_{1} \cap \dots \cap A_{n}) = P(A_{1})\dots P(A_{n})
@@ -25,6 +25,9 @@ $$
 >$$
 >{N \choose r} f^r (1-f)^{N-r}
 >$$
+
+>[!note]+
+>Kí hiệu $P(X = r \mid f, N)$ được hiểu là xác suất có điều kiện, ngoài ra, ta cũng có thể hiểu $f, N$ là tham số của hàm $P(X = r \mid f, N)$.
 
 Trung bình của phân phối trên (được gọi là **phân phối nhị thức**), kí hiệu là $\mathcal{E}[X]$, được định nghĩa như sau:
 $$
@@ -86,7 +89,7 @@ ta gọi phân phối trên là **phân phối Poisson**.
 >[!note]+
 >Phân phối chuẩn hay còn gọi là phân phối gaussian có công thức như sau:
 >$$
->P(X = x \mid \mu, \sigma) = \dfrac{1}{\sigma\sqrt{2 \pi}} e^{\dfrac{-(x - \mu)^2}{2\sigma^2}}.
+>P(X = x \mid \mu, \sigma^2) = \dfrac{1}{\sigma\sqrt{2 \pi}} e^{\dfrac{-(x - \mu)^2}{2\sigma^2}}.
 >$$
 >trong đó $\mu$ là trung bình của $X$, $\sigma^2$ là phương sai của $X$ và $\sigma$ là độ lệch chuẩn của $X$.
 
