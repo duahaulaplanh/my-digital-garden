@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/about-chapter-1/","noteIcon":"📝","created":"2024-04-15T16:40:01.637+07:00","updated":"2024-04-17T15:08:03.056+07:00"}
+{"dg-publish":true,"permalink":"/zettel/about-chapter-1/","noteIcon":"📝","created":"2024-04-15T16:40:01.637+07:00","updated":"2024-04-17T21:49:36.193+07:00"}
 ---
 
 ## Phân phối nhị thức (binomial distribution)
@@ -15,7 +15,7 @@ $$
 >$$
 >Vậy nếu tung $N$ lần, trong đó $r$ lần là mặt ngửa, tức là tại lần $i$ nào đó, ta tung được mặt ngửa, tức là $P(A_i) = f$, có $r$ lần như vậy. Ngoài ra khi tung $N$ lần mà $r$ lần mặt ngửa nên $N-r$ lần còn lại là mặt xấp với xác suất $1-f$. 
 >$$
->(A) = f^r (1-f)^{N-r}
+>P(A) = f^r (1-f)^{N-r}
 >$$
 >Nếu ta xem mỗi lần tung thứ $i$ là một "ô" thứ $i$ trong $N$ ô, thì số cách mà tung $N$ lần có $r$ mặt ngửa ta xem như số cách để chọn $r$ ô trong $N$ ô, vậy số cách sẽ là:
 >$$
