@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/introduction-prob/","noteIcon":"📝","created":"2024-04-15T11:07:12.414+07:00","updated":"2024-04-19T11:32:08.356+07:00"}
+{"dg-publish":true,"permalink":"/zettel/introduction-prob/","noteIcon":"📝","created":"2024-04-15T11:07:12.414+07:00","updated":"2024-04-19T13:19:03.593+07:00"}
 ---
 
 Một hôm LN định mua bánh, đến chợ thì có hai bà bán bánh là bà Hoa và bà Lan. Bà Lan hiện đang còn 2 cái bánh xèo và 6 cái bánh mì, bà Hoa hiện đang còn 3 cái bánh xèo và 1 cái bánh mì. 
 
-Như mọi hôm, LN thích ăn bánh của bà Hoa làm hơn, do đó ở 10 lần đi mua trước, hết 7 lần LN đã chọn bà Hoa. Giả sử, việc LN chọn bánh nào cũng như nhau (không thích bánh nào hơn bánh nào, đói thì ăn).
+Như mọi hôm, LN thích ăn bánh của bà Hoa làm hơn, do đó ở 10 lần đi mua trước, hết 6 lần LN đã chọn bà Hoa. Giả sử, việc LN chọn bánh nào cũng như nhau (không thích bánh nào hơn bánh nào, đói thì ăn).
 
 >[!note]+
 >- Ta gọi tập hợp các khả năng có thể xảy ra của một phép thử (ở ví dụ trên là đi mua bánh) là **không gian mẫu** và kí hiệu là $\Omega$. Một biến cố $A$ là một tập con của $\Omega$. Ta nói biến cố $A$ xảy ra nếu một kết quả trong $A$ xảy ra
@@ -15,7 +15,7 @@ Như mọi hôm, LN thích ăn bánh của bà Hoa làm hơn, do đó ở 10 l�
 >- Một biến ngẫu nhiên $X$ hiểu đơn giản là một cách để đưa các biến cố sang các số thực (hay là một ánh xạ từ $\Omega$ sang $\mathbb{R}$). 
 >- Ngoài ra, ta nói $X$ là biến ngẫu nhiên *rời rạc* nếu tập xác định của $X$ là tập hữu hạn (như ví dụ trên $\{0, 1, \dots, 50\}$) hay vô hạn đếm được (ví dụ $\{0, 1, \dots\}$). Ngược lại, ta gọi $X$ là biến ngẫu nhiên *liên tục*.
 
->[!example]
+>[!example]+
 >Giả sử mình là cửa hàng gà rán, muốn lấy ý kiến 50 người về món gà rán đó ngon hay không, mình đặt $1$ là ngon và $0$ là dở. Nếu vậy, mình sẽ có $| \Omega| = 2^{50}$, mỗi lần khảo sát mình sẽ có một chuỗi $01$ với độ dài $50$ và như thế thì quá to 🥲. Nếu mình đặt $X$ là một biến ngẫu nhiên, $X$ đại diện cho số người trong $50$ người cho rằng ngon, tức là số số $1$ trong chuỗi $01$ độ dài $50$, vậy các giá trị có thể của $X$ là $\{0, 1, \dots, 50 \}$. Bằng việc sử dụng biến ngẫu nhiên, mình đã giảm số khả năng từ $2^{50}$ xuống còn $51$ (ví dụ được mình ăn cắp từ [Casella] trang 54).
 
 >[!note]+
@@ -24,8 +24,8 @@ Như mọi hôm, LN thích ăn bánh của bà Hoa làm hơn, do đó ở 10 l�
 Nếu đặt $A$ là biến ngẫu nhiên cho bà bán bánh, thì $A = h$ tức là bà Hoa, $A = l$ tức là bà Lan. Đặt $B$ là biến ngẫu nhiên cho cái bánh, $B = x$ tức là bánh xèo, còn $B = m$ tức là bánh mì. Lúc này ta có xác suất:
 $$
 \begin{aligned}
-P(A = h) &= \frac{7}{10} = 0.7 \hspace{5pt} \text{(do $7$ trên $10$ lần bà Hoa được mua)} \\
-P(A = l) &= 1 - 0.7 = 0.3
+P(A = h) &= \frac{6}{10} \hspace{5pt} \text{(do $6$ trên $10$ lần bà Hoa được mua)} \\
+P(A = l) &= 1 - \frac{6}{10} = \frac{4}{10}
 \end{aligned}
 $$
 
@@ -120,15 +120,14 @@ P(X) = \sum_{Y} P(X, Y)
 
 >[!done]+ Product rule
 >$$
->P(X, Y) = P(Y \mid X) P(X)
+>P(X, Y) = P(Y \mid X) P(X) = P(X \mid Y)P(Y)
 >$$
 
 Từ product rule, mình có thể viết như sau:
 $$
 \begin{aligned}
 P(Y \mid X) &= \frac{P(X, Y)}{P(X)} \\
-&= \frac{P(Y, X)}{P(X)} \hspace{5pt} \text{(như đã nói trên, phép và có tính đối xứng)} \\
-&= \frac{P(X \mid Y)P(Y)}{P(X)} \hspace{5pt} \text{(Áp dụng thêm 1 lần product rule)} 
+&= \frac{P(X \mid Y)P(Y)}{P(X)}
 \end{aligned}
 $$
 ta gọi công thức trên (từ dấu $=$ thứ ba) là **định lý Bayes** (*Bayes' Theorem*). Đây là định lý cực kỳ quan trọng nên chúng ta đưa luôn vào đầu nhé 🥲.
@@ -139,7 +138,66 @@ P(Y \mid X) = \frac{P(X \mid Y)P(Y)}{\sum_{Y} P(X, Y)} =\frac{P(X \mid Y)P(Y)}{\
 $$
 ta có thể thấy phần mẫu của định lý Bayes giúp ta chắc chắn rằng $\sum_{Y} P(Y \mid X) = 1$, điều này nên có bởi vì trong các giá trị mà $Y$ nhận được thì $Y = y_i$ và $Y = y_j$ không cùng xảy ra (mutually exclusive) và các giá trị $Y = y_i$ hợp lại tạo thành các giá trị mà $Y$ có thể có (không gian mẫu), do đó xác suất của $\sum_{Y} P(Y \mid X) = 1$.
 
-Giờ quay về ví dụ mua bánh xèo nhé.
+Giờ quay về ví dụ mua bánh xèo nhé. Như ta đã biết:
+$$
+\begin{aligned}
+P(A = h) &= \frac{6}{10} \\
+P(A = l) &= \frac{4}{10}
+\end{aligned}
+$$
+Tiếp theo, nếu ta đã chọn mua bà Lan, vậy xác suất ta chọn được cái bánh xèo chính là số bánh xèo bà Lan có chia cho tổng số bánh:
+$$
+P(B = x \mid A = l) = \frac{2}{8} = \frac{1}{4}
+$$
+Tương tự với các xác suất còn lại:
+$$
+\begin{aligned}
+P(B = m \mid A = l) &= \frac{6}{8} = \frac{3}{4}\\
+P(B = x \mid A = h) &= \frac{3}{4} \\
+P(B = m \mid A = h) &= \frac{1}{4}
+\end{aligned}
+$$
+Để tìm được xác suất LN sẽ mua bánh xèo (không quan tâm mua từ bà bán bánh nào), ta sẽ dùng sum rule và product rule:
+$$
+\begin{aligned}
+P(B = x) &= P(B = x, A = l) + P(B = x, A = h) \\
+&= P(B = x \mid A = l)P(A = l) + P(B = x \mid A = h)P(A = h) \\
+&= \frac{1}{4} \frac{4}{10} + \frac{3}{4} \frac{6}{10} = \frac{11}{20}
+\end{aligned}
+$$
+Tương tự mình cũng có xác suất LN sẽ mua bánh mì (không quan tâm bà bán):
+$$
+P(B = m) = 1 - P(B = x) = \frac{9}{20}
+$$
+Bây giờ đến lúc trả lời câu hỏi mình đã đặt ra, xác suất để LN mua cái bánh xèo đó từ bà Hoa là bao nhiêu ? Tức là mình đã biết trước LN mua cái bánh xèo ($B = m$) và tìm xác suất mua từ bà Hoa dựa trên đó ($A = h$) $\implies$ Mình cần tìm $P(A = h \mid B = m)$, áp dụng định lý Bayes, mình được:
+$$
+\begin{aligned}
+P(A = h \mid B = m) &= \frac{P(B = m \mid A = h)P(A = h)}{P(B = m)} \\
+&= \dfrac{1 / 4 \times 6 / 10 }{11 / 20} = \frac{1}{3}
+\end{aligned}
+$$
+Tương tự, mình cũng có xác suất LN mua cái bánh xèo đó từ bà Lan:
+$$
+P(A = l \mid B = m) = 1 - \frac{1}{3} = \frac{2}{3}
+$$
+Vậy có thể thấy, mặc dù yêu thích bà Hoa hơn, nhưng khả năng LN chọn mua cái bánh xèo từ bà Lan lại cao hơn.
+
+Trong công thức Bayes của $P(X \mid Y)$, ta gọi $P(X)$ là **xác suất tiên nghiệm** (prior probability), $P(Y \mid X)$ là **likelihood**, $P(Y)$ được gọi là **xác suất biên** (marginal probability), $Y$ được gọi là **bằng chứng** (evidence), $X$ được gọi là **giả thiết** (hypothesis) và $P(X \mid Y)$ là **xác suất hậu nghiệm** (posterior probability). 
+
+Trong bài toán trên, ta có thể formal nó thành $P(A \mid B)$, trong đó $P(A)$ sẽ là xác suất tiên nghiệm. Trước khi biết LN mua cái bánh nào, thì khi được hỏi LN sẽ mua bánh từ bà bán bánh nào, thông tin duy nhất ta biết là LN thích bà bán bánh nào hơn, tức là chỉ biết được $P(A$). Thế nhưng sau khi ta biết được LN đã mua cái bánh nào, thì khi được hỏi LN sẽ mua bánh từ bà bán bánh nào, ta có thể dùng công thức Bayes để tính ra, do đó xác suất $P(A \mid B)$ được gọi là xác suất hậu nghiệm, bởi vì ta có được xác suất này sau khi *quan sát* được LN đã mua cái bánh nào (bằng chứng $B$).
+
+>[!success]+ Độc lập
+>Nếu một xác suất đồng thời $P(X, Y)$ có thể đưa về thành tích của hai xác suất biên $P(X)$ và $P(Y)$, nghĩa là:
+>$$
+>P(X, Y) = P(X)P(Y)
+>$$
+>thì ta nói $X$ với $Y$ độc lập với nhau.
+
+Nếu $X$ với $Y$ độc lập với nhau thì:
+$$
+P(X \mid Y) = \frac{P(X, Y)}{P(Y)} = P(X)
+$$
+tức là xác suất của $X$ cho dù biết $Y$ hay không thì cũng không bị ảnh hưởng. Suy ngược lại, nếu $P(X \mid Y) = P(X)$ (tương tự $P(Y \mid X) = P(Y)$) thì ta nói $X$ và $Y$ độc lập với nhau.
 
 ---
 
@@ -156,3 +214,4 @@ Phần sau: [[Zettel/Probability Densities\|Probability Densities]]
 
 - [Casella]  [Statistical Inference (wordpress.com)](https://mybiostats.files.wordpress.com/2015/03/casella-berger.pdf)
 - [Bishop] Pattern Recognition and Machine Learning - Bishop (chapter 1.2)
+- [Bayesian inference - Wikipedia](https://en.wikipedia.org/wiki/Bayesian_inference)
