@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/polynomial-curve-fitting/","noteIcon":"📝","created":"2024-04-15T11:06:21.892+07:00","updated":"2024-04-17T21:44:36.527+07:00"}
+{"dg-publish":true,"permalink":"/zettel/polynomial-curve-fitting/","noteIcon":"📝","created":"2024-04-15T11:06:21.892+07:00","updated":"2024-04-19T10:25:00.659+07:00"}
 ---
 
 Giả sử bạn LN có số tiền là $x \in \mathbb{R}$ và LN muốn dự đoán xem với số tiền $x$ này, LN có thể mua được bao nhiêu cái bánh xèo, bởi vì bà bán bánh xèo bả không muốn tiết lộ giá 1 cái bánh xèo và giá có thể mỗi ngày thay đổi (nhưng bánh xèo ngon).
@@ -47,7 +47,7 @@ Vấn đề tìm theo đó chính là tìm giá trị $M$ phù hợp.
 
 ---
 
-Phần sau: [[Zettel/Probability Theory (Bishop)\|Probability Theory (Bishop)]]
+Phần sau: [[Zettel/Introduction (Prob)\|Introduction (Prob)]]
 
 ---
 # References
