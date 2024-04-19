@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/book/ml-bishop/","tags":["book"],"noteIcon":"📝","created":"2024-04-15T11:05:19.428+07:00","updated":"2024-04-18T22:39:57.430+07:00"}
+{"dg-publish":true,"permalink":"/book/ml-bishop/","tags":["book"],"noteIcon":"📝","created":"2024-04-15T11:05:19.428+07:00","updated":"2024-04-19T10:26:50.804+07:00"}
 ---
 
 >[!danger]+ Lưu ý
@@ -12,4 +12,18 @@
 ## I. Introduction
 
 - [[Zettel/Polynomial Curve Fitting\|Polynomial Curve Fitting]]
-- [[Zettel/Probability Theory (Bishop)\|Probability Theory (Bishop)]]
+- Probability Theory
+	- [[Zettel/Introduction (Prob)\|Introduction (Prob)]]
+	- [[Zettel/Probability Densities\|Probability Densities]]
+	- [[Zettel/Expectations and covariances\|Expectations and covariances]]
+	- [[Bayesian Probabilities\|Bayesian Probabilities]]
+	- [[Gaussian Distributions\|Gaussian Distributions]]
+	- [[Curve Fitting Revisited\|Curve Fitting Revisited]]
+	- [[Bayesian Curve Fitting\|Bayesian Curve Fitting]]
+- [[Model Selection\|Model Selection]]
+- [[The Curse of Dimensionality\|The Curse of Dimensionality]]
+- Decision Theory
+- Information Theory
+- [[Exercises Part I\|Exercises Part I]]
+
+## II. Probability Distributions
