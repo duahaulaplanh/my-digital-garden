@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/probability-densities/","noteIcon":"📝","created":"2024-04-19T10:19:39.732+07:00","updated":"2024-04-19T13:55:40.787+07:00"}
+{"dg-publish":true,"permalink":"/zettel/probability-densities/","noteIcon":"📝","created":"2024-04-19T10:19:39.732+07:00","updated":"2024-04-19T14:53:36.887+07:00"}
 ---
 
 >[!example]+
@@ -20,6 +20,8 @@ p(x) = p(x \in (x, x)) = \int_{x}^x f(x)dx = F(x) - F(x) = 0
 
 >[!note]+
 >![Pasted image 20240419135539.png](/img/user/Attachment/Pasted%20image%2020240419135539.png)
+>
+>Có thể thấy ở ảnh trên, ta có thể hiểu xác suất mà 
 
 ---
 
