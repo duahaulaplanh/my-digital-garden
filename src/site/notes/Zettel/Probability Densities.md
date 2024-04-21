@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/probability-densities/","noteIcon":"📝","created":"2024-04-19T10:19:39.732+07:00","updated":"2024-04-21T12:04:38.791+07:00"}
+{"dg-publish":true,"permalink":"/zettel/probability-densities/","noteIcon":"📝","created":"2024-04-19T10:19:39.732+07:00","updated":"2024-04-21T12:37:42.438+07:00"}
 ---
 
 >[!example]+
@@ -115,6 +115,50 @@ P'_{x}(x) &= P'_{y}(g^{-1}(x)) \left| \frac{d}{dx}g^{-1}(x) \right| \\
 $$
 Ta gọi $|g'(y)|$ là **jacobian factor**. Hàm mật độ xác suất $p_x(x)$ sau khi chuyển từ biến $x$ sang biến $y$ bằng hàm không tuyến tính $g$ với $x = g(y)$ biến đổi khác đi, từ một hàm đơn giản khác sang một hàm mới (có thể phức tạp hơn), điều này là do jacobian factor.
 
+Nếu ta có nhiều biến ngẫu nhiên $x_1, \dots, x_D$, được định nghĩa chung bằng vector $\mathbf{x} = (x_1, \dots, x_D)$, khi đó ta định nghĩa hàm **mật độ xác suất đồng thời** $p(\mathbf{x}) = p(x_1, \dots, x_D)$ sao cho xác suất $\mathbf{x}$ thuộc một phần thể tích vô cùng nhỏ (infinitesimal volume) $\delta \mathbf{x}$ (có chứa $\mathbf{x}$) được xác định bởi $p(\mathbf{x})\delta \mathbf{x}$.
+
+>[!note]+
+>Khi ở nhiều chiều hơn, một "khoảng" của ta sẽ trở nên khác. Ví dụ ở 1 chiều $\mathbf{x} = (x)$ thì khoảng ở đây sẽ là một khoảng trên đường thẳng từ $(a, b)$ nào đó, nếu ở 2 chiều $\mathbf{x} = (x_1, x_2)$ thì "khoảng" ở đây là một hình chữ nhật, ở 3 chiều là một hình hộp chữ nhật, ở 4 chiều thì chịu 🥲, đùa đấy, ở chiều cao hơn thì sẽ được gọi là **hyper-rectangle**. Ngoài ra chữ *infinitesimal* (vô cùng nhỏ) có nghĩa là một số $x$ nào đó rất gần $0$ và không có số nào gần hơn nó.
+
+Tương tự như mật độ xác suất 1 biến, ta cũng có:
+- Xác suất không âm:
+$$
+p(\mathbf{x}) \geq 0
+$$
+- Phần tổng diện tích luôn là $1$:
+$$
+\int p(\mathbf{x}) d\mathbf{x} = 1
+$$
+>[!note]+
+>Kí hiệu $\int$ có nghĩa là tích phân toàn bộ không gian của $\mathbf{x}$, giả sử trong không gian 2 chiều, ta có:
+>$$
+\int p(\mathbf{x}) d\mathbf{x} = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} p(x_{1}, x_{2}) dx_{1} dx_{2} = 1
+>$$
+>Tương tự lên $3$ chiều hay $n$ chiều. Nếu xét trong 2 chiều, ta có xác suất để $\mathbf{x}$ nằm trong hình chữ nhật được tạo bởi 4 đường thẳng $x = a, x = b, y = c, y = d$ là:
+>$$
+p(a < x < b, c < y < d) = \int_{c}^{d} \int_{a}^{b} p(x, y) dx dy
+>$$
+>Nếu ta viết (chỉ xét trong không gian 2 chiều):
+>$$
+\begin{aligned}
+p(a < x < b) = p(a < x < b, y) &= \int_{-\infty}^{\infty} \int_{a}^{b} p(x, y) dx dy \\
+&= \int_{a}^{b} \left[ \int_{-\infty}^{\infty} p(x, y)dy \right] dx
+\end{aligned}
+>$$
+>thì đây chính là xác suất biên (tổng cũng tương tự tích phân, ta lấy tổng các biến ngẫu nhiên còn lại như đã định nghĩa ở phần trước). Ta có thể thấy $\int_{-\infty}^{\infty} p(x, y)dy$ đóng vai trò như $p_x(x)$.
+
+Nếu $x$ là biến ngẫu nhiên rời rạc, ta gọi $p(x)$ là **hàm khối xác suất** (probability mass function). Phân biệt một tí với hàm mật độ xác suất, hàm khối xác suất cũng thể được xem là xác suất của biến ngẫu nhiên rời rạc.
+
+Tương tự như biến ngẫu nhiên rời rạc, sum rule, product rule và định lý Bayes vẫn có thể áp dụng với biến ngẫu nhiên liên tục. Đặt $x$ và $y$ là hai biến ngẫu nhiên liên tục, ta có:
+$$
+\begin{aligned}
+p(x) &= \int p(x, y) dy \\
+p(x, y) &= p(y \mid x) p(x)
+\end{aligned}
+$$
+>[!bug]+
+>Việc chứng minh hai công thức này thì mình chịu, vượt quá sức của mình rồi 🥲
+
 ---
 
 Phần trước: [[Zettel/Introduction (Prob)\|Introduction (Prob)]]
@@ -130,3 +174,4 @@ Phần sau: [[Zettel/Expectations and covariances\|Expectations and covariances]
 - [3.7: Transformations of Random Variables - Statistics LibreTexts](https://stats.libretexts.org/Bookshelves/Probability_Theory/Probability_Mathematical_Statistics_and_Stochastic_Processes_(Siegrist)/03%3A_Distributions/3.07%3A_Transformations_of_Random_Variables)
 - [calculus - How is the derivative of the CDF of a random variable $X$ its PDF? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/248269/how-is-the-derivative-of-the-cdf-of-a-random-variable-x-its-pdf)
 - [distributions - Derivation of change of variables of a probability density function? - Cross Validated (stackexchange.com)](https://stats.stackexchange.com/questions/239588/derivation-of-change-of-variables-of-a-probability-density-function)
+- [ch3withfigs.pdf (uchicago.edu)](https://www.stat.uchicago.edu/~stigler/Stat244/ch3withfigs.pdf)
