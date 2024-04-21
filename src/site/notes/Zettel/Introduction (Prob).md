@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/introduction-prob/","noteIcon":"📝","created":"2024-04-15T11:07:12.414+07:00","updated":"2024-04-19T13:38:49.915+07:00"}
+{"dg-publish":true,"permalink":"/zettel/introduction-prob/","noteIcon":"📝","created":"2024-04-15T11:07:12.414+07:00","updated":"2024-04-21T10:04:24.419+07:00"}
 ---
 
 Một hôm LN định mua bánh, đến chợ thì có hai bà bán bánh là bà Hoa và bà Lan. Bà Lan hiện đang còn 2 cái bánh xèo và 6 cái bánh mì, bà Hoa hiện đang còn 3 cái bánh xèo và 1 cái bánh mì. 
@@ -89,6 +89,9 @@ Mình gọi xác suất mình đang tìm kiếm là **xác suất có điều ki
 $$
 p(Y = y_{j} \mid X = x_{i}) = \frac{n_{ij}}{c_{i}}
 $$
+>[!note]+
+>Xác suất $p(Y = y_j \mid X = x_i)$ chỉ có nghĩa khi $p(X = x_i) = c_i \neq 0$. Nếu $p(X = x_i) = 0$ thì biến cố $X = x_i$ không chắc chắn xảy ra (xác suất là $0$ khác với không thể xảy ra [Almost surely - Wikipedia](https://en.wikipedia.org/wiki/Almost_surely)).
+
 Từ công thức trên, ta có:
 $$
 \begin{aligned}
