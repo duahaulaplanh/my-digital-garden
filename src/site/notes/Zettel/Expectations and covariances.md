@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/expectations-and-covariances/","noteIcon":"📝","created":"2024-04-19T10:21:22.500+07:00","updated":"2024-04-21T16:00:37.601+07:00"}
+{"dg-publish":true,"permalink":"/zettel/expectations-and-covariances/","noteIcon":"📝","created":"2024-04-19T10:21:22.500+07:00","updated":"2024-04-21T16:01:32.123+07:00"}
 ---
 
 Kì vọng (expectation) là một trong nhất concept quan trọng nhất của xác suất. Giá trị trung bình của một hàm biến ngẫu nhiên $f(X)$ nào đó với $X$ có phân phối xác suất $p(x)$ được gọi là **kì vọng** của $f(X)$ và được kí hiệu là $\mathbb{E}[f]$.
@@ -150,7 +150,7 @@ $$
 &= \mathbb{E}_{\mathbf{x}, \mathbf{y}}[\mathbf{x}\mathbf{y}^T] + \mathbb{E}[\mathbf{x}]\mathbb{E}[\mathbf{y}^T]
 \end{aligned}
 $$
-
+Nếu ta xét hiệp phương sai giữa biến ngẫu nhiên $X$ với chính nó, ta có thể viết $\text{cov}[X]$ thay cho $\text{cov}[X, X]$. Tương tự với vector ngẫu nhiên $\mathbf{x}$.
 
 ---
 
