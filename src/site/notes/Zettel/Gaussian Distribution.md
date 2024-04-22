@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/gaussian-distribution/","noteIcon":"📝","created":"2024-04-22T12:17:03.261+07:00","updated":"2024-04-22T15:26:57.850+07:00"}
+{"dg-publish":true,"permalink":"/zettel/gaussian-distribution/","noteIcon":"📝","created":"2024-04-22T12:17:03.261+07:00","updated":"2024-04-22T20:08:19.594+07:00"}
 ---
 
 **Phân phối chuẩn** (Gaussian Distribution hoặc Normal Distribution), kí hiệu là $\mathcal{N}(x \mid \mu, \sigma^2)$, sẽ được định nghĩa như sau:
@@ -80,6 +80,115 @@ $$
 \mathcal{N}(\mathbf{x} \mid \pmb{\mu}, \pmb{\Sigma}) = \frac{1}{(2\pi)^{D/2}} \frac{1}{|\pmb{\Sigma}|^{1/2}} \exp \left\{ -\frac{1}{2} (\mathbf{x} - \pmb{\mu})^T \pmb{\Sigma}^{-1} (\mathbf{x} - \pmb{\mu}) \right\}
 $$
 trong đó $\pmb{\mu}$ là vector trung bình của phân phối có $D$ chiều, $\pmb{\Sigma}$ là ma trận hiệp phương sai có kích thước $D \times D$ và $|\pmb{\Sigma}|$ là định thức của ma trận hiệp phương sai $\pmb{\Sigma}$. Một tên gọi khác cho phân phối chuẩn nhiều chiều là **multivariate normal (hoặc gaussian) distribution**.
+
+>[!danger]+
+>Mình không thể gõ được chữ $x$ như trong sách 😭. Nên mình dùng kí hiệu là $\mathcal{D}$ vậy.
+
+Giả sử ta có một tập dữ liệu $\mathcal{D} = (y_1, \dots, y_N)^T$. Tập dữ liệu bao gồm $N$ quan sát, mỗi quan sát (observation) là một đại lượng vô hướng (scalar) $y_{i}$.
+
+>[!note]+
+>Ta gọi một giá trị $x$ là scalar nếu nó không phải là vector (ez huh). Đúng hơn, scalar (hay đại lượng vô hướng) để chỉ phần tử của một trường (field) ([Scalar (mathematics) - Wikipedia](https://en.wikipedia.org/wiki/Scalar_(mathematics))). Tập số thực ($\mathbb{R}$) là một trường, do đó ta có thể nói các số thực $x \in \mathbb{R}$ là một đại lượng vô hướng. Ngoài ra, tập số phức $\mathbb{C}$ cũng là một trường nên $x$ cũng có thể là số phức nếu ta chỉ nói $x$ là đại lượng vô hướng mà không nói gì thêm.
+
+Giả sử các quan sát trong tập dữ liệu $\mathcal{D}$ của ta được lấy ra một cách độc lập (drawn independently) từ một phân phối chuẩn có trung bình là $\mu$ và phương sai là $\sigma^2$ (đây là hai đại lượng mà ta chưa biết và mục đích của chúng ta là tìm ra được hai tham số này từ tập dữ liệu mà ta có), nghĩa là $y_i = \mathcal{N}(x_i \mid \mu, \sigma^2)$.
+
+>[!note]+
+>Ở câu "lấy ra một cách độc lập", ta có thể hiểu như sau:
+>- "Lấy ra" (drawn): tức là các giá trị này được chọn một cách ngẫu nhiên trên phân phối.
+>- "Độc lập" (independently): khi ta lấy một giá trị mới, các giá trị trước đó (kể cả sau đó) không làm ảnh hưởng đến quyết định ta lấy giá trị mới nào.
+
+Các điểm dữ liệu mà:
+- Được lấy ra từ cùng một phân phối (identically distributed).
+- Độc lập với nhau (independent).
+thì được nói là **độc lập và có phân phối đồng nhất** (independent and identically distributed) và thuòng viết tắt là i.i.d.
+
+>[!note]+
+>Xét tập dữ liệu $\mathcal{D}$, nếu ta viết $\mathcal{D} \overset{i.i.d}{\sim} \mathcal{N}(\mu, \sigma^2)$ tức là tập dữ liệu $\mathcal{D}$ là độc lập và có phân phối đồng nhất, ngoài ra $\mathcal{D}$ được lấy ra từ phân phối chuẩn.
+
+Xét hàm likelihood $\mathcal{L}(\mu, \sigma^2 \mid \mathcal{D})$, bởi vì $\mathcal{D}$ là i.i.d nên ta có:
+$$
+\mathcal{L}(\mu, \sigma^2 \mid \mathcal{D}) = p(\mathcal{D} \mid \mu, \sigma^2) = p(y_{1}, \dots, y_{N} \mid \mu, \sigma^2) = \prod_{n=1}^N p(y_{n} \mid \mu, \sigma^2)
+$$
+>[!note]+
+>Như ta đã nói ở phần trước ([[Zettel/Introduction (Prob)\|Introduction (Prob)]]), khi $X$ và $Y$ độc lập với nhau thì:
+>$$
+p(X, Y) = p(X)p(Y)
+>$$
+
+Ta có một tập dữ liệu $\mathcal{D}$, ta đã giả sử các điểm dữ liệu được lấy ra từ một phân phối chuẩn $\mathcal{N}(\mu, \sigma^2)$ với $\mu$ và $\sigma^2$ chưa biết. Nếu dự đoán được $\mu$ và $\sigma^2$, gọi giá trị đự doán là $\hat{\mu}$ và $\hat{\sigma}^2$, thì ta đã tìm được cách để dự đoán $\hat{y}$ từ một mẫu $x$ nào đó, bằng cách $\hat{y} = \mathcal{N}(x \mid \hat{\mu}, \hat{\sigma}^2)$.
+
+Một trong những cách thường dùng để tìm các tham số cho phân phối bằng cách sử dụng tập dữ liệu quan sát được là tìm các tham số mà **làm cực đại** hàm likelihood. Hay nói cách khác:
+$$
+\hat{\mu}, \hat{\sigma}^2 = \text{arg}\max_{\mu, \sigma} \mathcal{L}(\mu, \sigma^2 \mid \mathcal{D})
+$$
+>[!note]+
+>Kí hiệu $\displaystyle \text{arg}\max_{x} f(x)$ có nghĩa là giá trị $x$ sao cho $f(x)$ là lớn nhất (cực đại).
+
+Đễ dễ dàng hơn, thay vì tìm các tham số làm cực đại hàm likelihood, ta tìm các tham số làm cực đại hàm log (log ở đây sẽ được hiểu là $\ln$) của hàm likelihood, nghĩa là:
+$$
+\hat{\mu}, \hat{\sigma}^2 = \text{arg}\max_{\mu, \sigma} \ln \mathcal{L}(\mu, \sigma^2 \mid \mathcal{D})
+$$
+Sử dụng cách thức cực đại hàm log likehood, ta có thể viết hàm likelihood lại như sau:
+$$
+\begin{aligned}
+\ln \mathcal{L}(\mu, \sigma^2 \mid \mathcal{D}) &= \ln \prod_{n=1}^N p(y_{n} \mid \mu, \sigma^2) \\
+&= \left[-\frac{1}{2\sigma^2} \sum_{n=1}^N (y_{n} - \mu)^2 \right] - \frac{N}{2} \ln 2\pi - \frac{N}{2}\ln \sigma^2
+\end{aligned}
+$$
+>[!note]+
+>Ta có:
+>$$
+\begin{aligned}
+\ln \mathcal{L}(\mu, \sigma^2 \mid \mathcal{D}) &= \ln \prod_{i=1}^N p(y_{i} \mid \mu, \sigma^2) \\
+&= \sum_{i=1}^N \ln p(y_{i} \mid \mu, \sigma^2) \\
+&= \sum_{=1}^N \ln \frac{1}{(2\pi\sigma^2)^{1/2}} \exp \left\{ -\frac{1}{2\sigma^2} (y_{i} - \mu)^2 \right\} \\
+&= \sum_{i=1}^N \ln (2\pi\sigma^2)^{-1/2} -\frac{1}{2\sigma^2} (y_{i} - \mu)^2 \\
+&= \sum_{i=1}^N - \frac{1}{2}\ln 2\pi -\frac{1}{2}\ln \sigma^2 - \frac{1}{2\sigma^2} (y_{i} - \mu)^2 \\
+&= \left[-\frac{1}{2\sigma^2} \sum_{i=1}^N (y_{i} - \mu)^2 \right] - \frac{N}{2} \ln 2\pi - \frac{N}{2}\ln \sigma^2
+\end{aligned}
+>$$
+
+Cực đại hàm log likelihood phía trên bằng cách dùng $\mu$, ta có:
+$$
+\mu_{ML} = \frac{1}{N} \sum_{n=1}^N y_{n}
+$$
+trong đó $\mu_{ML}$ được gọi là **trung bình mẫu** (sample mean) tức là trung bình của các quan sát $\{y_n\}$ mà ta quan sát được. Còn nếu ta cực đại bằng cách dùng $\sigma^2$, ta có:
+$$
+\sigma^2_{ML} = \frac{1}{N} \sum_{n=1}^N (y_{n} - \mu_{ML})^2
+$$
+ta gọi $\sigma^2_{ML}$ là **phương sai mẫu** (sample variance), ngoài ra ta thấy $\sigma^2_{ML}$ cũng phụ thuộc vào $\mu_{ML}$. Về lý thuyết là ta cần tính cả hai cùng lúc (tìm bộ tham số làm cực đại, mà bộ tham số gồm $n$ biến thì tìm cùng lúc $n$ biến) thế nhưng trong trường hợp này, $\mu_{ML}$ không phụ thuộc vào $\sigma^2_{ML}$ do đó ta có thể tìm $\mu_{ML}$ trước sau đó tìm $\sigma^2_{ML}$.
+
+>[!note]+
+>Thông thường giá trị trung bình $\mu$ được gọi trung bình tổng thể (population mean) tương tự với $\sigma^2$ là phương sai tổng thể (variance mean), đây là giá trị mà ta không biết, thế nhưng bằng cách dùng một phần của tổng thể (gọi là mẫu), ta sẽ cố gắng ước lượng được giá trị $\mu$ với $\sigma^2$ tốt nhất. Như đã chứng minh phía trên, giá trị ước lượng tốt nhất chính là $\mu_{ML}$ (trung bình của mẫu) và $\sigma^2_{ML}$ (phương sai của mẫu).
+
+>[!note]+
+>Để tìm giá trị cực đại của một hàm, ta đạo hàm sau đó lấy bằng $0$. Ta biến rằng $\ln$ là một hàm đồng biến trên $\mathbb{R}$ do đó giá trị tại dạo hàm bằng $0$ cũng chính là cực đại. Ta sẽ viết gọn $\ln \mathcal{L}(\mu, \sigma^2 \mid \mathcal{D})$ thành $\mathcal{L}$.
+>
+>Xét cực đại bằng $\mu$, ta có:
+>$$
+\frac{\partial\mathcal{L}}{\partial\mu} = -\frac{1}{2\sigma^2} \sum_{n=1}^N -2y_{n} + 2\mu 
+>$$
+>Khi đó, giá trị cần tìm là:
+>$$
+\begin{aligned}
+-\frac{1}{2\sigma^2} \sum_{n=1}^N -2y_{n} + 2\mu &= 0 \\
+\implies \sum_{n=1}^N -2y_{n} + 2\mu &= 0 \\
+\Leftrightarrow 2\sum_{n=1}^N -y_{n} + 2N\mu &= 0 \\
+\Leftrightarrow \mu = \frac{1}{N} \sum_{n=1}^N y_{n}
+\end{aligned}
+>$$
+>
+>Xét cực đại bằng $\sigma^2$, ta có:
+>$$
+\frac{\partial \mathcal{L}}{\partial \sigma^2} = \frac{1}{2\sigma^4} \sum_{n=1}^N (y_{n} - \mu)^2 - \frac{N}{2} \frac{1}{\sigma^2}
+>$$
+>Khi đó, giá trị cần tìm là:
+>$$
+\begin{aligned}
+\frac{1}{2\sigma^4} \sum_{n=1}^N (y_{n} - \mu)^2 - \frac{N}{2} \frac{1}{\sigma^2} = 0 \\
+\implies \frac{1}{\sigma^2} \sum_{n=1}^N (y_{n} - \mu)^2 - N = 0 \\
+\Leftrightarrow \sigma^2 = \frac{1}{N} \sum_{n=1}^N (y_{n} - \mu)^2
+\end{aligned}
+>$$
 
 ---
 
