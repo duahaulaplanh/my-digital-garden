@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/expectations-and-covariances/","noteIcon":"📝","created":"2024-04-19T10:21:22.500+07:00","updated":"2024-04-21T16:01:32.123+07:00"}
+{"dg-publish":true,"permalink":"/zettel/expectations-and-covariances/","noteIcon":"📝","created":"2024-04-19T10:21:22.500+07:00","updated":"2024-04-22T11:29:04.798+07:00"}
 ---
 
-Kì vọng (expectation) là một trong nhất concept quan trọng nhất của xác suất. Giá trị trung bình của một hàm biến ngẫu nhiên $f(X)$ nào đó với $X$ có phân phối xác suất $p(x)$ được gọi là **kì vọng** của $f(X)$ và được kí hiệu là $\mathbb{E}[f]$.
+Kì vọng (expectation) là một trong nhất concept quan trọng nhất của xác suất. Giá trị trung bình của một hàm biến ngẫu nhiên $f(X)$ nào đó với $X$ có phân phối xác suất $p(x)$ được gọi là **kì vọng** của $f(X)$ và được kí hiệu là $\mathbb{E}[f]$ (ngoài ra ta cũng có thể viết $\mathbb{E}[f(X)]$).
 - Nếu $x$ là một biến ngẫu nhiên rời rạc thì:
 $$
 \mathbb{E}[f] = \sum_{X} p(x)f(x)
@@ -14,7 +14,7 @@ $$
 >$$
 \dfrac{w_{1}x_{1} + \dots + w_{n}x_{n}}{w_{1} + \dots + w_{n}}
 >$$
->Ở kì vọng của biến ngẫu nhiên rời rạc $x$, ta có trọng số là các xác suất $p(x)$ mà $\sum_{x}p(x) = 1$ do đó mẫu bị triệt tiêu.
+>Ở kì vọng của biến ngẫu nhiên rời rạc $X$, ta có trọng số là các xác suất $p(x)$ mà $\sum_{X}p(x) = 1$ do đó mẫu bị triệt tiêu.
 
 - Nếu $X$ là một biến ngẫu nhiên liên tục (khi này $p(x)$ là mật độ xác suất của $x$), ta có:
 $$
@@ -67,13 +67,13 @@ Lưu ý rằng, lúc này kì vọng $\mathbb{E}[f(X, Y)]$ là một số thực
 Ngoài ra, ta cũng quan tâm đến **kì vọng có điều kiện** (conditional expectation) của một hàm $f(X)$ trong đó $x$ có phân phối $p(x \mid y)$ (phân phối $x$ điều kiện $y$).
 - Nếu $X$ là biến rời rạc:
 $$
-\mathbb{E}[f \mid y] = \sum_{X} p(x \mid y)f(x)
+\mathbb{E}[f(X) \mid Y] = \sum_{X} p(x \mid y)f(x)
 $$
 - Tương tự với $X$ là biến liên tục:
 $$
-\mathbb{E}[f \mid y] = \int p(x \mid y) f(x) dx
+\mathbb{E}[f(X) \mid Y] = \int p(x \mid y) f(x) dx
 $$
-
+- Ta có thể thấy, ở hai trường hợp trên kì vọng có điều kiện $\mathbb{E}[f(X) \mid Y]$ là một hàm phụ thuộc vào $Y$.
 
 **Phương sai** (variance) của hàm $f(X)$ với $X$ là biến ngẫu nhiên được kí hiệu là $\text{var}[f]$ và được định nghĩa như sau:
 $$
@@ -150,12 +150,12 @@ $$
 &= \mathbb{E}_{\mathbf{x}, \mathbf{y}}[\mathbf{x}\mathbf{y}^T] + \mathbb{E}[\mathbf{x}]\mathbb{E}[\mathbf{y}^T]
 \end{aligned}
 $$
-Nếu ta xét hiệp phương sai giữa biến ngẫu nhiên $X$ với chính nó, ta có thể viết $\text{cov}[X]$ thay cho $\text{cov}[X, X]$. Tương tự với vector ngẫu nhiên $\mathbf{x}$.
+Nếu ta xét hiệp phương sai giữa biến ngẫu nhiên $X$ với chính nó, ta có thể viết $\text{cov}[X]$ thay cho $\text{cov}[X, X]$. Tương tự với vector ngẫu nhiên $\mathbf{x}$, $\text{cov}[\mathbf{x}, \mathbf{x}] \equiv \text{cov}[\mathbf{x}]$.
 
 ---
 
 Phần trước: [[Zettel/Probability Densities\|Probability Densities]]
-Phần sau: [[Bayesian Probabilities\|Bayesian Probabilities]]
+Phần sau: [[Zettel/Bayesian Probabilities\|Bayesian Probabilities]]
 
 ---
 # References
