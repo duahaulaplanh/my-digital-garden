@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/web-home/","tags":["gardenEntry"],"noteIcon":"📝","created":"2024-03-20T00:13:20.890+07:00","updated":"2024-04-21T15:11:13.017+07:00"}
+{"dg-publish":true,"permalink":"/web-home/","tags":["gardenEntry"],"noteIcon":"📝","created":"2024-03-20T00:13:20.890+07:00","updated":"2024-04-22T10:54:03.225+07:00"}
 ---
 
 >[!abstract]+ Thesis
@@ -9,10 +9,6 @@
 
 - [[Book/ML Bishop\|ML Bishop]]
 - [[Book/MacKay Information Theory\|MacKay Information Theory]]
-## Self-study
-
-- [[Study/Pytorch\|Pytorch]]
-
 ## Paper Implement
 
 - [[Paper/LeNet\|LeNet]]
