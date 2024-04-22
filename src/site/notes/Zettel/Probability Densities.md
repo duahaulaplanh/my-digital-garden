@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/probability-densities/","noteIcon":"📝","created":"2024-04-19T10:19:39.732+07:00","updated":"2024-04-22T19:09:20.171+07:00"}
+{"dg-publish":true,"permalink":"/zettel/probability-densities/","noteIcon":"📝","created":"2024-04-19T10:19:39.732+07:00","updated":"2024-04-22T22:26:19.262+07:00"}
 ---
 
 >[!example]+
@@ -56,7 +56,7 @@ ta gọi $P(z)$ là **phân phối xác suất tích luỹ** (cumulative distrib
 >$$
 >F(x) = \int_{a}^x f(t)dt
 >$$
->Thì $F'(x) = f(x)$ trên đoạn $[a,b]$. Nếu ta thay $[a, b]$ thành $(-\infty, \infty)$ thì ta vẫn có được $P'(x) = p(x)$ trên $\mathbb{R}$. Thông thường, ta sẽ cố gắng định nghĩa $p(x)$ (mật độ xác suất) sao cho $p(x)$ liên tục trên $\mathbb{R}$. Một ví dụ điển hình là 
+>Thì $F'(x) = f(x)$ trên đoạn $[a,b]$. Nếu ta thay $[a, b]$ thành $(-\infty, \infty)$ thì ta vẫn có được $P'(x) = p(x)$ trên $\mathbb{R}$. Thông thường, ta sẽ cố gắng định nghĩa $p(x)$ (mật độ xác suất) sao cho $p(x)$ liên tục trên $\mathbb{R}$. 
 
 >[!danger]+ Lưu ý nhỏ
 >Mật độ xác suất khác với xác suất, mật độ xác suất đại diện cho xác suất trên một đơn vị chiều dài của biến ngẫu nhiên $X$, giống như khối lượng riêng của một vật (tiếng anh khối lượng riêng là *density*) đại diện cho khối lượng trên một đơn vị thể tích. Do đó mật độ xác suất có thể lớn hơn $1$, nhưng điều quan trọng đó là diện tích nằm dưới đồ thị của mật độ xác suất $p(x)$ luôn là $1$ ([Can a probability distribution value exceeding 1 be OK? - Cross Validated (stackexchange.com)](https://stats.stackexchange.com/questions/4220/can-a-probability-distribution-value-exceeding-1-be-ok/4223#4223)) 
@@ -147,7 +147,11 @@ $$
 >$$
 \int p(\mathbf{x}) d\mathbf{x} = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} p(x_{1}, x_{2}) dx_{1} dx_{2} = 1
 >$$
->Tương tự lên $3$ chiều hay $n$ chiều. Nếu xét trong 2 chiều, ta có xác suất để $\mathbf{x}$ nằm trong hình chữ nhật được tạo bởi 4 đường thẳng $X = a, X = b, Y = c, Y = d$ là:
+>Tương tự lên $3, 4, \dots$ chiều hay $N$ chiều, ta có:
+>$$
+\int p(\mathbf{x}) d\mathbf{x} = \int \dots \int p(x_{1}, \dots, x_{N}) dx_{1} \dots dx_{N} = 1
+>$$
+>Nếu xét trong 2 chiều, ta có xác suất để $\mathbf{x}$ nằm trong hình chữ nhật được tạo bởi 4 đường thẳng $X = a, X = b, Y = c, Y = d$ là:
 >$$
 p(a < X < b, c < Y < d) = \int_{c}^{d} \int_{a}^{b} p(x, y) dx dy
 >$$
@@ -164,7 +168,6 @@ Nếu $X$ là biến ngẫu nhiên rời rạc, ta gọi $p(x)$ là **hàm khố
 $$
 P(z) = p(X \leq z) = \sum_{x \leq z} p(x)
 $$
-
 Tương tự như biến ngẫu nhiên rời rạc, sum rule, product rule và định lý Bayes vẫn có thể áp dụng với biến ngẫu nhiên liên tục. Đặt $X$ và $Y$ là hai biến ngẫu nhiên liên tục, ta có:
 $$
 \begin{aligned}
