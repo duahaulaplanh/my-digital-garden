@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/probability-densities/","noteIcon":"📝","created":"2024-04-19T10:19:39.732+07:00","updated":"2024-04-22T11:33:39.577+07:00"}
+{"dg-publish":true,"permalink":"/zettel/probability-densities/","noteIcon":"📝","created":"2024-04-19T10:19:39.732+07:00","updated":"2024-04-22T19:09:20.171+07:00"}
 ---
 
 >[!example]+
@@ -169,7 +169,9 @@ Tương tự như biến ngẫu nhiên rời rạc, sum rule, product rule và �
 $$
 \begin{aligned}
 p(x) &= \int p(x, y) dy \\
-p(x, y) &= p(y \mid x) p(x)
+p(x, y) &= p(y \mid x) p(x) \\
+\implies p(x,y) &= \int p(y \mid x) p(x) dy \\
+&= \int p(x \mid y) p(y) dy
 \end{aligned}
 $$
 >[!bug]+
