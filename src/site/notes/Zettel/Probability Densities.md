@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/probability-densities/","noteIcon":"📝","created":"2024-04-19T10:19:39.732+07:00","updated":"2024-04-21T15:10:44.918+07:00"}
+{"dg-publish":true,"permalink":"/zettel/probability-densities/","noteIcon":"📝","created":"2024-04-19T10:19:39.732+07:00","updated":"2024-04-22T11:33:39.577+07:00"}
 ---
 
 >[!example]+
@@ -14,11 +14,11 @@ $$
 >[!danger]
 >Mình cảm thấy kí hiệu khá là weird, thông thường người ta kí hiệu mật độ xác suất là $f(x)$. Nhưng tác giả kí hiệu hai xác suất trùng nhau, mặc dù nó khác nhau. Giả sử $p(x)$ (đang nói đến mật độ xác suất) có thể khác không, thế nhưng (mình sẽ đặt mật độ xác suất là $f(x)$, nguyên hàm là $F(x)$):
 >$$
-p(X = x) = p(X \in (x, x)) = \int_{x}^x f(x)dx = F(x) - F(x) = 0
+p(X = x) = p(x) = p(X \in (x, x)) = \int_{x}^x f(x)dx = F(x) - F(x) = 0
 >$$
->Xác suất $p(X = x)$ (mình đang nói đến xác suất nằm trong một khoảng) tại một điểm $x$ sẽ luôn là $0$ với mọi $x$.
+>Xác suất $p(X = x) = p(x)$ (mình đang nói đến xác suất nằm trong một khoảng) tại một điểm $x$ sẽ luôn là $0$ với mọi $x$.
 >
->Nhưng mà ta sẽ theo tác giả nhé, mình nghĩ khi tác giả nói đến $p(x)$ (với $x$ là số thực) thì $p(x)$ là mật độ xác suất, còn nói đến $p(x \in (a, b))$ thì tức là xác suất $x$ thuộc đoạn nào đó.
+>Nhưng mà ta sẽ theo tác giả nhé, mình nghĩ khi tác giả nói đến $p(x)$ (với $x$ là số thực) thì $p(x)$ là mật độ xác suất, còn nói đến $p(X \in (a, b))$ thì tức là xác suất $X$ thuộc đoạn $(a, b)$ nào đó.
 
 >[!note]+
 >Như đã nói phía trên $p(X = x) = 0$ với mọi $x$, do đó $p(X = a) = p(X = b) = 0$ nên:
@@ -31,12 +31,19 @@ Tiếp theo, mật độ xác suất $p(x)$ phải thoả mãn một vài điề
 $$
 p(x) \geq 0
 $$
-- Ta đã biết, $p(X) \in (a, b))$ là xác suất $X$ nằm trên khoảng $a, b$. Biến ngẫu nhiên $X$ mà ta đang xét là một số thực, do đó $X$ luôn nằm trong $\mathbb{R}$, tức là nằm trong đoạn $(-\infty, \infty)$. Vậy:
+- Ta đã biết, $p(X \in (a, b))$ là xác suất $X$ nằm trên khoảng $a, b$. Biến ngẫu nhiên $X$ mà ta đang xét là một số thực, do đó $X$ luôn nằm trong $\mathbb{R}$, tức là nằm trong đoạn $(-\infty, \infty)$. Vậy:
 $$
-p(X \in \mathbb{R}) = p(X) = \int_{-\infty}^{\infty} p(x)dx = 1
+p(X \in \mathbb{R}) = \int_{-\infty}^{\infty} p(x)dx = 1
 $$
 >[!note]+
->$p(X)$ khác với $p(x)$. Thật ra mình không muốn rối nhưng do tác giả kí hiệu rối ác nên mình chịu 🥲.
+>Như đã nói ở phần trước, nếu ta viết $p(X)$ thì ta sẽ xét toàn bộ tập xác định của $X$, gọi là $\mathcal{X}$. Khi đó:
+>$$
+>p(X) = p(X \in \mathcal{X}) = \int_{\mathcal{X}} p(x)dx
+>$$
+>Thông thường ta sẽ cố gắng đưa tập xác định của $X$ là $\mathbb{R}$, do đó:
+>$$
+p(X) = p(X \in \mathbb{R}) = 1
+>$$
 
 Ta có xác suất để $X$ nằm trong đoạn từ $(-\infty, z)$ là:
 $$
@@ -118,8 +125,7 @@ P'_{x}(x) &= P'_{y}(g^{-1}(x)) \left| \frac{d}{dx}g^{-1}(x) \right| \\
 \implies p_{y}(y) &= p_{x}(g(y)) | g'(y) |
 \end{aligned}
 $$
-Ta gọi $|g'(y)|$ là **jacobian factor**. Hàm mật độ xác suất $p_x(x)$ sau khi chuyển từ biến $x$ sang biến $y$ bằng hàm không tuyến tính $g$ với $X = g(Y)$ biến đổi khác đi, từ một hàm đơn giản khác sang một hàm mới (có thể phức tạp hơn), điều này là do jacobian factor.
-
+Ta gọi $|g'(y)|$ là **jacobian factor**. Hàm mật độ xác suất $p_x(x)$ sau khi chuyển từ biến ngẫu nhiên $X$ sang biến ngẫu nhiên $Y$ bằng hàm không tuyến tính $g$ với $X = g(Y)$ sẽ bị biến đổi khác đi, từ một hàm đơn giản khác sang một hàm mới (có thể phức tạp hơn), điều này là do jacobian factor.
 
 Nếu ta có nhiều biến ngẫu nhiên $X_1, \dots, X_D$, được định nghĩa chung bằng vector $\mathbf{x} = (x_1, \dots, x_D)$, khi đó ta định nghĩa hàm **mật độ xác suất đồng thời** $p(\mathbf{x}) = p(x_1, \dots, x_D)$ sao cho xác suất $\mathbf{x}$ thuộc một phần thể tích vô cùng nhỏ (infinitesimal volume) $\delta \mathbf{x}$ (có chứa $\mathbf{x}$) được xác định bởi $p(\mathbf{x})\delta \mathbf{x}$.
 
