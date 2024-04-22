@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/gaussian-distribution/","noteIcon":"📝","created":"2024-04-22T12:17:03.261+07:00","updated":"2024-04-22T23:46:40.672+07:00"}
+{"dg-publish":true,"permalink":"/zettel/gaussian-distribution/","noteIcon":"📝","created":"2024-04-22T12:17:03.261+07:00","updated":"2024-04-22T23:51:06.583+07:00"}
 ---
 
 **Phân phối chuẩn** (Gaussian Distribution hoặc Normal Distribution), kí hiệu là $\mathcal{N}(x \mid \mu, \sigma^2)$, sẽ được định nghĩa như sau:
@@ -277,3 +277,4 @@ Phần sau: [[Curve Fitting Revisited\|Curve Fitting Revisited]]
 
 - [Bishop] Pattern Recognition and Machine Learning - Bishop (chapter 1.2)
 - [Proof: Integral of PDF of Normal Distribution is Equal to 1 (in English) (youtube.com)](https://www.youtube.com/watch?v=8Ey7v8IoZjA)
+- [probability - Expectation of sample variance - Mathematics Stack Exchange](https://math.stackexchange.com/questions/4017763/expectation-of-sample-variance)
