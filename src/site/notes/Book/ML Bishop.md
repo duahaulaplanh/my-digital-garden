@@ -26,7 +26,7 @@
 	- [[Zettel/Expectations and covariances\|Expectations and covariances]]
 	- [[Zettel/Bayesian Probabilities\|Bayesian Probabilities]]
 	- [[Zettel/Gaussian Distribution\|Gaussian Distribution]]
-	- [[Curve Fitting Revisited\|Curve Fitting Revisited]]
+	- [[Zettel/Curve Fitting Revisited\|Curve Fitting Revisited]]
 	- [[Bayesian Curve Fitting\|Bayesian Curve Fitting]]
 - [[Model Selection\|Model Selection]]
 - [[The Curse of Dimensionality\|The Curse of Dimensionality]]
