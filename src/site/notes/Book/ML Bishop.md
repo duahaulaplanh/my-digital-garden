@@ -32,6 +32,6 @@
 - [[The Curse of Dimensionality\|The Curse of Dimensionality]]
 - Decision Theory
 - Information Theory
-- [[Exercises Part I\|Exercises Part I]]
+- [[Zettel/Exercises Part I\|Exercises Part I]]
 
 ## II. Probability Distributions
