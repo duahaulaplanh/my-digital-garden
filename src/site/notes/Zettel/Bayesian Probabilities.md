@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/bayesian-probabilities/","noteIcon":"📝","created":"2024-04-22T12:19:56.445+07:00","updated":"2024-04-22T19:14:51.539+07:00"}
+{"dg-publish":true,"permalink":"/zettel/bayesian-probabilities/","noteIcon":"📝","created":"2024-04-22T12:19:56.445+07:00","updated":"2024-04-23T20:23:09.238+07:00"}
 ---
 
 Định lý Bayes cũng có thể áp dụng trong Machine Leanring như sau. Giả sử rằng ta có tập dữ liệu $\mathcal{D}$ và một model có bộ tham số là $\mathbf{w}$. Mục đích của ta là với tập dữ liệu $\mathcal{D}$ như này, bộ tham số $\mathbf{w}$ của ta như nào mới là tốt, tức là tìm xác suất $p(\mathbf{w} \mid \mathcal{D})$.
@@ -40,6 +40,12 @@ trong đó $\text{likelihood}, \text{posterior}$ và $\text{prior}$ đều là c
 >$$
 >Còn việc $p(\mathbf{w} \mid \mathcal{D}) \geq 0$ mình nghĩ khá là dễ thấy rồi.
 
+Vậy sinh ra cái Bayes này làm gì, mục đích của chúng ta đó là cố gắng tìm bộ tham số $\mathbf{w}$ sao cho $p(\mathbf{w} \mid \mathcal{D})$ là tốt nhất, kiểu như ta đã biết trước tập dữ liệu $\mathcal{D}$ (tức là ta đã biết trước kết quả rồi), ta cần tìm mô hình (tham số $\mathbf{w}$) phù hợp với $\mathcal{D}$ nhất (tức là ta đi tìm nguyên nhân cho ra kết quả và nguyên nhân đó phải là phù hợp với kết quả nhất, vậy là tìm xác suất $p(\mathbf{w}\mid \mathcal{D})$ lớn nhất) (mình copy cách giải thích này từ [VHT]).
+
+Đối với frequentist thì ta sẽ dùng phương pháp **maximum likelihood** (MLE) để tìm giá trị $p(\mathcal{D} \mid \mathbf{w})$ lớn nhất từ đó tìm được $p(\mathbf{w} \mid \mathcal{D})$ lớn nhất (frequentist giả sử rằng $p(\mathbf{w})$ và $p(\mathcal{D})$ là các hằng số, ở góc nhìn của frequentist, ta sẽ xem $\mathbf{w}$ như là một giá trị mà ta ước lượng được, do đó $p(\mathbf{w})$ là một hằng số) Ta sẽ tìm hiểu phương pháp này ở phần [[Zettel/Gaussian Distribution\|Gaussian Distribution]].
+
+Còn đối với bayesian, ta có phương pháp gọi là **maximum a posteriori estimation** (MAP). Bayesian cho rằng $\mathbf{w}$ là một biến ngẫu nhiên chứ không phải một giá trị, do đó $p(\mathbf{w})$ là một phân phối. Vậy để tìm được $p(\mathbf{w} \mid \mathcal{D})$ lớn nhất ta phải tìm cả likelihood $p(\mathcal{D} \mid \mathbf{w})$ và prior $\mathcal{p}(\mathbf{w})$.
+
 ---
 
 Phần trước: [[Zettel/Expectations and covariances\|Expectations and covariances]]
@@ -49,3 +55,4 @@ Phần sau: [[Zettel/Gaussian Distribution\|Gaussian Distribution]]
 # References
 
 - [Bishop] Pattern Recognition and Machine Learning - Bishop (chapter 1.2)
+- [VHT]  [Machine Learning cơ bản (machinelearningcoban.com) - Bài 31](https://machinelearningcoban.com/2017/07/17/mlemap/)
