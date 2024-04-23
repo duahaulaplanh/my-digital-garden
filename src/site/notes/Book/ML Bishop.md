@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/book/ml-bishop/","tags":["book"],"noteIcon":"📝","created":"2024-04-15T11:05:19.428+07:00","updated":"2024-04-22T12:40:42.541+07:00"}
+{"dg-publish":true,"permalink":"/book/ml-bishop/","tags":["book"],"noteIcon":"📝","created":"2024-04-15T11:05:19.428+07:00","updated":"2024-04-23T11:00:45.148+07:00"}
 ---
 
 >[!danger]+ Lưu ý
