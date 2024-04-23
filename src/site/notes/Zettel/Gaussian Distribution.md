@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/gaussian-distribution/","noteIcon":"📝","created":"2024-04-22T12:17:03.261+07:00","updated":"2024-04-23T07:59:24.106+07:00"}
+{"dg-publish":true,"permalink":"/zettel/gaussian-distribution/","noteIcon":"📝","created":"2024-04-22T12:17:03.261+07:00","updated":"2024-04-23T20:07:21.696+07:00"}
 ---
 
 **Phân phối chuẩn** (Gaussian Distribution hoặc Normal Distribution), kí hiệu là $\mathcal{N}(x \mid \mu, \sigma^2)$, sẽ được định nghĩa như sau:
@@ -25,7 +25,7 @@ Ngoài ra, nếu lấy căn của phương sai, ta được $\sigma$ và ta gọ
 >$$
 \varphi(z) = \frac{1}{(2\pi)^{1/2}} \exp \left\{ -\frac{1}{2}z^2 \right\}
 >$$
->Ngoài ra, phân phối chuẩn tắc có trung bình là $0$ và phương sai là $1$. Nếu đặt $z = (x - \mu) / sigma$ thì ta có thể đưa phân phối chuẩn tắc về phân phối chuẩn như sau:
+>Ngoài ra, phân phối chuẩn tắc có trung bình là $0$ và phương sai là $1$. Nếu đặt $z = (x - \mu) / \sigma$ thì ta có thể đưa phân phối chuẩn tắc về phân phối chuẩn như sau:
 >$$
 \mathcal{N}(x \mid \mu, \sigma^2) = \frac{1}{\sigma} \varphi\left( \frac{x-\mu}{\sigma} \right)
 >$$
@@ -84,12 +84,12 @@ trong đó $\pmb{\mu}$ là vector trung bình của phân phối có $D$ chiều
 >[!danger]+
 >Mình không thể gõ được chữ $x$ như trong sách 😭. Nên mình dùng kí hiệu là $\mathcal{D}$ vậy.
 
-Giả sử ta có một tập dữ liệu $\mathcal{D} = (y_1, \dots, y_N)^T$. Tập dữ liệu bao gồm $N$ quan sát, mỗi quan sát (observation) là một đại lượng vô hướng (scalar) $y_{i}$.
+Giả sử ta có một tập dữ liệu $\mathcal{D} = (x_{1}, \dots, x_{N})^T$. Tập dữ liệu bao gồm $N$ quan sát, mỗi quan sát (observation) là một đại lượng vô hướng (scalar) $x_{i}$.
 
 >[!note]+
 >Ta gọi một giá trị $x$ là scalar nếu nó không phải là vector (ez huh). Đúng hơn, scalar (hay đại lượng vô hướng) để chỉ phần tử của một trường (field) ([Scalar (mathematics) - Wikipedia](https://en.wikipedia.org/wiki/Scalar_(mathematics))). Tập số thực ($\mathbb{R}$) là một trường, do đó ta có thể nói các số thực $x \in \mathbb{R}$ là một đại lượng vô hướng. Ngoài ra, tập số phức $\mathbb{C}$ cũng là một trường nên $x$ cũng có thể là số phức nếu ta chỉ nói $x$ là đại lượng vô hướng mà không nói gì thêm.
 
-Giả sử các quan sát trong tập dữ liệu $\mathcal{D}$ của ta được lấy ra một cách độc lập (drawn independently) từ một phân phối chuẩn có trung bình là $\mu$ và phương sai là $\sigma^2$ (đây là hai đại lượng mà ta chưa biết và mục đích của chúng ta là tìm ra được hai tham số này từ tập dữ liệu mà ta có), nghĩa là $y_i = \mathcal{N}(x_i \mid \mu, \sigma^2)$.
+Giả sử các quan sát trong tập dữ liệu $\mathcal{D}$ của ta được lấy ra một cách độc lập (drawn independently) từ một phân phối chuẩn có trung bình là $\mu$ và phương sai là $\sigma^2$ (đây là hai đại lượng mà ta chưa biết và mục đích của chúng ta là tìm ra được hai tham số này từ tập dữ liệu mà ta có).
 
 >[!note]+
 >Ở câu "lấy ra một cách độc lập", ta có thể hiểu như sau:
@@ -99,6 +99,7 @@ Giả sử các quan sát trong tập dữ liệu $\mathcal{D}$ của ta đượ
 Các điểm dữ liệu mà:
 - Được lấy ra từ cùng một phân phối (identically distributed).
 - Độc lập với nhau (independent).
+
 thì được nói là **độc lập và có phân phối đồng nhất** (independent and identically distributed) và thuòng viết tắt là i.i.d.
 
 >[!note]+
@@ -106,7 +107,7 @@ thì được nói là **độc lập và có phân phối đồng nhất** (ind
 
 Xét hàm likelihood $\mathcal{L}(\mu, \sigma^2 \mid \mathcal{D})$, bởi vì $\mathcal{D}$ là i.i.d nên ta có:
 $$
-\mathcal{L}(\mu, \sigma^2 \mid \mathcal{D}) = p(\mathcal{D} \mid \mu, \sigma^2) = p(y_{1}, \dots, y_{N} \mid \mu, \sigma^2) = \prod_{n=1}^N p(y_{n} \mid \mu, \sigma^2)
+\mathcal{L}(\mu, \sigma^2 \mid \mathcal{D}) = p(\mathcal{D} \mid \mu, \sigma^2) = p(x_{1}, \dots, x_{N} \mid \mu, \sigma^2) = \prod_{n=1}^N p(x_{n} \mid \mu, \sigma^2)
 $$
 >[!note]+
 >Như ta đã nói ở phần trước ([[Zettel/Introduction (Prob)\|Introduction (Prob)]]), khi $X$ và $Y$ độc lập với nhau thì:
@@ -114,9 +115,7 @@ $$
 p(X, Y) = p(X)p(Y)
 >$$
 
-Ta có một tập dữ liệu $\mathcal{D}$, ta đã giả sử các điểm dữ liệu được lấy ra từ một phân phối chuẩn $\mathcal{N}(\mu, \sigma^2)$ với $\mu$ và $\sigma^2$ chưa biết. Nếu dự đoán được $\mu$ và $\sigma^2$, gọi giá trị đự doán là $\hat{\mu}$ và $\hat{\sigma}^2$, thì ta đã tìm được cách để dự đoán $\hat{y}$ từ một mẫu $x$ nào đó, bằng $\hat{y} = \mathcal{N}(x \mid \hat{\mu}, \hat{\sigma}^2)$.
-
-Một trong những cách thường dùng để tìm các tham số cho phân phối bằng cách sử dụng tập dữ liệu quan sát được là tìm các tham số mà **làm cực đại** hàm likelihood (hay còn gọi là **maximum likelihood**). Hay nói cách khác:
+Một trong những cách thường dùng để tìm các tham số cho phân phối bằng cách sử dụng tập dữ liệu quan sát được ($\mathcal{D}$) là tìm các tham số mà **làm cực đại** hàm likelihood (hay còn gọi là **maximum likelihood**). Hay nói cách khác:
 $$
 \hat{\mu}, \hat{\sigma}^2 = \text{arg}\max_{\mu, \sigma^2} \mathcal{L}(\mu, \sigma^2 \mid \mathcal{D})
 $$
@@ -125,35 +124,35 @@ $$
 
 Đễ dễ dàng hơn, thay vì tìm các tham số làm cực đại hàm likelihood, ta tìm các tham số làm cực đại hàm log (log ở đây sẽ được hiểu là $\ln$) của hàm likelihood, nghĩa là:
 $$
-\hat{\mu}, \hat{\sigma}^2 = \text{arg}\max_{\mu, \sigma} \ln \mathcal{L}(\mu, \sigma^2 \mid \mathcal{D})
+\hat{\mu}, \hat{\sigma}^2 = \text{arg}\max_{\mu, \sigma^2} \ln \mathcal{L}(\mu, \sigma^2 \mid \mathcal{D})
 $$
 Sử dụng cách thức cực đại hàm log likehood, ta có thể viết hàm likelihood lại như sau:
 $$
 \begin{aligned}
-\ln \mathcal{L}(\mu, \sigma^2 \mid \mathcal{D}) &= \ln \prod_{n=1}^N p(y_{n} \mid \mu, \sigma^2) \\
-&= \left[-\frac{1}{2\sigma^2} \sum_{n=1}^N (y_{n} - \mu)^2 \right] - \frac{N}{2} \ln 2\pi - \frac{N}{2}\ln \sigma^2
+\ln \mathcal{L}(\mu, \sigma^2 \mid \mathcal{D}) &= \ln \prod_{n=1}^N p(x_{n} \mid \mu, \sigma^2) \\
+&= \left[-\frac{1}{2\sigma^2} \sum_{n=1}^N (x_{n} - \mu)^2 \right] - \frac{N}{2} \ln 2\pi - \frac{N}{2}\ln \sigma^2
 \end{aligned}
 $$
 >[!note]+
 >Ta có:
 >$$
 \begin{aligned}
-\ln \mathcal{L}(\mu, \sigma^2 \mid \mathcal{D}) &= \ln \prod_{i=1}^N p(y_{i} \mid \mu, \sigma^2) \\
-&= \sum_{i=1}^N \ln p(y_{i} \mid \mu, \sigma^2) \\
-&= \sum_{=1}^N \ln \frac{1}{(2\pi\sigma^2)^{1/2}} \exp \left\{ -\frac{1}{2\sigma^2} (y_{i} - \mu)^2 \right\} \\
-&= \sum_{i=1}^N \ln (2\pi\sigma^2)^{-1/2} -\frac{1}{2\sigma^2} (y_{i} - \mu)^2 \\
-&= \sum_{i=1}^N - \frac{1}{2}\ln 2\pi -\frac{1}{2}\ln \sigma^2 - \frac{1}{2\sigma^2} (y_{i} - \mu)^2 \\
-&= \left[-\frac{1}{2\sigma^2} \sum_{i=1}^N (y_{i} - \mu)^2 \right] - \frac{N}{2} \ln 2\pi - \frac{N}{2}\ln \sigma^2
+\ln \mathcal{L}(\mu, \sigma^2 \mid \mathcal{D}) &= \ln \prod_{i=1}^N p(x_{i} \mid \mu, \sigma^2) \\
+&= \sum_{i=1}^N \ln p(x_{i} \mid \mu, \sigma^2) \\
+&= \sum_{=1}^N \ln \frac{1}{(2\pi\sigma^2)^{1/2}} \exp \left\{ -\frac{1}{2\sigma^2} (x_{i} - \mu)^2 \right\} \\
+&= \sum_{i=1}^N \left[\ln (2\pi\sigma^2)^{-1/2} -\frac{1}{2\sigma^2} (x_{i} - \mu)^2 \right] \\
+&= \sum_{i=1}^N \left[- \frac{1}{2}\ln 2\pi -\frac{1}{2}\ln \sigma^2 - \frac{1}{2\sigma^2} (x_{i} - \mu)^2 \right] \\
+&= \left[-\frac{1}{2\sigma^2} \sum_{i=1}^N (x_{i} - \mu)^2 \right] - \frac{N}{2} \ln 2\pi - \frac{N}{2}\ln \sigma^2
 \end{aligned}
 >$$
 
 Cực đại hàm log likelihood phía trên bằng cách dùng $\mu$, ta có:
 $$
-\mu_{ML} = \frac{1}{N} \sum_{n=1}^N y_{n}
+\mu_{ML} = \frac{1}{N} \sum_{n=1}^N x_{n}
 $$
-trong đó $\mu_{ML}$ được gọi là **trung bình mẫu** (sample mean) tức là trung bình của các quan sát $\{y_n\}$ mà ta quan sát được. Còn nếu ta cực đại bằng cách dùng $\sigma^2$, ta có:
+trong đó $\mu_{ML}$ được gọi là **trung bình mẫu** (sample mean) tức là trung bình của các quan sát $\{x_n\}$ mà ta quan sát được. Còn nếu ta cực đại bằng cách dùng $\sigma^2$, ta có:
 $$
-\sigma^2_{ML} = \frac{1}{N} \sum_{n=1}^N (y_{n} - \mu_{ML})^2
+\sigma^2_{ML} = \frac{1}{N} \sum_{n=1}^N (x_{n} - \mu_{ML})^2
 $$
 ta gọi $\sigma^2_{ML}$ là **phương sai mẫu** (sample variance), ngoài ra ta thấy $\sigma^2_{ML}$ cũng phụ thuộc vào $\mu_{ML}$. Về lý thuyết là ta cần tính cả hai cùng lúc (tìm bộ tham số làm cực đại, mà bộ tham số gồm $n$ biến thì tìm cùng lúc $n$ biến) thế nhưng trong trường hợp này, $\mu_{ML}$ không phụ thuộc vào $\sigma^2_{ML}$ do đó ta có thể tìm $\mu_{ML}$ trước sau đó tìm $\sigma^2_{ML}$.
 
@@ -165,36 +164,36 @@ ta gọi $\sigma^2_{ML}$ là **phương sai mẫu** (sample variance), ngoài ra
 >
 >Xét cực đại bằng $\mu$, ta có:
 >$$
-\frac{\partial\mathcal{L}}{\partial\mu} = -\frac{1}{2\sigma^2} \sum_{n=1}^N -2y_{n} + 2\mu 
+\frac{\partial\mathcal{L}}{\partial\mu} = -\frac{1}{2\sigma^2} \sum_{n=1}^N -2x_{n} + 2\mu 
 >$$
 >Khi đó, giá trị cần tìm là:
 >$$
 \begin{aligned}
--\frac{1}{2\sigma^2} \sum_{n=1}^N -2y_{n} + 2\mu &= 0 \\
-\implies \sum_{n=1}^N -2y_{n} + 2\mu &= 0 \\
-\Leftrightarrow 2\sum_{n=1}^N -y_{n} + 2N\mu &= 0 \\
-\Leftrightarrow \mu = \frac{1}{N} \sum_{n=1}^N y_{n}
+-\frac{1}{2\sigma^2} \sum_{n=1}^N -2x_{n} + 2\mu &= 0 \\
+\implies \sum_{n=1}^N -2x_{n} + 2\mu &= 0 \\
+\Leftrightarrow 2\sum_{n=1}^N -x_{n} + 2N\mu &= 0 \\
+\Leftrightarrow \mu = \frac{1}{N} \sum_{n=1}^N x_{n}
 \end{aligned}
 >$$
 >
 >Xét cực đại bằng $\sigma^2$, ta có:
 >$$
-\frac{\partial \mathcal{L}}{\partial \sigma^2} = \frac{1}{2\sigma^4} \sum_{n=1}^N (y_{n} - \mu)^2 - \frac{N}{2} \frac{1}{\sigma^2}
+\frac{\partial \mathcal{L}}{\partial \sigma^2} = \frac{1}{2\sigma^4} \sum_{n=1}^N (x_{n} - \mu)^2 - \frac{N}{2} \frac{1}{\sigma^2}
 >$$
 >Khi đó, giá trị cần tìm là:
 >$$
 \begin{aligned}
-\frac{1}{2\sigma^4} \sum_{n=1}^N (y_{n} - \mu)^2 - \frac{N}{2} \frac{1}{\sigma^2} = 0 \\
-\implies \frac{1}{\sigma^2} \sum_{n=1}^N (y_{n} - \mu)^2 - N = 0 \\
-\Leftrightarrow \sigma^2 = \frac{1}{N} \sum_{n=1}^N (y_{n} - \mu)^2
+\frac{1}{2\sigma^4} \sum_{n=1}^N (x_{n} - \mu)^2 - \frac{N}{2} \frac{1}{\sigma^2} = 0 \\
+\implies \frac{1}{\sigma^2} \sum_{n=1}^N (x_{n} - \mu)^2 - N = 0 \\
+\Leftrightarrow \sigma^2 = \frac{1}{N} \sum_{n=1}^N (x_{n} - \mu)^2
 \end{aligned}
 >$$
 
 Xét giá trị kì vọng của trung bình mẫu $\mu_{ML}$, ta có:
 $$
 \begin{aligned}
-\mathbb{E}[\mu_{ML}] &= \mathbb{E}\left[ \frac{1}{N} \sum_{n=1}^N y_{n} \right] \\
-&= \frac{1}{N} \sum_{n=1}^N \mathbb{E}[y_{n}] \\
+\mathbb{E}[\mu_{ML}] &= \mathbb{E}\left[ \frac{1}{N} \sum_{n=1}^N x_{n} \right] \\
+&= \frac{1}{N} \sum_{n=1}^N \mathbb{E}[x_{n}] \\
 &= \frac{1}{N} \sum_{n=1}^N \mu \\
 &= \mu
 \end{aligned}
@@ -206,7 +205,7 @@ $$
 Mặc dù ước lượng tốt với $\mu_{ML}$ thế nhưng $\sigma^2_{ML}$ thì không. Dùng $\sigma^2_{ML}$ để ước lượng cho $\sigma^2$ thì cho ra giá trị thấp hơn, ta gọi cách ước lượng này là **đánh giá thấp** (underestimate) (hay còn gọi là bias). Để tránh việc bias như này, ta chỉ cần chia cho $N-1$ thay vì $N$ ở phương sai mẫu:
 $$
 \begin{aligned}
-\sigma^2_{ML} &= \frac{1}{N-1} \sum_{n=1}^N (y_{n} - \mu_{ML})^2 \\
+\sigma^2_{ML} &= \frac{1}{N-1} \sum_{n=1}^N (x_{n} - \mu_{ML})^2 \\
 \implies \mathbb{E}[\sigma^2_{ML}] &= \sigma^2
 \end{aligned}
 $$
@@ -216,21 +215,21 @@ và đây là lý do mà người ta thường chia cho $N-1$ thay vì $N$ ở p
 >Ta có:
 >$$
 \begin{aligned}
-\mathbb{E}[\sigma^2_{ML}] &= \mathbb{E}\left[ \frac{1}{N} \sum_{n=1}^N (y_{n} - \mu_{{ML}})^2 \right] \\
-&= \frac{1}{N} \sum_{n=1}^N \mathbb{E}[(y_{n} - \mu_{ML})^2] \\
-&= \frac{1}{N} \sum_{n=1}^N \mathbb{E}[y_{n}^2 -2y_{n}\mu_{ML} + \mu_{ML}^2] \\
-&= \frac{1}{N} \sum_{n=1}^N \mathbb{E}[y_{n}^2] -2\mathbb{E}[y_{n}\mu_{ML}] + \mathbb{E}[\mu_{ML}^2] \\
+\mathbb{E}[\sigma^2_{ML}] &= \mathbb{E}\left[ \frac{1}{N} \sum_{n=1}^N (x_{n} - \mu_{{ML}})^2 \right] \\
+&= \frac{1}{N} \sum_{n=1}^N \mathbb{E}[(x_{n} - \mu_{ML})^2] \\
+&= \frac{1}{N} \sum_{n=1}^N \mathbb{E}[x_{n}^2 -2x_{n}\mu_{ML} + \mu_{ML}^2] \\
+&= \frac{1}{N} \sum_{n=1}^N \mathbb{E}[x_{n}^2] -2\mathbb{E}[x_{n}\mu_{ML}] + \mathbb{E}[\mu_{ML}^2] \\
 \end{aligned}
 >$$
->Như ta đã biết ở phần trên, moment bậc 2 của $y_n$ hay $\mathbb{E}[y_n^2]$ sẽ là:
+>Như ta đã biết ở phần trên, moment bậc 2 của $x_n$ hay $\mathbb{E}[x_n^2]$ sẽ là:
 >$$
-\mathbb{E}[y_{n}^2] = \sigma^2 + \mu^2
+\mathbb{E}[x_{n}^2] = \sigma^2 + \mu^2
 >$$
->Còn giá trị $\mathbb{E}[y_n\mu_{ML}]$ sẽ được tính như sau (nhớ là các quan sát độc lập với nhau, do đó với hai quan sát $y_i$ và $y_j$ bất kì, ta có $\mathbb{E}[y_iy_j] = \mathbb{E}[y_i]\mathbb{E}[y_j]$):
+>Còn giá trị $\mathbb{E}[x_n\mu_{ML}]$ sẽ được tính như sau (nhớ là các quan sát độc lập với nhau, do đó với hai quan sát $x_i$ và $x_j$ bất kì, ta có $\mathbb{E}[x_ix_j] = \mathbb{E}[x_i]\mathbb{E}[x_j]$):
 >$$
 \begin{aligned}
-\mathbb{E}[y_{n}\mu_{ML}] &= \mathbb{E}\left[ y_{n} \frac{1}{N} \sum_{i=1}^N y_{i} \right] \\
-&= \frac{1}{N} \left[ \sum_{j \neq n} \mathbb{E}[y_{n}y_{j}] + \mathbb{E}[y_{n}^2] \right] \\
+\mathbb{E}[x_{n}\mu_{ML}] &= \mathbb{E}\left[ x_{n} \frac{1}{N} \sum_{i=1}^N x_{i} \right] \\
+&= \frac{1}{N} \left[ \sum_{j \neq n} \mathbb{E}[x_{n}x_{j}] + \mathbb{E}[x_{n}^2] \right] \\
 &= \frac{1}{N} \left[ (N-1)\mu^2 + \mu^2 + \sigma^2 \right] \\
 &= \mu^2 + \frac{\sigma^2}{N}
 \end{aligned}
@@ -242,9 +241,9 @@ và đây là lý do mà người ta thường chia cho $N-1$ thay vì $N$ ở p
 >Chứng minh này công thức này mình thua (các bạn có thể xem thêm ở [algebra precalculus - What is the square of summation? - Mathematics Stack Exchange](https://math.stackexchange.com/questions/329344/what-is-the-square-of-summation)). Sau khi có công thức rồi thì tính thôi nào:
 >$$
 \begin{aligned}
-\mathbb{E}[\mu_{ML}^2] &= \mathbb{E}\left[ \frac{1}{N^2} \left( \sum_{n=1}^N y_{n} \right)^2 \right] \\
-&= \frac{1}{N^2} \mathbb{E}\left[ \sum_{n=1}^N y_{n}^2 + \sum_{j=1}^N\sum_{i=1}^{j-1} y_{i}y_{j} \right] \\
-&= \frac{1}{N^2} \left[ \sum_{n=1}^N \mathbb{E}[y_{n}^2] + \sum_{j=1}^N\sum_{i=1}^{j-1} \mathbb{E}[y_{i}y_{j}] \right] \\
+\mathbb{E}[\mu_{ML}^2] &= \mathbb{E}\left[ \frac{1}{N^2} \left( \sum_{n=1}^N x_{n} \right)^2 \right] \\
+&= \frac{1}{N^2} \mathbb{E}\left[ \sum_{n=1}^N x_{n}^2 + \sum_{j=1}^N\sum_{i=1}^{j-1} x_{i}x_{j} \right] \\
+&= \frac{1}{N^2} \left[ \sum_{n=1}^N \mathbb{E}[x_{n}^2] + \sum_{j=1}^N\sum_{i=1}^{j-1} \mathbb{E}[x_{i}x_{j}] \right] \\
 &= \frac{1}{N^2} \left( N(\mu^2 + \sigma^2) + 2\sum_{j=1}^N\sum_{i=1}^{j-1} \mu^2 \right)
 \end{aligned}
 >$$
@@ -259,13 +258,13 @@ và đây là lý do mà người ta thường chia cho $N-1$ thay vì $N$ ở p
 >$$
 \begin{aligned}
 \mathbb{E}[\mu_{ML}^2] &= \frac{1}{N^2} \left( N(\mu^2 + \sigma^2) + N(N-1)\mu^2 \right) \\
-&= \mu^2 + \frac{\sigma^2}{N} = \mathbb{E}[y_{n}\mu_{ML}]
+&= \mu^2 + \frac{\sigma^2}{N} = \mathbb{E}[x_{n}\mu_{ML}]
 \end{aligned}
 >$$
 >Sau khi đã có cả 3, ta chứng minh được, mình đi ngủ đây, dài vãi 💀.
 >$$
 \begin{aligned}
-\mathbb{E}[\sigma^2_{ML}] &= \frac{1}{N} \sum_{n=1}^N \mathbb{E}[y_{n}^2] -\mathbb{E}[y_{n}\mu_{ML}] \\
+\mathbb{E}[\sigma^2_{ML}] &= \frac{1}{N} \sum_{n=1}^N \mathbb{E}[x_{n}^2] -\mathbb{E}[x_{n}\mu_{ML}] \\
 &= \mu^2 + \sigma^2 - \mu^2 - \frac{1}{N}\sigma^2 \\
 &= \frac{(N-1)}{N} \sigma^2
 \end{aligned}
