@@ -73,7 +73,7 @@ $$
 \max \mathcal{N}(x \mid \mu, \sigma^2) = \mu
 $$
 >[!note]+
->Do tác giả đưa chứng minh này vào phần bài tập nên mình cũng sẽ cố gắng chứng minh trong phần bài tập luôn. Phần bài tập nằm ở [[Exercises Part I\|Exercises Part I]].
+>Do tác giả đưa chứng minh này vào phần bài tập nên mình cũng sẽ cố gắng chứng minh trong phần bài tập luôn. Phần bài tập nằm ở [[Zettel/Exercises Part I\|Exercises Part I]].
 
 Xét một vector $D$ chiều gồm các số thực $\mathbf{x} =(x_{1}, \dots, x_{D})^T$. Ta định nghĩa phân phối chuẩn trên vector $\mathbf{x}$ là:
 $$
