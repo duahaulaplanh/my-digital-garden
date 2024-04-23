@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/gaussian-distribution/","noteIcon":"📝","created":"2024-04-22T12:17:03.261+07:00","updated":"2024-04-22T23:51:06.583+07:00"}
+{"dg-publish":true,"permalink":"/zettel/gaussian-distribution/","noteIcon":"📝","created":"2024-04-22T12:17:03.261+07:00","updated":"2024-04-23T07:59:24.106+07:00"}
 ---
 
 **Phân phối chuẩn** (Gaussian Distribution hoặc Normal Distribution), kí hiệu là $\mathcal{N}(x \mid \mu, \sigma^2)$, sẽ được định nghĩa như sau:
@@ -161,7 +161,7 @@ ta gọi $\sigma^2_{ML}$ là **phương sai mẫu** (sample variance), ngoài ra
 >Thông thường giá trị trung bình $\mu$ được gọi trung bình tổng thể (population mean) tương tự với $\sigma^2$ là phương sai tổng thể (variance mean), đây là giá trị mà ta không biết, thế nhưng bằng cách dùng một phần của tổng thể (gọi là mẫu), ta sẽ cố gắng ước lượng được giá trị $\mu$ với $\sigma^2$ tốt nhất. Như đã chứng minh phía trên, giá trị ước lượng tốt nhất chính là $\mu_{ML}$ (trung bình của mẫu) và $\sigma^2_{ML}$ (phương sai của mẫu).
 
 >[!note]+
->Để tìm giá trị cực đại của một hàm, ta đạo hàm sau đó lấy bằng $0$. Ta biến rằng $\ln$ là một hàm đồng biến trên $\mathbb{R}$ do đó giá trị tại dạo hàm bằng $0$ cũng chính là cực đại. Ta sẽ viết gọn $\ln \mathcal{L}(\mu, \sigma^2 \mid \mathcal{D})$ thành $\mathcal{L}$.
+>Để tìm giá trị cực đại của một hàm, ta đạo hàm sau đó lấy bằng $0$. Ta biết rằng $\ln$ là một hàm đồng biến trên $\mathbb{R}$ do đó giá trị tại dạo hàm bằng $0$ cũng chính là cực đại. Ta sẽ viết gọn $\ln \mathcal{L}(\mu, \sigma^2 \mid \mathcal{D})$ thành $\mathcal{L}$.
 >
 >Xét cực đại bằng $\mu$, ta có:
 >$$
@@ -201,8 +201,17 @@ $$
 $$
 có thể thấy, kì vọng của trung bình mẫu $\mu_{ML}$ chính là trung bình của phân phối $\mu$, đúng như ta dự đoán, giá trị $\mu_{ML}$ có thể được dùng ước lượng rất tốt $\mu$. Thế nhưng, nếu xét giá trị kì vọng của phương sai mẫu $\sigma^2_{ML}$, ta có:
 $$
-\mathbb{E}[\sigma^2_{ML}] = \frac{N-1}{N} \sigma^2
+\mathbb{E}[\sigma^2_{ML}] = \frac{(N-1)}{N} \sigma^2
 $$
+Mặc dù ước lượng tốt với $\mu_{ML}$ thế nhưng $\sigma^2_{ML}$ thì không. Dùng $\sigma^2_{ML}$ để ước lượng cho $\sigma^2$ thì cho ra giá trị thấp hơn, ta gọi cách ước lượng này là **đánh giá thấp** (underestimate) (hay còn gọi là bias). Để tránh việc bias như này, ta chỉ cần chia cho $N-1$ thay vì $N$ ở phương sai mẫu:
+$$
+\begin{aligned}
+\sigma^2_{ML} &= \frac{1}{N-1} \sum_{n=1}^N (y_{n} - \mu_{ML})^2 \\
+\implies \mathbb{E}[\sigma^2_{ML}] &= \sigma^2
+\end{aligned}
+$$
+và đây là lý do mà người ta thường chia cho $N-1$ thay vì $N$ ở phương sai mẫu.
+
 >[!danger]+ Phần chứng minh này hơi dài 🥲
 >Ta có:
 >$$
@@ -265,12 +274,19 @@ $$
 >My honest reaction:
 ><center><img width=300 height=300 src="https://preview.redd.it/man-im-dead-v0-ymr5u3c0bjsa1.jpg?auto=webp&s=364c87d710ec0cda25a8e23fcbf1dbd692d0a597"> </center>
 
+Thế nhưng khi $N$ trở lên lớn dần, việc bias của nghiệm của maximum likelihood ($\sigma^2_{ML}$) không còn quá quan trọng nữa (ví dụ bạn có $N = 100001$ thì $N - 1 = 100000$ sẽ cho ra kết quả không quá chênh lệch). Khi mà $N \to \infty$ thì phương sai mẫu $\sigma^2_{ML}$ sẽ tiến dần về phương sai thực sự $\sigma$ của phân phối. Trong thực tế, nếu $N$ không nhỏ thì bias không phải là một vấn đề quan trọng lắm.
 
+>[!note]+
+>Việc phương sai mẫu $\sigma^2_{ML}$ tiến dần về phương sai thực sự $\sigma$ của phân phối khi mà $N \to \infty$ được chứng minh cụ thể ở **luật số lớn** (Law of Large Number).
+>[Law of large numbers - Wikipedia](https://en.wikipedia.org/wiki/Law_of_large_numbers)
+>[probability theory - Sample variance converge almost surely - Mathematics Stack Exchange](https://math.stackexchange.com/questions/243348/sample-variance-converge-almost-surely)
+
+Tuy nhiên với các mô hình ML phức tạp có nhiều tham số thì vấn đề bias này lại trở nên nghiêm trọng. Ở các phần sau, tác giả sẽ cho thấy vấn đề bias của maximum likelihood là một trong những nguyên nhân gây ra over-fitting.
 
 ---
 
 Phần trước: [[Zettel/Bayesian Probabilities\|Bayesian Probabilities]]
-Phần sau: [[Curve Fitting Revisited\|Curve Fitting Revisited]]
+Phần sau: [[Zettel/Curve Fitting Revisited\|Curve Fitting Revisited]]
 
 ---
 # References
