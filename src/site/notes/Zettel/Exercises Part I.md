@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/exercises-part-i/","noteIcon":"📝","created":"2024-04-23T09:04:07.504+07:00","updated":"2024-04-24T12:33:41.891+07:00"}
+{"dg-publish":true,"permalink":"/zettel/exercises-part-i/","noteIcon":"📝","created":"2024-04-23T09:04:07.504+07:00","updated":"2024-04-24T12:37:51.240+07:00"}
 ---
 
 >[!example]+ Giải bài 1.1
@@ -124,7 +124,7 @@ $$
 
 Giả sử ta có hàm khả vi $f(x)$ với $x$ là số thực (không phải biến ngẫu nhiên), để tìm giá trị lớn nhất của $f(x)$, ta đạo hàm $f'(x)$ sau đó cho $f'(x) = 0$ để tìm được giá trị $x$ thoả mãn, gọi là $\hat{x}$ đi.
 
-Tiếp theo, ta có một biến mới là $y$ với $x = g(y)$ (lưu ý, $g$ phải là hàm khả nghịch). Đổi biến hàm $f(x)$ sang $f(g(y))$ (là một hàm của $y$), ta đặt $\tilde{f}(y) = f(g(y))$ (để biết đây là một hàm của $y$). Để tìm giá trị lớn nhất của $\tilde{f}(y)$, ta đạo hàm và sau đó cho bằng $0$. Đầu tiên đạo hàm:
+Tiếp theo, ta có một biến mới là $y$ với $x = g(y)$. Đổi biến hàm $f(x)$ sang $f(g(y))$ (là một hàm của $y$), ta đặt $\tilde{f}(y) = f(g(y))$ (để biết đây là một hàm của $y$). Để tìm giá trị lớn nhất của $\tilde{f}(y)$, ta đạo hàm và sau đó cho bằng $0$. Đầu tiên đạo hàm:
 $$
 \begin{aligned}
 \frac{d\tilde{f}(y)}{dy} &= \frac{df(g(y))}{g(y)} \frac{dg(y)}{y} \\
@@ -164,14 +164,12 @@ p_{y}'(\hat{y}) &= sp_{x}'(g(\hat{y}))[g'(\hat{y})]^2 + sp_{x}(g(\hat{y}))\hspac
 $$
 Vậy rõ ràng nếu $\hat{y}$ là giá trị làm cho $p_y$ lớn nhất và $\hat{x} =g(\hat{y})$ thì điều này lại sai, do đó $\hat{x} \neq g(\hat{y})$. Tức là nếu $X$ và $Y$ là biến ngẫu nhiên thì không có quan hệ nào giữa $\hat{x}$ và $g(\hat{y})$, do đó ta không thể tìm giá trị $X$ làm cho $p_x$ lớn nhất bằng cách tìm giá trị $Y$ làm cho $p_y$ lớn nhất.
 
-Tuy nhiên, nếu ta chọn $g(Y) = X$ sao cho $g$ là một hàm tuyến tính. Giả sử $X = g(Y) = \alpha Y + \beta$. Khi đó:
+Tuy nhiên, nếu ta chọn $g(Y) = X$ sao cho $g$ là một hàm tuyến tính thì mọi chuyện sẽ khác. Giả sử $X = g(Y) = \alpha Y + \beta$. Khi đó:
 $$
-\begin{aligned}
-p_{y}(y) &= p_{x}(g(y))sg'(y) \\
-&= p_{x}(g(y)) s\alpha \\
-\implies p_{y}'(y) &= s\alpha^2p_{x}'(g(y))
-\end{aligned}
+p'_{y}(\hat{y}) = sp_{x}(g(\hat{y}))g''(\hat{y}) = 0
 $$
+Do nếu $g(y) = \alpha y + \beta$ thì $g''(y) = 0$ với mọi $y$.
+
 Vậy $p_y'(\hat{y}) = 0 \implies p_x'(g(\hat{y})) = 0 \implies p_x'(\hat{x}) = p_{x}(g(\hat{y})) = 0 \implies  \hat{x} = g(\hat{y})$. Ta có thể thấy bằng việc chọn $g$ là một hàm tuyến tính thì $\hat{x} = g(\hat{y})$, do đó việc chọn hàm $g$ để biến đổi từ $X$ sang $Y$ là rất quan trọng.
 
 >[!example]+ Giải bài 1.5
