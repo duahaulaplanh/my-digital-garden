@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/probability-densities/","noteIcon":"📝","created":"2024-04-19T10:19:39.732+07:00","updated":"2024-04-22T22:26:19.262+07:00"}
+{"dg-publish":true,"permalink":"/zettel/probability-densities/","noteIcon":"📝","created":"2024-04-19T10:19:39.732+07:00","updated":"2024-04-24T11:47:23.578+07:00"}
 ---
 
 >[!example]+
@@ -79,7 +79,10 @@ p(X \in (a, b)) = \int_{a}^b p(x)dx = \lim_{ \delta x \to 0 } \sum_{k=0}^{n-1} p
  Xét hai biến ngẫu nhiên $X$ và $Y$ với $X = g(Y)$. Đặt $P_{x}$ là cdf của $X$ và $P_y$ là cdf của $Y$. Tương tự, đặt $p_x$ là mật độ xác suất của $X$ và $p_y$ là mật độ xác suất của $Y$. 
 
 >[!danger]+ Lưu ý
->$g$ phải là một hàm đơn điệu (ngặt) để có thể tồn tại một hàm ngược $g^{-1}$.  Khi đó mọi công thức phía dưới mới đúng.
+>$g$ phải là một hàm khả nghịch, do đó tồn tại một hàm nghịch đảo $g^{-1}$. Ta nói một hàm $g: \mathcal{X} \to \mathcal{Y}$ nếu $g$ là *song ánh* (bijective), tức là $g$ có hai tính chất sau:
+>- *Đơn ánh* (injective): với mọi $x_1, x_2 \in \mathcal{X}$, nếu $x_1 \neq x_2$ thì $g(x_1) \neq g(x_2)$.
+>- **Lưu ý**: không có trường hợp $x_1 = x_2$ thì $g(x_1) \neq g(x_2)$ nhé, bởi vì như vậy thì $g$ không còn là một hàm nữa.
+>- *Đồng ánh* (surjective): với mọi $y \in \mathcal{Y}$ luôn tồn tại một giá trị $x \in \mathcal{X}$ sao cho $g(x) = y$.
 
 Ta xét 2 trường hợp:
 - Nếu $g$ là hàm đồng biến:
