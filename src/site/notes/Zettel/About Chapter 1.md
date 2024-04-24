@@ -161,7 +161,7 @@ $$
 $$
 ---
 
-Phần sau: [[Zettel/Probability, Entropy và Inference\|Probability, Entropy và Inference]]
+Phần sau: [[Probability, Entropy và Inference\|Probability, Entropy và Inference]]
 
 ---
 # References
