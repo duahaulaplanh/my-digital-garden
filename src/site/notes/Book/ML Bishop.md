@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/book/ml-bishop/","tags":["book"],"noteIcon":"📝","created":"2024-04-15T11:05:19.428+07:00","updated":"2024-04-23T11:00:45.148+07:00"}
+{"dg-publish":true,"permalink":"/book/ml-bishop/","tags":["book"],"noteIcon":"📝","created":"2024-04-15T11:05:19.428+07:00","updated":"2024-04-25T15:20:57.814+07:00"}
 ---
 
 >[!danger]+ Lưu ý
@@ -15,6 +15,7 @@
 - **Complement**:
 	- [ctgk/PRML: PRML algorithms implemented in Python (github.com)](https://github.com/ctgk/PRML)
 	- [gerdm/prml: Repository of notes, code and notebooks in Python for the book Pattern Recognition and Machine Learning by Christopher Bishop (github.com)](https://github.com/gerdm/prml)
+	- [[Study/Some math knowledge\|Some math knowledge]]
 # 2. My take
 
 ## I. Introduction
