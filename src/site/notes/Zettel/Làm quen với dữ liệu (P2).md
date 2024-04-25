@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p2/","noteIcon":"📝","created":"2024-03-20T00:13:20.868+07:00","updated":"2024-04-17T21:33:43.515+07:00"}
+{"dg-publish":true,"permalink":"/zettel/lam-quen-voi-du-lieu-p2/","noteIcon":"📝","created":"2024-03-20T00:13:20.868+07:00","updated":"2024-04-25T15:28:33.916+07:00"}
 ---
 
 # III. Phép đo độ tương đồng và khác biệt của dữ liệu (TT)
