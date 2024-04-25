@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/probability-densities/","noteIcon":"📝","created":"2024-04-19T10:19:39.732+07:00","updated":"2024-04-24T11:47:23.578+07:00"}
+{"dg-publish":true,"permalink":"/zettel/probability-densities/","noteIcon":"📝","created":"2024-04-19T10:19:39.732+07:00","updated":"2024-04-25T16:35:57.520+07:00"}
 ---
 
 >[!example]+
@@ -75,60 +75,14 @@ p(X \in (a, b)) = \int_{a}^b p(x)dx = \lim_{ \delta x \to 0 } \sum_{k=0}^{n-1} p
 >
 >![Pasted image 20240419135539.png](/img/user/Attachment/Pasted%20image%2020240419135539.png)
 
- 
- Xét hai biến ngẫu nhiên $X$ và $Y$ với $X = g(Y)$. Đặt $P_{x}$ là cdf của $X$ và $P_y$ là cdf của $Y$. Tương tự, đặt $p_x$ là mật độ xác suất của $X$ và $p_y$ là mật độ xác suất của $Y$. 
-
->[!danger]+ Lưu ý
->$g$ phải là một hàm khả nghịch, do đó tồn tại một hàm nghịch đảo $g^{-1}$. Ta nói một hàm $g: \mathcal{X} \to \mathcal{Y}$ nếu $g$ là *song ánh* (bijective), tức là $g$ có hai tính chất sau:
->- *Đơn ánh* (injective): với mọi $x_1, x_2 \in \mathcal{X}$, nếu $x_1 \neq x_2$ thì $g(x_1) \neq g(x_2)$.
->- **Lưu ý**: không có trường hợp $x_1 = x_2$ thì $g(x_1) \neq g(x_2)$ nhé, bởi vì như vậy thì $g$ không còn là một hàm nữa.
->- *Đồng ánh* (surjective): với mọi $y \in \mathcal{Y}$ luôn tồn tại một giá trị $x \in \mathcal{X}$ sao cho $g(x) = y$.
-
-Ta xét 2 trường hợp:
-- Nếu $g$ là hàm đồng biến:
+ Xét hai biến ngẫu nhiên $X$ và $Y$ với $X = g(Y)$. Đặt $P_{x}$ là cdf của $X$ và $P_y$ là cdf của $Y$. Tương tự, đặt $p_x$ là mật độ xác suất của $X$ và $p_y$ là mật độ xác suất của $Y$. Khi đó:
 $$
-\begin{aligned}
-P_{x}(z) = p(X \in (-\infty, z)) &= p(X < z) \\
-&= p(g(Y) < z) \\ 
-&= p(Y < g^{-1}(z)) \\
-&= P_{y}(g^{-1}(z))
-\end{aligned}
-$$
-- Nếu $g$ là hàm nghịch biến:
-$$
-\begin{aligned}
-P_{x}(z) &= p(X < z) \\
-&= p(g(Y) < z) \\ 
-&= p(Y > g^{-1}(z)) \\
-&= 1 - p(Y < g^{-1}(z)) \\
-&= 1 - P_{y}(g^{-1}(z))
-\end{aligned}
-$$
-Lấy đạo hàm $P_x(z)$ ta được:
-- Nếu $g$ là hàm đồng biến:
-$$
-P'_{x}(z) = P'_{y}(g^{-1}(z)) \frac{d}{dz}g^{-1}(z)
-$$
-- Nếu $g$ là hàm nghịch biến:
-$$
-P'_{x}(z) = -P'_{y}(g^{-1}(z)) \frac{d}{dz}g^{-1}(z)
-$$
-- Kết hợp cả 2, ta được trường hợp tổng quát nếu $g$ là hàm đơn điệu (ngặt):
-$$
-P'_{x}(z) = P'_{y}(g^{-1}(z)) \left| \frac{d}{dz}g^{-1}(z) \right|
-$$
-
-Thay biến $z$ thành $x$, ta được:
-$$
-\begin{aligned}
-P'_{x}(x) &= P'_{y}(g^{-1}(x)) \left| \frac{d}{dx}g^{-1}(x) \right| \\
-&= P'_{y}(y) \left| \frac{dy}{dx} \right| \\
-\Leftrightarrow P'_{y}(y) &= P'_{x}(x) \left| \frac{dx}{dy} \right| \\
-&= P'_{x}(g(y)) \left| \frac{dg(y)}{dy} \right| \\
-\implies p_{y}(y) &= p_{x}(g(y)) | g'(y) |
-\end{aligned}
+p_{y}(y) = p_{x}(g(y)) | g'(y) |
 $$
 Ta gọi $|g'(y)|$ là **jacobian factor**. Hàm mật độ xác suất $p_x(x)$ sau khi chuyển từ biến ngẫu nhiên $X$ sang biến ngẫu nhiên $Y$ bằng hàm không tuyến tính $g$ với $X = g(Y)$ sẽ bị biến đổi khác đi, từ một hàm đơn giản khác sang một hàm mới (có thể phức tạp hơn), điều này là do jacobian factor.
+
+>[!note]+ Chứng minh
+>[[Zettel/Change of random variable\|Change of random variable]]
 
 Nếu ta có nhiều biến ngẫu nhiên $X_1, \dots, X_D$, được định nghĩa chung bằng vector $\mathbf{x} = (x_1, \dots, x_D)$, khi đó ta định nghĩa hàm **mật độ xác suất đồng thời** $p(\mathbf{x}) = p(x_1, \dots, x_D)$ sao cho xác suất $\mathbf{x}$ thuộc một phần thể tích vô cùng nhỏ (infinitesimal volume) $\delta \mathbf{x}$ (có chứa $\mathbf{x}$) được xác định bởi $p(\mathbf{x})\delta \mathbf{x}$.
 
@@ -182,6 +136,13 @@ p(x, y) &= p(y \mid x) p(x) \\
 $$
 >[!bug]+
 >Việc chứng minh hai công thức này thì mình chịu, vượt quá sức của mình rồi 🥲
+
+>[!note]+ 
+>Nếu ta tổng quát hoá việc đổi biến lên nhiều chiều, tức là đổi từ vector ngẫu nhiên $\mathbf{x}$ sang $\mathbf{y}$ với $\mathbf{x} = g(\mathbf{y})$, mỗi vector có mật độ xác suất tương ứng là $p_{\mathbf{x}}$ và $p_{\mathbf{y}}$. Khi đó:
+>$$
+>p_{\mathbf{y}}(\mathbf{y}) = p_{\mathbf{x}}(g(\mathbf{y})) \left| \det\left( \frac{\partial g(\mathbf{y})}{\partial \mathbf{y}} \right) \right|
+>$$
+>trong đó $\det$ là định thức và $\partial g(\mathbf{y}) / \partial y$ là ma trận Jacobian.
 
 ---
 
