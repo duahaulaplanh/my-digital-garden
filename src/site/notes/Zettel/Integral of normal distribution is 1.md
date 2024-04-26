@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/integral-of-normal-distribution-is-1/","noteIcon":"📝","created":"2024-04-25T16:27:27.480+07:00","updated":"2024-04-25T16:30:51.232+07:00"}
+{"dg-publish":true,"permalink":"/zettel/integral-of-normal-distribution-is-1/","noteIcon":"📝","created":"2024-04-25T16:27:27.480+07:00","updated":"2024-04-26T10:24:23.749+07:00"}
 ---
 
 
@@ -39,7 +39,7 @@ $$
 \int_{-\infty}^{\infty} \exp\{-y^2\}dy = \sqrt{ \pi }
 $$
 
-còn được gọi là **tích phân Gauss** ([[Zettel/Gauss Integral proof\|Gauss Integral proof]]). Nếu tiếp tục đặt $y^2 = z^2 / 2 \implies \sqrt{ 2 } y = z$ thì ta có $\sqrt{ 2 }dy = dz$, ta được:
+còn được gọi là **tích phân Gauss** ([[Zettel/Gauss Integral\|Gauss Integral]]). Nếu tiếp tục đặt $y^2 = z^2 / 2 \implies \sqrt{ 2 } y = z$ thì ta có $\sqrt{ 2 }dy = dz$, ta được:
 $$
 \begin{aligned}
 &\frac{1}{(2\pi)^{1/2}} \int_{-\infty}^{\infty} \exp \left\{ - y^2 \right\} \sqrt{ 2 } dy \\
