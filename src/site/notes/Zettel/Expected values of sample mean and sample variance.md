@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/expected-values-of-sample-mean-and-sample-variance/","noteIcon":"📝","created":"2024-04-25T15:39:26.811+07:00","updated":"2024-04-25T18:55:58.223+07:00"}
+{"dg-publish":true,"permalink":"/zettel/expected-values-of-sample-mean-and-sample-variance/","noteIcon":"📝","created":"2024-04-25T15:39:26.811+07:00","updated":"2024-04-26T10:30:53.350+07:00"}
 ---
 
 Xét 1 mẫu $\mathcal{D}$ gồm $n$ quan sát $x_{1}, \dots, x_{n}$ và $\mathcal{D} \overset{i.i.d}{\sim} \mathcal{N}(\mu, \sigma^2)$. 
@@ -53,7 +53,7 @@ $$
 &= \frac{1}{N^2} \left[ \sum_{n=1}^N \mathbb{E}[x_{n}^2] + \sum_{j=1}^N\sum_{i=1}^{j-1} \mathbb{E}[x_{i}x_{j}] \right] \\
 &= \frac{1}{N^2} \left( N(\mu^2 + \sigma^2) + 2\sum_{j=1}^N\sum_{i=1}^{j-1} \mu^2 \right)
 \end{aligned}
->$$
+$$
 Ở đoạn cuối, ta thấy như sau:
 $$
 \begin{aligned}
