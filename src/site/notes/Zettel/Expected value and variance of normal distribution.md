@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/expected-value-and-variance-of-normal-distribution/","noteIcon":"📝","created":"2024-04-25T18:54:12.996+07:00","updated":"2024-04-26T10:24:41.197+07:00"}
+{"dg-publish":true,"permalink":"/zettel/expected-value-and-variance-of-normal-distribution/","noteIcon":"📝","created":"2024-04-25T18:54:12.996+07:00","updated":"2024-04-26T10:32:36.794+07:00"}
 ---
 
 Kì vọng của phân phối chuẩn:
@@ -20,7 +20,9 @@ $$
 \mathbb{E}[X] &= \int_{-\infty}^{\infty} \frac{1}{(2\pi \sigma^2)^{1/2}} \exp\left( \frac{-1}{2\sigma^2}z^2 \right) (z + \mu) dz \\
 &= \frac{1}{(2\pi \sigma^2)^{1/2}} \left[ \int_{-\infty}^{\infty} \exp\left( -\frac{1}{2\sigma^2}z^2 \right) z dz + \mu \int_{-\infty}^{\infty} \exp\left( -\frac{1}{2\sigma^2} z^2 \right) dz \right] \\
 \end{align*}
-$$Xét tích phân phía bên trái dấu $+$ nằm trong ngoặc vuông, đặt:
+$$
+
+Xét tích phân phía bên trái dấu $+$ nằm trong ngoặc vuông, đặt:
 $$
 f(z) = \exp\left( -\frac{1}{2\sigma^2} z^2 \right) z
 $$
