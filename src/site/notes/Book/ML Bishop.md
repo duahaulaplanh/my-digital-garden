@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/book/ml-bishop/","tags":["book"],"noteIcon":"📝","created":"2024-04-15T11:05:19.428+07:00","updated":"2024-04-25T15:20:57.814+07:00"}
+{"dg-publish":true,"permalink":"/book/ml-bishop/","tags":["book"],"noteIcon":"📝","created":"2024-04-15T11:05:19.428+07:00","updated":"2024-04-25T23:34:48.689+07:00"}
 ---
 
 >[!danger]+ Lưu ý
@@ -34,5 +34,6 @@
 - Decision Theory
 - Information Theory
 - [[Zettel/Exercises Part I\|Exercises Part I]]
+- [[Zettel/Exercises Part I (TT)\|Exercises Part I (TT)]]
 
 ## II. Probability Distributions
