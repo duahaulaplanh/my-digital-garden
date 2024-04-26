@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/study/some-math-knowledge/","tags":["self-study"],"noteIcon":"📝","created":"2024-04-25T15:03:08.838+07:00","updated":"2024-04-26T10:24:23.721+07:00"}
+{"dg-publish":true,"permalink":"/study/some-math-knowledge/","tags":["self-study"],"noteIcon":"📝","created":"2024-04-25T15:03:08.838+07:00","updated":"2024-04-26T10:47:31.754+07:00"}
 ---
 
 ## Calculus
 
 - [[Zettel/Polar Coordinates\|Polar Coordinates]]
-- [[Double Integral with Polar Coordinates\|Double Integral with Polar Coordinates]]
+- [[Zettel/Double Integral with Polar Coordinates\|Double Integral with Polar Coordinates]]
 - [[Zettel/Gauss Integral\|Gauss Integral]]
 - [[Zettel/Integral of odd and even function\|Integral of odd and even function]]
 - [[Zettel/Differentiating under integral\|Differentiating under integral]]
@@ -22,3 +22,5 @@
 - [[Zettel/Why probability distribution of coin is binomial\|Why probability distribution of coin is binomial]]
 - [[Zettel/Poisson distribution and Stirling approximation\|Poisson distribution and Stirling approximation]]
 - [[Zettel/Expected value and variance of normal distribution\|Expected value and variance of normal distribution]]
+- [[Zettel/Mode of normal distribution\|Mode of normal distribution]]
+- [[Zettel/Maximum when variable changed\|Maximum when variable changed]]
