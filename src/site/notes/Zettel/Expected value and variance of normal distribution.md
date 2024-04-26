@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/expected-value-and-variance-of-normal-distribution/","noteIcon":"📝","created":"2024-04-25T18:54:12.996+07:00","updated":"2024-04-26T10:32:36.794+07:00"}
+{"dg-publish":true,"permalink":"/zettel/expected-value-and-variance-of-normal-distribution/","noteIcon":"📝","created":"2024-04-25T18:54:12.996+07:00","updated":"2024-04-26T10:33:00.265+07:00"}
 ---
 
 Kì vọng của phân phối chuẩn:
@@ -53,6 +53,7 @@ $$
 &= 0
 \end{align*}
 >$$
+
 
 Còn phần tích phân phía sau dấu $+$ trong ngoặc vuông đã được ta chứng minh ở bài 1.7 trong [[Zettel/Exercises Part I\|Exercises Part I]] (hoặc có thể dùng tích phân Gauss [[Zettel/Gauss Integral\|Gauss Integral]] rồi đổi biến) và có giá trị là $(2\pi \sigma^2)^{1/2}$. Vậy ta có:
 $$
