@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/exercises-part-i/","noteIcon":"📝","created":"2024-04-23T09:04:07.504+07:00","updated":"2024-04-24T12:37:51.240+07:00"}
+{"dg-publish":true,"permalink":"/zettel/exercises-part-i/","noteIcon":"📝","created":"2024-04-23T09:04:07.504+07:00","updated":"2024-04-26T10:25:03.767+07:00"}
 ---
 
 >[!example]+ Giải bài 1.1
@@ -188,12 +188,63 @@ Vậy $p_y'(\hat{y}) = 0 \implies p_x'(g(\hat{y})) = 0 \implies p_x'(\hat{x}) = 
 >
 >![Pasted image 20240424123337.png](/img/user/Attachment/Pasted%20image%2020240424123337.png)
 
+Bài này mình đã chứng minh ở [[Zettel/Integral of normal distribution is 1\|Integral of normal distribution is 1]] nhưng mà theo hướng khác, trong đó mình dùng tích phân Gauss, ở đây tác giả cũng đưa ra tích phân $I$ (khá giống giống trong [[Zettel/Gauss Integral\|Gauss Integral]]) và vẫn dùng toạ độ cực.
 
+Chuyển từ toạ độ $(x, y)$ sang toạ độ cực $(r, \theta)$ cho tích phân $I^2$ (tìm hiểu ở [[Double Integral with Polar Coordinates\|Double Integral with Polar Coordinates]]), ta có:
+$$
+\begin{aligned}
+I^{2} &= \int_{0}^{2\pi} \int_{0}^{\infty} \exp\left( -\frac{1}{2\sigma^{2}}r^2\cos(\theta)^2 -\frac{1}{2\sigma^2}r^2\sin (\theta)^2 \right) r dr d\theta \\
+&= \int_{0}^{2\pi} \int_{0}^{\infty} \exp\left( -\frac{1}{2\sigma^2} r^2 \right) r dr d\theta \\
+&= \int_{0}^{2\pi} \left[ \int_{0}^{\infty} \exp\left( -\frac{1}{2\sigma^2} r^2 \right) rdr \right] d \theta
+\end{aligned}
+$$
+Đặt $u = r^2$ ta có $\frac{1}{2}du = r dr$:
+$$
+\begin{align*}
+I^{2} &= \int_{0}^{2\pi} \frac{1}{2} \left[ \int_{0}^{\infty} \exp\left( -\frac{1}{2\sigma^2} u \right) du \right] d \theta 
+\end{align*}
+$$
+Xét tích phân của $u$, ta có:
+$$
+\begin{align*}
+\int_{0}^{\infty} \exp\left( -\frac{1}{2\sigma^2} u \right) du &= \lim_{ n \to \infty } \int_{0}^{n} \exp\left( -\frac{1}{2\sigma^2} u \right) du\\
+&= \lim_{ n \to \infty } \left[ \left. -2\sigma^2 \exp\left( -\frac{1}{2\sigma^2}u \right) \right|_{0}^n \hspace{3pt} \right] \\
+&= \lim_{ n \to \infty } \left[ -2\sigma^2\exp\left( -\frac{1}{2\sigma^2}n \right) + 2\sigma^2 \right] \\
+&= 2\sigma^2
+\end{align*}
+$$
+Thay vào tích phân $I^2$, ta được:
+$$
+\begin{align*}
+I^2 &= \int_{0}^{2\pi} \sigma^2 d\theta \\
+&= \left. \sigma^2 \theta \right|_{0}^{2\pi} \\
+&= 2\pi \sigma^2 \\
+\implies I &= (2\pi \sigma^2)^{1/2}
+\end{align*}
+$$
+Vậy:
+$$
+\int_{-\infty}^{\infty} \exp\left( -\frac{1}{2\sigma^2}x \right)dx = (2\pi \sigma^2)^{1/2}
+$$
+Để áp dụng được tích phân này lên phân phối chuẩn $\mathcal{N}(\mu, \sigma^2)$, ta đặt $z = x - \mu$, khi đó $dz = dx$, vậy:
+$$
+\begin{align*}
+\int_{-\infty}^{\infty} \mathcal{N}(x \mid \mu, \sigma^2) &= \int_{-\infty}^{\infty} \frac{1}{(2\pi \sigma^2)^{1/2}} \exp\left( -\frac{1}{2\sigma^2}(x - \mu)^2 \right) dx \\
+&= \int_{-\infty}^{\infty} \frac{1}{(2\pi \sigma^2)^{1/2}} \exp\left( -\frac{1}{2\sigma^2} z^2 \right) dz \\
+&= \frac{1}{(2\pi \sigma^2)^{1/2}} \int_{-\infty}^{\infty} \exp\left( -\frac{1}{2\sigma^2}z^2 \right) dz \\
+&= 1
+\end{align*}
+$$
+>[!example]+ Giải bài 1.8
+>
+>![Pasted image 20240425192708.png](/img/user/Attachment/Pasted%20image%2020240425192708.png)
+
+Đã được giải trong [[Zettel/Expected value and variance of normal distribution\|Expected value and variance of normal distribution]]
 
 ---
 
 Phần trước: 
-Phần sau: 
+Phần sau: [[Zettel/Exercises Part I (TT)\|Exercises Part I (TT)]]
 
 ---
 # References
