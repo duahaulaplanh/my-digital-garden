@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/gaussian-distribution/","noteIcon":"📝","created":"2024-04-22T12:17:03.261+07:00","updated":"2024-04-25T16:42:59.058+07:00"}
+{"dg-publish":true,"permalink":"/zettel/gaussian-distribution/","noteIcon":"📝","created":"2024-04-22T12:17:03.261+07:00","updated":"2024-04-26T11:17:05.117+07:00"}
 ---
 
 **Phân phối chuẩn** (Gaussian Distribution hoặc Normal Distribution), kí hiệu là $\mathcal{N}(x \mid \mu, \sigma^2)$, sẽ được định nghĩa như sau:
@@ -28,9 +28,9 @@ ta gọi giá trị $\mathbb{E}[X^2]$ là **moment bậc 2** (second order momen
 $$
 \text{var}[X] = \mathbb{E}[X^2] - \mathbb{E}[X]^2 = \sigma^2
 $$
-Giá trị lớn nhất của một phân phối còn được gọi là **mode** và phân phối chuẩn có $mode = \mu$, tức là:
+Giá trị lớn nhất $x$ làm cho phân phối cực đại còn được gọi là **mode** và phân phối chuẩn có $mode = \mu$, tức là:
 $$
-\max \mathcal{N}(x \mid \mu, \sigma^2) = \mu
+\text{arg}\max_{x} \mathcal{N}(x \mid \mu, \sigma^2) = \mu
 $$
 >[!note]+
 >Do tác giả đưa chứng minh này vào phần bài tập nên mình cũng sẽ cố gắng chứng minh trong phần bài tập luôn. Phần bài tập nằm ở [[Zettel/Exercises Part I\|Exercises Part I]].
