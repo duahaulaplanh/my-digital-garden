@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/expected-value-and-variance-of-normal-distribution/","noteIcon":"📝","created":"2024-04-25T18:54:12.996+07:00","updated":"2024-04-26T10:33:00.265+07:00"}
+{"dg-publish":true,"permalink":"/zettel/expected-value-and-variance-of-normal-distribution/","noteIcon":"📝","created":"2024-04-25T18:54:12.996+07:00","updated":"2024-04-26T12:21:53.659+07:00"}
 ---
 
 Kì vọng của phân phối chuẩn:
@@ -115,13 +115,13 @@ $$
 Thực hiện đạo hàm 2 vế, ta có:
 $$
 \begin{align*}
-\frac{\partial f(\sigma^2)}{\partial \sigma^2} = \frac{\partial 1}{\partial \sigma^2} \\
-\Leftrightarrow \int_{-\infty}^{\infty} \frac{1}{2\sigma^2}\left[ \frac{(x-\mu)^2}{\sigma^2} - 1 \right] \mathcal{N}(x \mid \mu, \sigma^2) dx = 0 \\
-\Leftrightarrow \frac{1}{\sigma^2}\int_{-\infty}^{\infty} (x-\mu)^2 \mathcal{N}(x \mid \mu, \sigma^2) dx - \int_{-\infty}^{\infty} \mathcal{N}(x \mid \mu, \sigma^2) dx = 0 \\
-\Leftrightarrow \frac{1}{\sigma^2}\int_{-\infty}^{\infty} (x-\mu)^2 \mathcal{N}(x \mid \mu, \sigma^2) dx - 1 = 0 \\
-\Leftrightarrow \int_{-\infty}^{\infty} (x-\mu)^2 \mathcal{N}(x \mid \mu, \sigma^2) dx = \sigma^2 \\
-\Leftrightarrow \mathbb{E}[(X-\mu)^2] = \sigma^2 \\
-\Leftrightarrow \text{var}[X] = \sigma^2
+&\frac{\partial f(\sigma^2)}{\partial \sigma^2} = \frac{\partial 1}{\partial \sigma^2} \\
+&\Leftrightarrow \int_{-\infty}^{\infty} \frac{1}{2\sigma^2}\left[ \frac{(x-\mu)^2}{\sigma^2} - 1 \right] \mathcal{N}(x \mid \mu, \sigma^2) dx = 0 \\
+&\Leftrightarrow \frac{1}{\sigma^2}\int_{-\infty}^{\infty} (x-\mu)^2 \mathcal{N}(x \mid \mu, \sigma^2) dx - \int_{-\infty}^{\infty} \mathcal{N}(x \mid \mu, \sigma^2) dx = 0 \\
+&\Leftrightarrow \frac{1}{\sigma^2}\int_{-\infty}^{\infty} (x-\mu)^2 \mathcal{N}(x \mid \mu, \sigma^2) dx - 1 = 0 \\
+&\Leftrightarrow \int_{-\infty}^{\infty} (x-\mu)^2 \mathcal{N}(x \mid \mu, \sigma^2) dx = \sigma^2 \\
+&\Leftrightarrow \mathbb{E}[(X-\mu)^2] = \sigma^2 \\
+&\Leftrightarrow \text{var}[X] = \sigma^2
 \end{align*}
 $$
 Vậy ta chứng minh được phương sai của phân phối chuẩn là $\sigma^2$, tiếp theo:
