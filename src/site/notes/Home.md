@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"noteIcon":"📝","created":"2024-03-20T00:13:20.890+07:00","updated":"2024-04-24T11:06:54.295+07:00"}
+{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"noteIcon":"📝","created":"2024-03-20T00:13:20.890+07:00","updated":"2024-04-26T15:40:25.618+07:00"}
 ---
 
 ---
@@ -22,7 +22,6 @@
 ## Bookself
 
 - [[Book/ML Bishop\|ML Bishop]]
-- [[Book/MacKay Information Theory\|MacKay Information Theory]]
 ## Blog
 
 - [[Zettel/Làm quen với dữ liệu (P1)\|Làm quen với dữ liệu (P1)]]
