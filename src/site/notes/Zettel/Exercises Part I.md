@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/exercises-part-i/","noteIcon":"📝","created":"2024-04-23T09:04:07.504+07:00","updated":"2024-04-26T10:49:28.793+07:00"}
+{"dg-publish":true,"permalink":"/zettel/exercises-part-i/","noteIcon":"📝","created":"2024-04-23T09:04:07.504+07:00","updated":"2024-04-27T21:17:05.585+07:00"}
 ---
 
 >[!example]+ Giải bài 1.1
@@ -176,7 +176,7 @@ I^2 &= \int_{0}^{2\pi} \sigma^2 d\theta \\
 $$
 Vậy:
 $$
-\int_{-\infty}^{\infty} \exp\left( -\frac{1}{2\sigma^2}x \right)dx = (2\pi \sigma^2)^{1/2}
+\int_{-\infty}^{\infty} \exp\left( -\frac{1}{2\sigma^2}x^2 \right)dx = (2\pi \sigma^2)^{1/2}
 $$
 Để áp dụng được tích phân này lên phân phối chuẩn $\mathcal{N}(\mu, \sigma^2)$, ta đặt $z = x - \mu$, khi đó $dz = dx$, vậy:
 $$
