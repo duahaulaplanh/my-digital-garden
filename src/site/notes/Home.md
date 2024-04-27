@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"noteIcon":"📝","created":"2024-03-20T00:13:20.890+07:00","updated":"2024-04-26T15:40:25.618+07:00"}
+{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"noteIcon":"📝","created":"2024-03-20T00:13:20.890+07:00","updated":"2024-04-27T21:11:56.283+07:00"}
 ---
 
 ---
@@ -16,12 +16,10 @@
 >Mình rất là cảm ơn luôn.
 
 ---
-
->[!info]+ Thesis
->[[Thesis/Model Merging Research\|Model Merging Research]]
 ## Bookself
 
 - [[Book/ML Bishop\|ML Bishop]]
+- [[Book/RL Sutton\|RL Sutton]]
 ## Blog
 
 - [[Zettel/Làm quen với dữ liệu (P1)\|Làm quen với dữ liệu (P1)]]
