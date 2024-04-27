@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/exercises-part-i-tt/","noteIcon":"📝","created":"2024-04-25T23:34:09.516+07:00","updated":"2024-04-26T11:44:24.301+07:00"}
+{"dg-publish":true,"permalink":"/zettel/exercises-part-i-tt/","noteIcon":"📝","created":"2024-04-25T23:34:09.516+07:00","updated":"2024-04-26T12:21:26.099+07:00"}
 ---
 
 >[!example]+ Giải bài 1.9
@@ -39,11 +39,10 @@ $$
 Bây giờ, ta sẽ phân tích $\mathbb{E}[(X +Z)^2]$ thử:
 $$
 \begin{align*}
-\mathbb{E}[(X+Z)^2] &= \iint (x+z)^2 p(x, z)dxdz \\
+&\mathbb{E}[(X+Z)^2] = \iint (x+z)^2 p(x, z)dxdz \\
 &= \iint (x^2 + 2xz + z^2) p(x, z)dxdz \\
 &= \iint x^2p_{x}(x)p_{z}(z)dxdz + 2\iint xzp_{x}(x)p_{z}(z)dxdz + \iint z^2p_{x}(x)p_{z}(z)dxdz \\
-&= \int p_{z}(z) \left[ \int x^2 p_{x}(x)dx \right]dz + \int p_{x}(x) \left[ \int z^2 p_{z}(z)dz \right]dx  \\
-&+ 2\int xp_{x}(x)dx \int zp_{z}(z)dz \\
+&= \int p_{z}(z) \left[ \int x^2 p_{x}(x)dx \right]dz + \int p_{x}(x) \left[ \int z^2 p_{z}(z)dz \right]dx + 2\int xp_{x}(x)dx \int zp_{z}(z)dz \\
 &= \mathbb{E}[X^2] + \mathbb{E}[Z^2] + 2\mathbb{E}[X] \mathbb{E}[Y]
 \end{align*}
 $$
