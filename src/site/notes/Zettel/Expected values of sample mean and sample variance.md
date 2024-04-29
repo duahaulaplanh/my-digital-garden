@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/expected-values-of-sample-mean-and-sample-variance/","noteIcon":"📝","created":"2024-04-25T15:39:26.811+07:00","updated":"2024-04-26T10:30:53.350+07:00"}
+{"dg-publish":true,"permalink":"/zettel/expected-values-of-sample-mean-and-sample-variance/","noteIcon":"📝","created":"2024-04-25T15:39:26.811+07:00","updated":"2024-04-27T21:36:41.200+07:00"}
 ---
 
 Xét 1 mẫu $\mathcal{D}$ gồm $n$ quan sát $x_{1}, \dots, x_{n}$ và $\mathcal{D} \overset{i.i.d}{\sim} \mathcal{N}(\mu, \sigma^2)$. 
@@ -72,13 +72,25 @@ Sau khi đã có cả 3, ta chứng minh được, mình đi ngủ đây, dài v
 $$
 \begin{aligned}
 \mathbb{E}[\sigma^2_{ML}] &= \frac{1}{N} \sum_{n=1}^N \mathbb{E}[x_{n}^2] -\mathbb{E}[x_{n}\mu_{ML}] \\
-&= \mu^2 + \sigma^2 - \mu^2 - \frac{1}{N}\sigma^2 \\
+&= \frac{1}{N} \sum_{n=1}^N \left( \sigma^2 + \mu^2 - \mu^2 - \frac{\sigma^2}{N} \right) \\
+&= \frac{1}{N} \sum_{n=1}^N \left( \frac{N-1}{N} \sigma^2 \right) \\
 &= \frac{(N-1)}{N} \sigma^2
 \end{aligned}
 $$
 
 >[!note] My honest reaction:
 ><center><img width=300 height=300 src="https://preview.redd.it/man-im-dead-v0-ymr5u3c0bjsa1.jpg?auto=webp&s=364c87d710ec0cda25a8e23fcbf1dbd692d0a597"> </center>
+
+Có thể thấy, nếu ta chọn chia $N-1$ thay vì $N$ ở phương sai mẫu thì ta có:
+$$
+\begin{aligned}
+\mathbb{E}[\sigma^2_{ML}] &= \mathbb{E}\left[ \frac{1}{N-1} \sum_{n=1}^N (x_{n} - \mu_{ML})^2 \right] \\
+&= \frac{1}{N-1} \mathbb{E}\left[ \sum_{n=1}^N (x_{n} - \mu_{ML})^2 \right] \\
+&= \frac{1}{N-1} \sum_{n=1}^N \left( \frac{N-1}{N} \sigma^2 \right) \\
+&= \sigma^2
+\end{aligned}
+$$
+Vậy đây chính là lý do mà người ta thường chia cho $N-1$ thay vì $N$ ở phương sai mẫu.
 
 ---
 # References
