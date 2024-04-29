@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/some-math-knowledge/","tags":["self-study"],"noteIcon":"📝","created":"2024-04-25T15:03:08.838+07:00","updated":"2024-04-26T10:47:31.754+07:00"}
+{"dg-publish":true,"permalink":"/study/some-math-knowledge/","tags":["self-study"],"noteIcon":"📝","created":"2024-04-25T15:03:08.838+07:00","updated":"2024-04-29T09:18:54.570+07:00"}
 ---
 
 ## Calculus
@@ -24,3 +24,4 @@
 - [[Zettel/Expected value and variance of normal distribution\|Expected value and variance of normal distribution]]
 - [[Zettel/Mode of normal distribution\|Mode of normal distribution]]
 - [[Zettel/Maximum when variable changed\|Maximum when variable changed]]
+## Machine Learning
