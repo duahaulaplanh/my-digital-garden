@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/some-math-knowledge/","tags":["self-study"],"noteIcon":"📝","created":"2024-04-25T15:03:08.838+07:00","updated":"2024-04-29T09:18:54.570+07:00"}
+{"dg-publish":true,"permalink":"/study/some-math-knowledge/","tags":["self-study"],"noteIcon":"📝","created":"2024-04-25T15:03:08.838+07:00","updated":"2024-05-01T23:50:04.250+07:00"}
 ---
 
 ## Calculus
