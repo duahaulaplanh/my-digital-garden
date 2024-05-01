@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"noteIcon":"📝","created":"2024-03-20T00:13:20.890+07:00","updated":"2024-04-27T21:11:56.283+07:00"}
+{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"noteIcon":"📝","created":"2024-03-20T00:13:20.890+07:00","updated":"2024-05-01T20:32:20.783+07:00"}
 ---
 
 ---
@@ -13,7 +13,7 @@
 >- [Facebook](https://www.facebook.com/profile.php?id=100081741695746)
 >- [Mail](mailto:lenguyen18072003@gmail.com)
 >
->Mình rất là cảm ơn luôn.
+>Mình rất là cảm ơn luôn 🥰.
 
 ---
 ## Bookself
@@ -24,6 +24,5 @@
 
 - [[Zettel/Làm quen với dữ liệu (P1)\|Làm quen với dữ liệu (P1)]]
 - [[Zettel/Làm quen với dữ liệu (P2)\|Làm quen với dữ liệu (P2)]]
-## Paper Implement
-
-- [[Paper/LeNet\|LeNet]]
+- [[Zettel/Transformers Reading\|Transformers Reading]]
+- [[Study/Some math knowledge\|Some math knowledge]]
