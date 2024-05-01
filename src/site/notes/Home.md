@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"noteIcon":"📝","created":"2024-03-20T00:13:20.890+07:00","updated":"2024-05-01T20:32:20.783+07:00"}
+{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"noteIcon":"📝","created":"2024-03-20T00:13:20.890+07:00","updated":"2024-05-01T23:47:31.537+07:00"}
 ---
 
 ---
@@ -18,10 +18,11 @@
 ---
 ## Bookself
 
-- [[Book/ML Bishop\|ML Bishop]]
-- [[Book/RL Sutton\|RL Sutton]]
+- [[Study/ML Bishop\|ML Bishop]]
+- [[Study/RL Sutton\|RL Sutton]]
 ## Blog
 
+- [[Life/Film\|Film]]
 - [[Zettel/Làm quen với dữ liệu (P1)\|Làm quen với dữ liệu (P1)]]
 - [[Zettel/Làm quen với dữ liệu (P2)\|Làm quen với dữ liệu (P2)]]
 - [[Zettel/Transformers Reading\|Transformers Reading]]
