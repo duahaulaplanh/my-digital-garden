@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/transformers-reading/","noteIcon":"📝","created":"2024-03-20T00:13:20.877+07:00","updated":"2024-04-18T21:50:46.412+07:00"}
+{"dg-publish":true,"permalink":"/zettel/transformers-reading/","noteIcon":"📝","created":"2024-03-20T00:13:20.877+07:00","updated":"2024-05-01T20:32:10.716+07:00"}
 ---
 
 >[!danger]+
