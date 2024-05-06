@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/gaussian-distribution/","noteIcon":"📝","created":"2024-04-22T12:17:03.261+07:00","updated":"2024-04-26T11:17:05.117+07:00"}
+{"dg-publish":true,"permalink":"/zettel/gaussian-distribution/","noteIcon":"📝","created":"2024-04-22T12:17:03.261+07:00","updated":"2024-05-02T08:36:16.081+07:00"}
 ---
 
 **Phân phối chuẩn** (Gaussian Distribution hoặc Normal Distribution), kí hiệu là $\mathcal{N}(x \mid \mu, \sigma^2)$, sẽ được định nghĩa như sau:
@@ -60,7 +60,7 @@ Các điểm dữ liệu mà:
 - Được lấy ra từ cùng một phân phối (identically distributed).
 - Độc lập với nhau (independent).
 
-thì được nói là **độc lập và có phân phối đồng nhất** (independent and identically distributed) và thuòng viết tắt là i.i.d.
+thì được nói là **độc lập và có phân phối đồng nhất** (independent and identically distributed) và thường viết tắt là i.i.d.
 
 >[!note]+
 >Xét tập dữ liệu $\mathcal{D}$, nếu ta viết $\mathcal{D} \overset{i.i.d}{\sim} \mathcal{N}(\mu, \sigma^2)$ tức là tập dữ liệu $\mathcal{D}$ là độc lập và có phân phối đồng nhất, ngoài ra $\mathcal{D}$ được lấy ra từ phân phối chuẩn.
