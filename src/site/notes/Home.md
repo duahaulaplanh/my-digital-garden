@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"noteIcon":"📝","created":"2024-03-20T00:13:20.890+07:00","updated":"2024-05-01T23:47:31.537+07:00"}
+{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"noteIcon":"📝","created":"2024-03-20T00:13:20.890+07:00","updated":"2024-05-06T20:22:09.329+07:00"}
 ---
 
 ---
@@ -18,8 +18,14 @@
 ---
 ## Bookself
 
-- [[Study/ML Bishop\|ML Bishop]]
-- [[Study/RL Sutton\|RL Sutton]]
+| Name                                                                |
+| ------------------------------------------------------------------- |
+| [[Study/Analysis I Tao\|Analysis I Tao]]                         |
+| [[Study/ML Bishop\|ML Bishop]]                                   |
+| [[Archive/MacKay Information Theory\|MacKay Information Theory]] |
+| [[Study/RL Sutton\|RL Sutton]]                                   |
+
+{ .block-language-dataview}
 ## Blog
 
 - [[Life/Film\|Film]]
