@@ -20,10 +20,10 @@
 
 | Name                                                                |
 | ------------------------------------------------------------------- |
-| [[Study/Analysis I Tao\|Analysis I Tao]]                         |
-| [[Study/ML Bishop\|ML Bishop]]                                   |
-| [[Archive/MacKay Information Theory\|MacKay Information Theory]] |
 | [[Study/RL Sutton\|RL Sutton]]                                   |
+| [[Study/ML Bishop\|ML Bishop]]                                   |
+| [[Study/Analysis I Tao\|Analysis I Tao]]                         |
+| [[Archive/MacKay Information Theory\|MacKay Information Theory]] |
 
 { .block-language-dataview}
 ## Blog
