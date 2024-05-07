@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/expected-values-of-sample-mean-and-sample-variance/","noteIcon":"📝","created":"2024-04-25T15:39:26.811+07:00","updated":"2024-04-27T21:36:41.200+07:00"}
+{"dg-publish":true,"permalink":"/zettel/expected-values-of-sample-mean-and-sample-variance/","noteIcon":"📝","created":"2024-04-25T15:39:26.811+07:00","updated":"2024-05-07T15:25:43.798+07:00"}
 ---
 
-Xét 1 mẫu $\mathcal{D}$ gồm $n$ quan sát $x_{1}, \dots, x_{n}$ và $\mathcal{D} \overset{i.i.d}{\sim} \mathcal{N}(\mu, \sigma^2)$. 
+Xét 1 mẫu $\mathcal{D}$ gồm $N$ quan sát ${} x_{1}, \dots, x_{N} {}$ và $\mathcal{D} \overset{i.i.d}{\sim} \mathcal{N}(\mu, \sigma^2)$. 
 
 >[!note]+
 >Ta biết $\mathbb{E}[X] = \mu$, $\mathbb{E}[X^{2}] = \mu^{2}+ \sigma^2$ và $\text{var}[X] = \sigma^2$ với $X$ có phân phối chuẩn $\mathcal{N}(\mu, \sigma^2)$. Chứng minh ở [[Zettel/Expected value and variance of normal distribution\|Expected value and variance of normal distribution]].
