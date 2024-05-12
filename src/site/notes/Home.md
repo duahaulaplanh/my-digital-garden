@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"noteIcon":"📝","created":"2024-03-20T00:13:20.890+07:00","updated":"2024-05-06T20:22:09.329+07:00"}
+{"dg-publish":true,"permalink":"/home/","tags":["gardenEntry"],"noteIcon":"📝","created":"2024-03-20T00:13:20.890+07:00","updated":"2024-05-08T22:56:32.251+07:00"}
 ---
 
 ---
@@ -12,17 +12,14 @@
 >Nếu có gì sai trong note của mình, các bạn có thể liên lạc với mình tại:
 >- [Facebook](https://www.facebook.com/profile.php?id=100081741695746)
 >- [Mail](mailto:lenguyen18072003@gmail.com)
->
->Mình rất là cảm ơn luôn 🥰.
 
 ---
 ## Bookself
 
 | Name                                                                |
 | ------------------------------------------------------------------- |
-| [[Study/RL Sutton\|RL Sutton]]                                   |
 | [[Study/ML Bishop\|ML Bishop]]                                   |
-| [[Study/Analysis I Tao\|Analysis I Tao]]                         |
+| [[Archive/RL Sutton\|RL Sutton]]                                 |
 | [[Archive/MacKay Information Theory\|MacKay Information Theory]] |
 
 { .block-language-dataview}
