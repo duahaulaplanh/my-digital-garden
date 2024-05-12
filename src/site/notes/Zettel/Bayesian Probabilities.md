@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/bayesian-probabilities/","noteIcon":"📝","created":"2024-04-22T12:19:56.445+07:00","updated":"2024-04-23T20:23:09.238+07:00"}
+{"dg-publish":true,"permalink":"/zettel/bayesian-probabilities/","noteIcon":"📝","created":"2024-04-22T12:19:56.445+07:00","updated":"2024-05-12T11:03:05.136+07:00"}
 ---
 
 Định lý Bayes cũng có thể áp dụng trong Machine Leanring như sau. Giả sử rằng ta có tập dữ liệu $\mathcal{D}$ và một model có bộ tham số là $\mathbf{w}$. Mục đích của ta là với tập dữ liệu $\mathcal{D}$ như này, bộ tham số $\mathbf{w}$ của ta như nào mới là tốt, tức là tìm xác suất $p(\mathbf{w} \mid \mathcal{D})$.
@@ -42,6 +42,9 @@ trong đó $\text{likelihood}, \text{posterior}$ và $\text{prior}$ đều là c
 
 Vậy sinh ra cái Bayes này làm gì, mục đích của chúng ta đó là cố gắng tìm bộ tham số $\mathbf{w}$ sao cho $p(\mathbf{w} \mid \mathcal{D})$ là tốt nhất, kiểu như ta đã biết trước tập dữ liệu $\mathcal{D}$ (tức là ta đã biết trước kết quả rồi), ta cần tìm mô hình (tham số $\mathbf{w}$) phù hợp với $\mathcal{D}$ nhất (tức là ta đi tìm nguyên nhân cho ra kết quả và nguyên nhân đó phải là phù hợp với kết quả nhất, vậy là tìm xác suất $p(\mathbf{w}\mid \mathcal{D})$ lớn nhất) (mình copy cách giải thích này từ [VHT]).
 
+>[!note]+
+>Ngoài cách giải thích trên, ta hãy xem xác suất như *mức độ của niềm tin* (degree of belief) tức là xác suất càng cao, ta càng tin là nó sẽ tốt (hoặc sẽ xảy ra). Trước khi có data quan sát được dữ liệu $\mathcal{D}$, ta tin rằng $\mathbf{w}$ sẽ tốt (là một mô hình phù hợp với $\mathcal{D}$) ở một mức độ nào đó, tức là $p(\mathbf{w})$, sau khi quan sát được dữ liệu ${} \mathcal{D}$ rồi, niềm tin về độ phù hợp của $\mathbf{w}$ với ${} \mathcal{D} {}$ sẽ thay đổi và có giá trị là $p(\mathbf{w} \mid \mathcal{D})$.
+
 Đối với frequentist thì ta sẽ dùng phương pháp **maximum likelihood** (MLE) để tìm giá trị $p(\mathcal{D} \mid \mathbf{w})$ lớn nhất từ đó tìm được $p(\mathbf{w} \mid \mathcal{D})$ lớn nhất (frequentist giả sử rằng $p(\mathbf{w})$ và $p(\mathcal{D})$ là các hằng số, ở góc nhìn của frequentist, ta sẽ xem $\mathbf{w}$ như là một giá trị mà ta ước lượng được, do đó $p(\mathbf{w})$ là một hằng số) Ta sẽ tìm hiểu phương pháp này ở phần [[Zettel/Gaussian Distribution\|Gaussian Distribution]].
 
 Còn đối với bayesian, ta có phương pháp gọi là **maximum a posteriori estimation** (MAP). Bayesian cho rằng $\mathbf{w}$ là một biến ngẫu nhiên chứ không phải một giá trị, do đó $p(\mathbf{w})$ là một phân phối. Vậy để tìm được $p(\mathbf{w} \mid \mathcal{D})$ lớn nhất ta phải tìm cả likelihood $p(\mathcal{D} \mid \mathbf{w})$ và prior $\mathcal{p}(\mathbf{w})$.
@@ -56,3 +59,4 @@ Phần sau: [[Zettel/Gaussian Distribution\|Gaussian Distribution]]
 
 - [Bishop] Pattern Recognition and Machine Learning - Bishop (chapter 1.2)
 - [VHT]  [Machine Learning cơ bản (machinelearningcoban.com) - Bài 31](https://machinelearningcoban.com/2017/07/17/mlemap/)
+- [Bayesian Machine Learning (cam.ac.uk)](https://mlg.eng.cam.ac.uk/zoubin/bayesian.html)
