@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/equivalence-relation/","noteIcon":"📝","created":"2024-03-20T00:13:20.882+07:00","updated":"2024-04-25T16:43:32.901+07:00"}
+{"dg-publish":true,"permalink":"/zettel/equivalence-relation/","noteIcon":"📝","created":"2024-03-20T00:13:20.882+07:00","updated":"2024-05-15T21:34:03.614+07:00"}
 ---
 
 Cho $A$ và $B$ là hai tập hợp. Một **quan hệ** $R$ từ $A$ đến $B$ là một tập hợp con của $A \times B$. Nếu $R$ là một quan hệ từ $A$ đến $A$ thì ta nói $R$ là một quan hệ **trên** $A$.
