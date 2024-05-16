@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/poisson-distribution-and-stirling-approximation/","noteIcon":"📝","created":"2024-04-25T17:21:15.075+07:00","updated":"2024-04-25T17:22:10.027+07:00"}
+{"dg-publish":true,"permalink":"/zettel/poisson-distribution-and-stirling-approximation/","noteIcon":"📝","created":"2024-04-25T17:21:15.075+07:00","updated":"2024-05-15T21:34:03.748+07:00"}
 ---
 
 Xét phân phối $X$ như dưới đây:
