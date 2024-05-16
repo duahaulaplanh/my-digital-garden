@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/change-of-random-variable/","noteIcon":"📝","created":"2024-04-25T15:41:21.082+07:00","updated":"2024-04-25T16:36:12.312+07:00"}
+{"dg-publish":true,"permalink":"/zettel/change-of-random-variable/","noteIcon":"📝","created":"2024-04-25T15:41:21.082+07:00","updated":"2024-05-15T21:34:03.565+07:00"}
 ---
 
 Xét hai biến ngẫu nhiên $X$ và $Y$ với $X = g(Y)$. Đặt $F_{X}$ là cdf của $X$ và $F_{Y}$ là cdf của $Y$. Tương tự, ta đặt $f_{X}$ là mật độ xác suất của $X$ và $f_{Y}$ là mật độ xác suất của $Y$.
