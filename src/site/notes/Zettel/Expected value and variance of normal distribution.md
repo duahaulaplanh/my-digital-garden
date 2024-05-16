@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/expected-value-and-variance-of-normal-distribution/","noteIcon":"📝","created":"2024-04-25T18:54:12.996+07:00","updated":"2024-04-26T12:21:53.659+07:00"}
+{"dg-publish":true,"permalink":"/zettel/expected-value-and-variance-of-normal-distribution/","noteIcon":"📝","created":"2024-04-25T18:54:12.996+07:00","updated":"2024-05-15T21:34:03.628+07:00"}
 ---
 
 Kì vọng của phân phối chuẩn:
