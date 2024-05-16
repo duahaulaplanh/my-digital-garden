@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/study/ml-bishop/","tags":["book"],"noteIcon":"📝","created":"2024-04-15T11:05:19.428+07:00","updated":"2024-04-25T23:34:48.689+07:00"}
+{"dg-publish":true,"permalink":"/study/ml-bishop/","tags":["book"],"noteIcon":"📝","created":"2024-04-15T11:05:19.428+07:00","updated":"2024-05-15T22:30:24.493+07:00"}
 ---
 
 >[!danger]+ Lưu ý
@@ -15,10 +15,9 @@
 - **Complement**:
 	- [ctgk/PRML: PRML algorithms implemented in Python (github.com)](https://github.com/ctgk/PRML)
 	- [gerdm/prml: Repository of notes, code and notebooks in Python for the book Pattern Recognition and Machine Learning by Christopher Bishop (github.com)](https://github.com/gerdm/prml)
-	- [[Study/Some math knowledge\|Some math knowledge]]
 # 2. My take
 
-## I. Introduction
+## Introduction
 
 - [[Zettel/Polynomial Curve Fitting\|Polynomial Curve Fitting]]
 - Probability Theory
@@ -36,4 +35,4 @@
 - [[Zettel/Exercises Part I\|Exercises Part I]]
 - [[Zettel/Exercises Part I (TT)\|Exercises Part I (TT)]]
 
-## II. Probability Distributions
+## Probability Distributions
