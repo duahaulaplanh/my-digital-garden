@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/why-probability-distribution-of-coin-is-binomial/","noteIcon":"📝","created":"2024-04-25T17:14:32.132+07:00","updated":"2024-04-25T17:17:04.399+07:00"}
+{"dg-publish":true,"permalink":"/zettel/why-probability-distribution-of-coin-is-binomial/","noteIcon":"📝","created":"2024-04-25T17:14:32.132+07:00","updated":"2024-05-15T21:34:03.766+07:00"}
 ---
 
 Một đồng xu không đồng chất (tức là xác suất ra mặt ngửa và mặt xấp không đều nhau) có xác suất ra mặt ngửa là $f$. Đặt biến ngẫu nhiên $X$ là số mặt ngửa khi tung đồng xu $N$ lần, khi đó, phân phối xác suất của $X$ sẽ là:
