@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/mode-of-normal-distribution/","noteIcon":"📝","created":"2024-04-26T10:46:54.499+07:00","updated":"2024-04-26T11:17:24.874+07:00"}
+{"dg-publish":true,"permalink":"/zettel/mode-of-normal-distribution/","noteIcon":"📝","created":"2024-04-26T10:46:54.499+07:00","updated":"2024-05-15T21:34:03.739+07:00"}
 ---
 
 Như đã chứng minh ở [[Zettel/Maximum when variable changed\|Maximum when variable changed]], khi mà ta đổi biến ngẫu nhiên $X$ có phân phối xác suất $f_{X}$ sang biến ngẫu nhiên $Y$ với $X = g(Y)$ và $g$ là hàm tuyến tính thì ta có thể tìm giá trị lớn nhất của $f_{X}$ thông qua $f_{Y}$. Ngoài ra ta có thể tìm $f_{Y}$ thông qua công thức sau ([[Zettel/Change of random variable\|Change of random variable]]):
