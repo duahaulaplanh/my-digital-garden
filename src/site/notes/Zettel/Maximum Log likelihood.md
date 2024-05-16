@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/maximum-log-likelihood/","noteIcon":"📝","created":"2024-04-25T16:38:41.123+07:00","updated":"2024-04-25T16:40:10.320+07:00"}
+{"dg-publish":true,"permalink":"/zettel/maximum-log-likelihood/","noteIcon":"📝","created":"2024-04-25T16:38:41.123+07:00","updated":"2024-05-15T21:34:03.707+07:00"}
 ---
 
 Ta có:
