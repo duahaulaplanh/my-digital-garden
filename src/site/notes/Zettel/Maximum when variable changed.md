@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/maximum-when-variable-changed/","noteIcon":"📝","created":"2024-04-26T10:47:33.457+07:00","updated":"2024-04-26T10:49:39.152+07:00"}
+{"dg-publish":true,"permalink":"/zettel/maximum-when-variable-changed/","noteIcon":"📝","created":"2024-04-26T10:47:33.457+07:00","updated":"2024-05-15T21:34:03.722+07:00"}
 ---
 
 >[!note]+
