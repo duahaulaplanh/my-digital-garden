@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/expected-values-of-sample-mean-and-sample-variance/","noteIcon":"📝","created":"2024-04-25T15:39:26.811+07:00","updated":"2024-05-07T15:29:05.320+07:00"}
+{"dg-publish":true,"permalink":"/zettel/expected-values-of-sample-mean-and-sample-variance/","noteIcon":"📝","created":"2024-04-25T15:39:26.811+07:00","updated":"2024-05-15T21:34:03.644+07:00"}
 ---
 
 Xét 1 mẫu $\mathcal{D}$ gồm $N$ quan sát ${} x_{1}, \dots, x_{N} {}$ và $\mathcal{D} \overset{i.i.d}{\sim} \mathcal{N}(\mu, \sigma^2)$. Đặt $\mu_{ML}$ là trung bình mẫu và $\sigma^2_{ML}$ là phương sai mẫu.
