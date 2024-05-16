@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/zettel/integral-of-normal-distribution-is-1/","noteIcon":"📝","created":"2024-04-25T16:27:27.480+07:00","updated":"2024-04-26T10:24:23.749+07:00"}
+{"dg-publish":true,"permalink":"/zettel/integral-of-normal-distribution-is-1/","noteIcon":"📝","created":"2024-04-25T16:27:27.480+07:00","updated":"2024-05-15T21:34:03.681+07:00"}
 ---
 
 
